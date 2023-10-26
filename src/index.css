@@ -2,6 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-* {
-    background-color: grey;
-}
+/* body {
+    background-color: #212121;
+} */
