@@ -36,15 +36,7 @@ const profileMenuItems = [
     {
         label: "Inbox",
         icon: InboxArrowDownIcon,
-    },
-    {
-        label: "Help",
-        icon: LifebuoyIcon,
-    },
-    {
-        label: "Sign Out",
-        icon: PowerIcon,
-    },
+    }
 ];
 
 function ProfileMenu() {
@@ -57,14 +49,13 @@ function ProfileMenu() {
             <MenuHandler>
                 <Button
                     variant="text"
-                    color="blue-gray"
-                    className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"
+                    className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto text-pink-900"
                 >
                     <Avatar
                         variant="circular"
                         size="sm"
                         alt="kris algario"
-                        className="border border-gray-900 p-0.5"
+                        className="border border-pink-900 p-0.5"
                         src="./src/assets/krisphoto.jpg"
                     />
                     <p>Contact</p>
@@ -78,25 +69,20 @@ function ProfileMenu() {
 
             <MenuList className="p-1">
                 {profileMenuItems.map(({ label, icon }, key) => {
-                    const isLastItem = key === profileMenuItems.length - 1;
                     return (
                         <MenuItem
                             key={label}
                             onClick={closeMenu}
-                            className={`flex items-center gap-2 rounded ${isLastItem
-                                    ? "hover:bg-red-500/10 focus:bg-red-500/10 active:bg-red-500/10"
-                                    : ""
-                                }`}
+                            className={"flex items-center gap-2 rounded"}
                         >
                             {React.createElement(icon, {
-                                className: `h-4 w-4 ${isLastItem ? "text-red-500" : ""}`,
+                                className: "h-4 w-4",
                                 strokeWidth: 2,
                             })}
                             <Typography
                                 as="span"
                                 variant="small"
                                 className="font-normal"
-                                color={isLastItem ? "red" : "inherit"}
                             >
                                 {label}
                             </Typography>
@@ -135,8 +121,7 @@ function NavList() {
                     as="a"
                     href="#"
                     variant="small"
-                    color="gray"
-                    className="font-medium text-blue-gray-500"
+                    className="font-medium text-pink-900"
                 >
                     <MenuItem className="flex items-center gap-2 lg:rounded-full">
                         {React.createElement(icon, { className: "h-[18px] w-[18px]" })}{" "}
@@ -162,7 +147,7 @@ export default function NavMenu() {
 
     return (
         <Navbar className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6">
-            <div className="relative mx-auto flex items-center justify-between text-pink-300">
+            <div className="relative mx-auto flex items-center justify-between text-pink-900">
                 <Typography
                     as="a"
                     href="#"
@@ -175,7 +160,7 @@ export default function NavMenu() {
                 </div>
                 <IconButton
                     size="sm"
-                    color="blue-gray"
+                    color="text-pink-700"
                     variant="text"
                     onClick={toggleIsNavOpen}
                     className="ml-auto mr-2 lg:hidden"
@@ -183,7 +168,7 @@ export default function NavMenu() {
                     <Bars2Icon className="h-6 w-6" />
                 </IconButton>
 
-                <Button size="sm" variant="text">
+                <Button size="sm" variant="text" className="text-pink-900">
                     <span>Contact</span>
                 </Button>
                 <ProfileMenu />
