@@ -49,7 +49,7 @@ function ProfileMenu() {
             <MenuHandler>
                 <Button
                     variant="text"
-                    className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto text-mypink-800"
+                    className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto text-mypink-800 hover:bg-purple-50"
                 >
                     <Avatar
                         variant="circular"
@@ -68,12 +68,12 @@ function ProfileMenu() {
             </MenuHandler>
 
             <MenuList className="p-1">
-                {profileMenuItems.map(({ label, icon }, key) => {
+                {profileMenuItems.map(({ label, icon }) => {
                     return (
                         <MenuItem
                             key={label}
                             onClick={closeMenu}
-                            className={"flex items-center gap-2 rounded"}
+                            className={"flex items-center gap-2 rounded text-mypink-800"}
                         >
                             {React.createElement(icon, {
                                 className: "h-4 w-4",
@@ -93,7 +93,6 @@ function ProfileMenu() {
         </Menu>
     );
 }
-
 
 
 // nav list component
@@ -123,16 +122,16 @@ const navListItems = [
 function NavList() {
     return (
         <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center ">
-            {navListItems.map(({ label, icon }, key) => (
+            {navListItems.map(({ label, icon }) => (
                 <Typography
                     key={label}
                     as="a"
                     href="#"
                     variant="small"
-                    className="font-medium text-mypink-800"
+                    className="font-medium text-mypink-800 "
                 >
-                    <MenuItem className="flex items-center gap-2 lg:rounded-full">
-                        {React.createElement(icon, { className: "h-[18px] w-[18px]" })}{" "}
+                    <MenuItem className="flex items-center gap-2 lg:rounded-full hover:bg-purple-50">
+                        {React.createElement(icon, { className: "h-[18px] w-[18px] text-mypink-800" })}{" "}
                         <span className="text-mypink-800"> {label}</span>
                     </MenuItem>
                 </Typography>
@@ -154,9 +153,9 @@ export default function NavMenu() {
     }, []);
 
     return (
-        <Navbar className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6 flex-row-reverse">
+        <Navbar className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6">
             <div className="relative mx-auto flex items-center justify-between text-mypink-800">
-                <Typography as="a" href="#" className="mr-4 ml-2 cursor-pointer py-1.5 font-medium flex items-center divide-x divide-mypink-800">
+                <Typography as="a" href="#" className="me-20 flex items-start mr-4 ml-2 cursor-pointer py-1.5 font-medium flex items-center">
                     <svg width="63" height="34" viewBox="0 0 73 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M57.8966 24.1568L56.6549 22.3975H15.5772L9.88631 17.2549H4.19543V19.1495H9.88631L15.5772 24.1568H57.8966Z" fill="#500035" />
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.51724 20.7059C3.90748 20.7059 5.03448 19.5471 5.03448 18.1177C5.03448 16.6882 3.90748 15.5294 2.51724 15.5294C1.12701 15.5294 0 16.6882 0 18.1177C0 19.5471 1.12701 20.7059 2.51724 20.7059ZM2.51717 19.227C3.11299 19.227 3.59599 18.7303 3.59599 18.1177C3.59599 17.5051 3.11299 17.0085 2.51717 17.0085C1.92136 17.0085 1.43835 17.5051 1.43835 18.1177C1.43835 18.7303 1.92136 19.227 2.51717 19.227Z" fill="#500035" />
@@ -169,10 +168,10 @@ export default function NavMenu() {
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5697 21.4454C19.96 21.4454 21.087 20.2866 21.087 18.8572C21.087 17.4277 19.96 16.2689 18.5697 16.2689C17.1795 16.2689 16.0525 17.4277 16.0525 18.8572C16.0525 20.2866 17.1795 21.4454 18.5697 21.4454ZM18.5698 19.9665C19.1656 19.9665 19.6486 19.4699 19.6486 18.8572C19.6486 18.2446 19.1656 17.748 18.5698 17.748C17.974 17.748 17.491 18.2446 17.491 18.8572C17.491 19.4699 17.974 19.9665 18.5698 19.9665Z" fill="#500035" />
                     </svg>
 
-                    <h1 className="">. Algario</h1>
+                    <h1>Algario</h1>
                 </Typography>
                 
-                <div className="hidden lg:block lg:flex-row-reverse">
+                <div className="hidden lg:block flex items-center ms-20 md:ms-10">
                     <NavList />
                 </div>
 
@@ -181,9 +180,9 @@ export default function NavMenu() {
                     color="text-mypink-800"
                     variant="text"
                     onClick={toggleIsNavOpen}
-                    className="ml-auto mr-2 lg:hidden"
+                    className="ml-auto mr-2 lg:hidden flex items-end"
                 >
-                    <Bars2Icon className="h-6 w-6" />
+                    <Bars2Icon className="h-6 w-6 text-mypink-800" />
                 </IconButton>
 
                 <ProfileMenu />
