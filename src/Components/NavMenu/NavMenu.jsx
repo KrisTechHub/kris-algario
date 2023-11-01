@@ -60,22 +60,20 @@ export default function NavMenu() {
                 </Typography>
                 
                 <div className="hidden lg:block flex items-center ms-20 md:ms-10">
-                    <NavList />
+                    <MenuItems />
                 </div>
 
-                <IconButton
-                    size="sm"
-                    color="text-mypink-800"
-                    variant="text"
-                    onClick={toggleIsNavOpen}
-                    className="ml-auto mr-2 lg:hidden flex items-end"
-                >
-                    <Bars3Icon className="h-6 w-6 text-mypink-800" />
-                </IconButton>
+                <div className="flex items-center">
+                    {/* Dropdown for Contact in Nav Bar */}
+                    <ContactDropdown /> 
 
-                {/* Dropdown for Contact in Nav Bar */}
-                <ContactDropdown /> 
-            </div>
+                    <IconButton size="sm" color="text-mypink-800" variant="text" onClick={toggleIsNavOpen} className="mr-2 lg:hidden flex items-end">
+                        <Bars3Icon className="h-6 w-6 text-mypink-800" />
+                    </IconButton>
+                </div>
+
+            </div> 
+
             <MobileNav open={isNavOpen} className="overflow-scroll">
                 <MenuItems />
             </MobileNav>

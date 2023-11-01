@@ -101,7 +101,7 @@ function ProfileMenu() {
 
 const ContactDropdown = () => {
     return (
-        <div>
+        <div className='hidden sm:block flex md:items-end'>
             <ProfileMenu />
         </div>
     );

@@ -8,7 +8,7 @@ function App() {
   return (
       <div>
         <NavMenu />
-        <SideBar />
+        {/* <SideBar /> */}
       </div>
   )
 }
