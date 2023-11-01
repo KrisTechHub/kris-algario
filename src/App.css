@@ -1,0 +1,15 @@
+.top-navbar {
+    /* Your top navigation bar styles */
+}
+
+.sidebar {
+    /* Your sidebar styles */
+    position: fixed;
+    width: 200px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    display: list-item;
+    /* Adjust the background color as needed */
+}

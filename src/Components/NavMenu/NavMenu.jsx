@@ -1,4 +1,7 @@
 import React from "react";
+import ContactDropdown from "./ContactDropdown";
+import MenuItems from "./MenuItems";
+
 import {
     Navbar,
     MobileNav,
@@ -19,126 +22,10 @@ import {
     ChevronDownIcon,
     Cog6ToothIcon,
     InboxArrowDownIcon,
-    Bars2Icon,
+    Bars3Icon,
     Squares2X2Icon,
 } from "@heroicons/react/24/solid";
 
-// profile menu component
-const profileMenuItems = [
-    {
-        label: "Job Profiles",
-        icon: UserCircleIcon,
-    },
-    {
-        label: "Socials",
-        icon: Cog6ToothIcon,
-    },
-    {
-        label: "Inbox",
-        icon: InboxArrowDownIcon,
-    }
-];
-
-function ProfileMenu() {
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-    const closeMenu = () => setIsMenuOpen(false);
-
-    return (
-        <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
-            <MenuHandler>
-                <Button
-                    variant="text"
-                    className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto text-mypink-800 hover:bg-purple-50"
-                >
-                    <Avatar
-                        variant="circular"
-                        size="sm"
-                        alt="kris algario"
-                        className="border border-mypink-800 p-0.5"
-                        src="./src/assets/krisphoto.jpg"
-                    />
-                    <p>Contact</p>
-                    <ChevronDownIcon
-                        strokeWidth={2.5}
-                        className={`h-3 w-3 transition-transform ${isMenuOpen ? "rotate-180" : ""
-                            }`}
-                    />
-                </Button>
-            </MenuHandler>
-
-            <MenuList className="p-1">
-                {profileMenuItems.map(({ label, icon }) => {
-                    return (
-                        <MenuItem
-                            key={label}
-                            onClick={closeMenu}
-                            className={"flex items-center gap-2 rounded text-mypink-800"}
-                        >
-                            {React.createElement(icon, {
-                                className: "h-4 w-4",
-                                strokeWidth: 2,
-                            })}
-                            <Typography
-                                as="span"
-                                variant="small"
-                                className="font-normal"
-                            >
-                                {label}
-                            </Typography>
-                        </MenuItem>
-                    );
-                })}
-            </MenuList>
-        </Menu>
-    );
-}
-
-
-// nav list component
-const navListItems = [
-    {
-        label: "Home",
-        icon: HomeIcon,
-    },
-    {
-        label: "About me",
-        icon: UserCircleIcon,
-    },
-    {
-        label: "Services",
-        icon: ComputerDesktopIcon,
-    },
-    {
-        label: "Skills",
-        icon: Cog8ToothIcon,
-    },
-    {
-        label: "Portfolio",
-        icon: Squares2X2Icon,
-    },
-];
-
-function NavList() {
-    return (
-        <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center ">
-            {navListItems.map(({ label, icon }) => (
-                <Typography
-                    key={label}
-                    as="a"
-                    href="#"
-                    variant="small"
-                    className="font-medium text-mypink-800 "
-                >
-                    <MenuItem className="flex items-center gap-2 lg:rounded-full hover:bg-purple-50">
-                        {React.createElement(icon, { className: "h-[18px] w-[18px] text-mypink-800" })}{" "}
-                        <span className="text-mypink-800"> {label}</span>
-                    </MenuItem>
-                </Typography>
-            ))}
-        </ul>
-    );
-}
 
 export default function NavMenu() {
     const [isNavOpen, setIsNavOpen] = React.useState(false);
@@ -153,10 +40,11 @@ export default function NavMenu() {
     }, []);
 
     return (
-        <Navbar className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6">
-            <div className="relative mx-auto flex items-center justify-between text-mypink-800">
-                <Typography as="a" href="#" className="me-20 flex items-start mr-4 ml-2 cursor-pointer py-1.5 font-medium flex items-center">
-                    <svg width="63" height="34" viewBox="0 0 73 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <Navbar className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6 tracking-wider">
+            <div className="relative mx-auto flex items-center justify-between text-mypink-800 ">
+
+                <Typography as="a" href="#" className="divide-x-2 divide-mypink-600 font-sans me-20 flex items-start mr-4 ml-2 cursor-pointer py-1.5 font-medium flex items-center">
+                    <svg className="px-2 lg:text-lg md:text-base" width="63" height="34" viewBox="0 0 73 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M57.8966 24.1568L56.6549 22.3975H15.5772L9.88631 17.2549H4.19543V19.1495H9.88631L15.5772 24.1568H57.8966Z" fill="#500035" />
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.51724 20.7059C3.90748 20.7059 5.03448 19.5471 5.03448 18.1177C5.03448 16.6882 3.90748 15.5294 2.51724 15.5294C1.12701 15.5294 0 16.6882 0 18.1177C0 19.5471 1.12701 20.7059 2.51724 20.7059ZM2.51717 19.227C3.11299 19.227 3.59599 18.7303 3.59599 18.1177C3.59599 17.5051 3.11299 17.0085 2.51717 17.0085C1.92136 17.0085 1.43835 17.5051 1.43835 18.1177C1.43835 18.7303 1.92136 19.227 2.51717 19.227Z" fill="#500035" />
                         <path d="M60.0314 26.8683L61.2529 28.4706H30.2069L30.2069 26.7468L29.7874 26.7451H30.2069V26.7468L60.0314 26.8683Z" fill="#500035" />
@@ -167,8 +55,8 @@ export default function NavMenu() {
                         <path d="M30.3164 0V18.1069H20.1379V19.8431H56.0682L72.1609 0H59.307L44.1252 18.1069H40.4816V0H30.3164Z" fill="#500035" />
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5697 21.4454C19.96 21.4454 21.087 20.2866 21.087 18.8572C21.087 17.4277 19.96 16.2689 18.5697 16.2689C17.1795 16.2689 16.0525 17.4277 16.0525 18.8572C16.0525 20.2866 17.1795 21.4454 18.5697 21.4454ZM18.5698 19.9665C19.1656 19.9665 19.6486 19.4699 19.6486 18.8572C19.6486 18.2446 19.1656 17.748 18.5698 17.748C17.974 17.748 17.491 18.2446 17.491 18.8572C17.491 19.4699 17.974 19.9665 18.5698 19.9665Z" fill="#500035" />
                     </svg>
-
-                    <h1>Algario</h1>
+                    
+                    <h1 className="px-2 lg:text-lg md:text-base ">Algario</h1>
                 </Typography>
                 
                 <div className="hidden lg:block flex items-center ms-20 md:ms-10">
@@ -182,13 +70,14 @@ export default function NavMenu() {
                     onClick={toggleIsNavOpen}
                     className="ml-auto mr-2 lg:hidden flex items-end"
                 >
-                    <Bars2Icon className="h-6 w-6 text-mypink-800" />
+                    <Bars3Icon className="h-6 w-6 text-mypink-800" />
                 </IconButton>
 
-                <ProfileMenu />
+                {/* Dropdown for Contact in Nav Bar */}
+                <ContactDropdown /> 
             </div>
             <MobileNav open={isNavOpen} className="overflow-scroll">
-                <NavList />
+                <MenuItems />
             </MobileNav>
         </Navbar>
     );

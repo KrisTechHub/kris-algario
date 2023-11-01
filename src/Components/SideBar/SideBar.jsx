@@ -1,4 +1,6 @@
 import React from "react";
+import ContactDropdown from "../NavMenu/ContactDropdown";
+
 import {
     Card,
     Typography,
@@ -35,30 +37,28 @@ export default function SideBar() {
     };
 
     return (
-        <Card className="h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
-            <img src="./src/assets/krisphoto.jpg" alt="brand" className="h-8 w-8 space flex items-center" />
-            <div className="mb-2 flex items-center gap-4 p-4">
-                <img src="./src/assets/K.svg" alt="brand" className="h-8 w-8" />
-                <Typography variant="h5" color="blue-gray" flex items-center>
-                    Kristine Algario
-                </Typography>
+        <Card className="h-[calc(100vh-2rem)] w-full max-w-[18rem] p-4 shadow-xl shadow-blue-gray-900/5">
+
+            <div className="flex items-center justify-center">
+                <img src="./src/assets/krisphoto.jpg" alt="brand" className="h-20 w-20 space rounded-full" />
             </div>
+            
+            <Typography variant="h5" className="font-mono flex items-center text-mypink-800 justify-center p-4">
+                <img src="./src/assets/K.svg" alt="brand" className="h-8 w-8" />
+                ristine Algario
+            </Typography>
+
             <List>
-                <Accordion
-                    open={open === 1}
-                    icon={
-                        <ChevronDownIcon
-                            strokeWidth={2.5}
-                            className={`mx-auto h-4 w-4 transition-transform ${open === 1 ? "rotate-180" : ""}`}
-                        />
-                    }
-                >
+                <Accordion open={open === 1} icon={
+                        <ChevronDownIcon strokeWidth={2.5} className={`mx-auto h-4 w-4 transition-transform ${open === 1 ? "rotate-180" : ""}`} />
+                }>
+
                     <ListItem className="p-0" selected={open === 1}>
                         <AccordionHeader onClick={() => handleOpen(1)} className="border-b-0 p-3">
                             <ListItemPrefix>
                                 <PresentationChartBarIcon className="h-5 w-5" />
                             </ListItemPrefix>
-                            <Typography color="blue-gray" className="mr-auto font-normal">
+                            <Typography className="mr-auto font-normal text-mypink-800">
                                 Dashboard
                             </Typography>
                         </AccordionHeader>
@@ -150,6 +150,9 @@ export default function SideBar() {
                     </ListItemPrefix>
                     Log Out
                 </ListItem>
+                
+                <ContactDropdown />
+
             </List>
             <Alert open={openAlert} className="mt-auto" onClose={() => setOpenAlert(false)}>
                 <CubeTransparentIcon className="mb-4 h-12 w-12" />
