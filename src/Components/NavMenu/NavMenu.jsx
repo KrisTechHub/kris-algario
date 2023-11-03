@@ -1,53 +1,15 @@
 import React from "react";
 import ContactDropdown from "./ContactDropdown";
 import MenuItems from "./MenuItems";
+import { navItems } from "./NavData";
 
-import {
-    Navbar,
-    Collapse,
-    Typography,
-    IconButton,
-} from "@material-tailwind/react";
-import {
-    Cog8ToothIcon,
-    HomeIcon,
-    ComputerDesktopIcon,
-    UserCircleIcon,
-    Bars3Icon,
-    Squares2X2Icon,
-} from "@heroicons/react/24/solid";
-
-// nav list component
-const navItems = [
-    {
-        label: "HOME",
-        icon: HomeIcon,
-    },
-    {
-        label: "ABOUT ME",
-        icon: UserCircleIcon,
-    },
-    {
-        label: "SERVICES",
-        icon: ComputerDesktopIcon,
-    },
-    {
-        label: "SKILLS",
-        icon: Cog8ToothIcon,
-    },
-    {
-        label: "PORTFOLIO",
-        icon: Squares2X2Icon,
-    },
-];
+import { Navbar, Collapse, Typography, IconButton, } from "@material-tailwind/react";
+import { Bars3Icon } from "@heroicons/react/24/solid";
 
 
 
 export default function NavMenu() {
-
-    
     const [isNavOpen, setIsNavOpen] = React.useState(false);
-
     const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
 
     React.useEffect(() => {
