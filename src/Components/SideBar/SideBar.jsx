@@ -1,5 +1,6 @@
 import React from "react";
 import ContactDropdown from "../NavMenu/ContactDropdown";
+import MenuItems from "../NavMenu/MenuItems";
 
 import {
     Card,
@@ -95,16 +96,7 @@ export default function SideBar() {
                         />
                     }
                 >
-                    <ListItem className="p-0" selected={open === 2}>
-                        <AccordionHeader onClick={() => handleOpen(2)} className="border-b-0 p-3">
-                            <ListItemPrefix>
-                                <ShoppingBagIcon className="h-5 w-5" />
-                            </ListItemPrefix>
-                            <Typography color="blue-gray" className="mr-auto font-normal">
-                                E-Commerce
-                            </Typography>
-                        </AccordionHeader>
-                    </ListItem>
+
                     <AccordionBody className="py-1">
                         <List className="p-0">
                             <ListItem>
@@ -123,33 +115,9 @@ export default function SideBar() {
                     </AccordionBody>
                 </Accordion>
                 <hr className="my-2 border-blue-gray-50" />
-                <ListItem>
-                    <ListItemPrefix>
-                        <InboxIcon className="h-5 w-5" />
-                    </ListItemPrefix>
-                    Inbox
-                    <ListItemSuffix>
-                        <Chip value="14" size="sm" variant="ghost" color="blue-gray" className="rounded-full" />
-                    </ListItemSuffix>
-                </ListItem>
-                <ListItem>
-                    <ListItemPrefix>
-                        <UserCircleIcon className="h-5 w-5" />
-                    </ListItemPrefix>
-                    Profile
-                </ListItem>
-                <ListItem>
-                    <ListItemPrefix>
-                        <Cog6ToothIcon className="h-5 w-5" />
-                    </ListItemPrefix>
-                    Settings
-                </ListItem>
-                <ListItem>
-                    <ListItemPrefix>
-                        <PowerIcon className="h-5 w-5" />
-                    </ListItemPrefix>
-                    Log Out
-                </ListItem>
+                <div>
+                    <MenuItems />
+                </div>
                 
                 <ContactDropdown />
 

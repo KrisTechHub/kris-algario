@@ -9,7 +9,7 @@ function App() {
   return (
       <div>
         <NavMenu />
-        {/* <SideBar /> */}
+        <SideBar />
         <Home />
       </div>
   )

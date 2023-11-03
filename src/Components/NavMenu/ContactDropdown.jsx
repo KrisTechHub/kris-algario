@@ -1,8 +1,6 @@
 import React from 'react';
 
 import {
-    Navbar,
-    MobileNav,
     Typography,
     Button,
     Menu,
@@ -10,18 +8,12 @@ import {
     MenuList,
     MenuItem,
     Avatar,
-    IconButton,
 } from "@material-tailwind/react";
 import {
-    Cog8ToothIcon,
-    HomeIcon,
-    ComputerDesktopIcon,
     UserCircleIcon,
     ChevronDownIcon,
-    Cog6ToothIcon,
-    InboxArrowDownIcon,
-    Bars2Icon,
-    Squares2X2Icon,
+    UserIcon,
+    EnvelopeIcon,
 } from "@heroicons/react/24/solid";
 
 
@@ -33,11 +25,11 @@ const profileMenuItems = [
     },
     {
         label: "Socials",
-        icon: Cog6ToothIcon,
+        icon: UserIcon,
     },
     {
         label: "Email",
-        icon: InboxArrowDownIcon,
+        icon: EnvelopeIcon,
     }
 ];
 
@@ -50,10 +42,7 @@ function ProfileMenu() {
     return (
         <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
             <MenuHandler>
-                <Button
-                    variant="text"
-                    className="tracking-wide flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto text-mypink-800 hover:bg-purple-50"
-                >
+                <Button variant="text" className="tracking-wide flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto text-mypink-800 hover:bg-purple-50">
                     <Avatar
                         variant="circular"
                         size="sm"
@@ -62,31 +51,16 @@ function ProfileMenu() {
                         src="./src/assets/krisphoto.jpg"
                     />
                     <p>Contact</p>
-                    <ChevronDownIcon
-                        strokeWidth={2.5}
-                        className={`h-3 w-3 transition-transform ${isMenuOpen ? "rotate-180" : ""
-                            }`}
-                    />
+                    <ChevronDownIcon strokeWidth={2.5} className={`h-3 w-3 transition-transform ${isMenuOpen ? "rotate-180" : "" }`} />
                 </Button>
             </MenuHandler>
 
             <MenuList className="p-1">
                 {profileMenuItems.map(({ label, icon }) => {
                     return (
-                        <MenuItem
-                            key={label}
-                            onClick={closeMenu}
-                            className={"flex items-center gap-2 rounded text-mypink-800 tracking-wide"}
-                        >
-                            {React.createElement(icon, {
-                                className: "h-4 w-4",
-                                strokeWidth: 2,
-                            })}
-                            <Typography
-                                as="span"
-                                variant="small"
-                                className="font-normal"
-                            >
+                        <MenuItem key={label} onClick={closeMenu} className={"flex items-center gap-2 rounded text-mypink-800 tracking-wide"}>
+                            {React.createElement(icon, { className: "h-4 w-4", strokeWidth: 2, })}
+                            <Typography as="span" variant="small" className="font-normal" >
                                 {label}
                             </Typography>
                         </MenuItem>
