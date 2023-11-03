@@ -10,7 +10,7 @@ import {
     Avatar,
 } from "@material-tailwind/react";
 import {
-    UserCircleIcon,
+    BriefcaseIcon,
     ChevronDownIcon,
     UserIcon,
     EnvelopeIcon,
@@ -21,7 +21,7 @@ import {
 const profileMenuItems = [
     {
         label: "Job Profiles",
-        icon: UserCircleIcon,
+        icon: BriefcaseIcon,
     },
     {
         label: "Socials",

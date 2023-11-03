@@ -8,20 +8,16 @@ import {
     List,
     ListItem,
     ListItemPrefix,
-    ListItemSuffix,
-    Chip,
     Accordion,
     AccordionHeader,
     AccordionBody,
     Alert,
 } from "@material-tailwind/react";
 import {
-    PresentationChartBarIcon,
-    ShoppingBagIcon,
-    UserCircleIcon,
-    Cog6ToothIcon,
-    InboxIcon,
-    PowerIcon,
+    PhoneArrowDownLeftIcon,
+    BriefcaseIcon,
+    UserIcon,
+    EnvelopeIcon,
 } from "@heroicons/react/24/solid";
 import {
     ChevronRightIcon,
@@ -38,7 +34,7 @@ export default function SideBar() {
     };
 
     return (
-        <Card className="h-[calc(100vh-2rem)] w-full max-w-[18rem] p-4 shadow-xl shadow-blue-gray-900/5">
+        <Card className="h-[calc(110vh-2rem)] w-full max-w-[18rem] p-4 shadow-xl shadow-blue-gray-900/5">
 
             <div className="flex items-center justify-center">
                 <img src="./src/assets/krisphoto.jpg" alt="brand" className="h-20 w-20 space rounded-full" />
@@ -55,34 +51,35 @@ export default function SideBar() {
                 }>
 
                     <ListItem className="p-0" selected={open === 1}>
-                        <AccordionHeader onClick={() => handleOpen(1)} className="border-b-0 p-3">
+                        <AccordionHeader onClick={() => handleOpen(1)} className="border-b-0 p-3 text-mypink-800">
                             <ListItemPrefix>
-                                <PresentationChartBarIcon className="h-5 w-5" />
+                                <PhoneArrowDownLeftIcon className="h-5 w-5" />
                             </ListItemPrefix>
-                            <Typography className="mr-auto font-normal text-mypink-800">
-                                Dashboard
+                            <Typography className="mr-auto font-normal">
+                                Contact
                             </Typography>
                         </AccordionHeader>
                     </ListItem>
+
                     <AccordionBody className="py-1">
-                        <List className="p-0">
+                        <List className="p-0 text-mypink-800">
                             <ListItem>
                                 <ListItemPrefix>
-                                    <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                                    <BriefcaseIcon strokeWidth={3} className="h-3 w-5" />
                                 </ListItemPrefix>
-                                Analytics
+                                Work Profiles
                             </ListItem>
                             <ListItem>
                                 <ListItemPrefix>
                                     <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                 </ListItemPrefix>
-                                Reporting
+                                Socials
                             </ListItem>
                             <ListItem>
                                 <ListItemPrefix>
                                     <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                 </ListItemPrefix>
-                                Projects
+                                Email
                             </ListItem>
                         </List>
                     </AccordionBody>
@@ -119,9 +116,10 @@ export default function SideBar() {
                     <MenuItems />
                 </div>
                 
-                <ContactDropdown />
-
             </List>
+
+
+            {/* ALERT */}
             <Alert open={openAlert} className="mt-auto" onClose={() => setOpenAlert(false)}>
                 <CubeTransparentIcon className="mb-4 h-12 w-12" />
                 <Typography variant="h6" className="mb-1">
