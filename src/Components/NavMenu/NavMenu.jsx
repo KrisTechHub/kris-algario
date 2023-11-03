@@ -6,12 +6,6 @@ import {
     Navbar,
     Collapse,
     Typography,
-    Button,
-    Menu,
-    MenuHandler,
-    MenuList,
-    MenuItem,
-    Avatar,
     IconButton,
 } from "@material-tailwind/react";
 import {
@@ -19,16 +13,12 @@ import {
     HomeIcon,
     ComputerDesktopIcon,
     UserCircleIcon,
-    ChevronDownIcon,
-    Cog6ToothIcon,
-    InboxArrowDownIcon,
     Bars3Icon,
     Squares2X2Icon,
 } from "@heroicons/react/24/solid";
 
-
 // nav list component
-const navListItems = [
+const navItems = [
     {
         label: "HOME",
         icon: HomeIcon,
@@ -52,7 +42,10 @@ const navListItems = [
 ];
 
 
+
 export default function NavMenu() {
+
+    
     const [isNavOpen, setIsNavOpen] = React.useState(false);
 
     const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
@@ -85,7 +78,7 @@ export default function NavMenu() {
                 </Typography>
                 
                 <div className="hidden lg:block flex items-center ms-20 md:ms-10">
-                    <MenuItems navListItems={navListItems} isVertical={false} />
+                    <MenuItems navListItems={navItems} isVertical={false} />
                 </div>
 
                 <div className="flex items-center">
@@ -100,7 +93,7 @@ export default function NavMenu() {
             </div> 
 
             <Collapse open={isNavOpen} className="overflow-scroll">
-                <MenuItems />
+                <MenuItems navListItems={navItems} isVertical={true} />
             </Collapse>
         </Navbar>
     );
