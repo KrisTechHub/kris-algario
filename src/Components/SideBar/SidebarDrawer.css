@@ -1,0 +1,8 @@
+/* Custom CSS file */
+.custom-rounded-br {
+    border-bottom-right-radius: .8rem;
+}
+
+.custom-rounded-tr {
+    border-top-right-radius: .8rem;
+}

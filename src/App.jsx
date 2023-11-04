@@ -15,14 +15,18 @@ function App() {
   return (
       <Router>
           <NavMenu />
-          <SidebarDrawer/>
-          <Routes>
-              <Route path="/Home" element={<Home/>} />
-              <Route path="/About" element={<About/>} />
-              <Route path="/Skills" element={<Skills />} />
-              <Route path="/Services" element={<Services />} />
-              <Route path="/Portfolio" element={<Portfolio />} />
-          </Routes>
+          <div className="flex">
+              <SidebarDrawer />
+              <main className="flex-1 overflow-y-auto p-4">
+                <Routes>
+                  <Route path="/Home" element={<Home />} />
+                  <Route path="/About" element={<About />} />
+                  <Route path="/Skills" element={<Skills />} />
+                  <Route path="/Services" element={<Services />} />
+                  <Route path="/Portfolio" element={<Portfolio />} />
+                </Routes>
+              </main>
+          </div>
       </Router>
   )
 }
