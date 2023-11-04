@@ -1,53 +1,34 @@
 import React from "react";
+import SideBar from "./SideBar";
+import { Drawer, Button } from "@material-tailwind/react";
 import {
-    Drawer,
-    Button,
-    Typography,
-    IconButton,
-} from "@material-tailwind/react";
+    HomeIcon,
+    ArrowsPointingOutIcon,
+    UserCircleIcon,
+    ComputerDesktopIcon,
+    Cog8ToothIcon,
+    Squares2X2Icon,
+} from "@heroicons/react/24/solid";
 
-export function DrawerDefault() {
+
+
+export default function SidebarDrawer() {
     const [open, setOpen] = React.useState(false);
 
     const openDrawer = () => setOpen(true);
     const closeDrawer = () => setOpen(false);
 
     return (
-        <React.Fragment>
-            <Button onClick={openDrawer}>Open Drawer</Button>
-            <Drawer open={open} onClose={closeDrawer} className="p-4">
-                <div className="mb-6 flex items-center justify-between">
-                    <Typography variant="h5" color="blue-gray">
-                        Material Tailwind
-                    </Typography>
-                    <IconButton variant="text" color="blue-gray" onClick={closeDrawer}>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={2}
-                            stroke="currentColor"
-                            className="h-5 w-5"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M6 18L18 6M6 6l12 12"
-                            />
-                        </svg>
-                    </IconButton>
-                </div>
-                <Typography color="gray" className="mb-8 pr-4 font-normal">
-                    Material Tailwind features multiple React and HTML components, all
-                    written with Tailwind CSS classes and Material Design guidelines.
-                </Typography>
-                <div className="flex gap-2">
-                    <Button size="sm" variant="outlined">
-                        Documentation
-                    </Button>
-                    <Button size="sm">Get Started</Button>
-                </div>
+        <div className="p-2 w-14 text-mypink-800 bg-gray-50 shadow-xl shadow-blue-gray-900/5 rounded-tr-md rounded-br-md">    
+            <img src="./src/assets/K.svg" className="h-12 w-12 pr-2" /> 
+
+                <hr className="w-12 my-2 border-gray-400" />
+            <HomeIcon className="cursor-pointer"/>
+
+            <ArrowsPointingOutIcon onClick={openDrawer} className="p-1 flex text-center text-mypink-800 cursor-pointer"/>
+            <Drawer open={open} onClose={closeDrawer} className="p-4 w-full max-w-[18rem] p-4">
+                <SideBar />
             </Drawer>
-        </React.Fragment>
+        </div>
     );
 }

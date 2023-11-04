@@ -14,9 +14,9 @@ export default function SideBar() {
     };
 
     return (
-        <Card className="h-[calc(110vh-2rem)] w-full max-w-[18rem] p-4 shadow-xl shadow-blue-gray-900/5">
+        <div>
 
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center pt-4">
                 <img src="./src/assets/krisphoto.jpg" alt="brand" className="h-20 w-20 space rounded-full" />
             </div>
             
@@ -64,33 +64,7 @@ export default function SideBar() {
                         </List>
                     </AccordionBody>
                 </Accordion>
-                <Accordion
-                    open={open === 2}
-                    icon={
-                        <ChevronDownIcon
-                            strokeWidth={2.5}
-                            className={`mx-auto h-4 w-4 transition-transform ${open === 2 ? "rotate-180" : ""}`}
-                        />
-                    }
-                >
-
-                    <AccordionBody className="py-1">
-                        <List className="p-0">
-                            <ListItem>
-                                <ListItemPrefix>
-                                    <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
-                                </ListItemPrefix>
-                                Orders
-                            </ListItem>
-                            <ListItem>
-                                <ListItemPrefix>
-                                    <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
-                                </ListItemPrefix>
-                                Products
-                            </ListItem>
-                        </List>
-                    </AccordionBody>
-                </Accordion>
+            
                 <hr className="my-2 border-blue-gray-50" />
                 <div>
                     <MenuItems />
@@ -124,6 +98,6 @@ export default function SideBar() {
                     </Typography>
                 </div>
             </Alert>
-        </Card>
+        </div>
     );
 }
