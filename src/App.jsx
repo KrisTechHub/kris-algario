@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css'
 import NavMenu from './Components/NavMenu/NavMenu'
-// import SideBar from './Components/SideBar/SideBar'
+import SideBar from './Components/SideBar/SideBar'
 import Home from './Components/Home/Home'
 import About from './Components/About/About'
 import Skills from './Components/Skills/Skills'
@@ -15,7 +15,7 @@ function App() {
   return (
       <Router>
           <NavMenu />
-          {/* <SideBar /> */}
+          <SideBar />
           
           <Routes>
               <Route path="/Home" element={<Home/>} />

@@ -16,9 +16,9 @@ function NavList({ navListItems, isVertical = false }) {
             <ul className={containerClasses}>
                 {navListItems.map(({ label, icon, link }) => (
                     <Link key={label} as="a" to={link} variant="small" className="font-medium text-sm" >
-                        <MenuItem className="flex items-center gap-2 lg:rounded-full hover:bg-purple-50">
-                            {React.createElement(icon, { className: "h-[16px] w-[16px] text-mypink-800" })}{" "}
-                            <span className="text-mypink-800">{label}</span>
+                        <MenuItem className="flex items-center gap-2 lg:rounded-full hover:bg-purple-50 text-mypink-800">
+                            {React.createElement(icon, { className: "h-[16px] w-[16px]" })}{" "}
+                            <span >{label}</span>
                         </MenuItem>
                     </Link>
                 ))}
