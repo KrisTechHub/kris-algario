@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect, useState} from "react";
 import ContactDropdown from "./ContactDropdown";
 import MenuItems from "./MenuItems";
 import { navItems } from "./NavData";
@@ -9,10 +9,10 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 
 
 export default function NavMenu() {
-    const [isNavOpen, setIsNavOpen] = React.useState(false);
+    const [isNavOpen, setIsNavOpen] = useState(false);
     const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
 
-    React.useEffect(() => {
+    useEffect(() => {
         window.addEventListener(
             "resize",
             () => window.innerWidth >= 960 && setIsNavOpen(false),
