@@ -10,21 +10,26 @@ export const navItems = [
     {
         label: "HOME",
         icon: HomeIcon,
+        link: "/Home",
     },
     {
         label: "ABOUT ME",
         icon: UserCircleIcon,
+        link: "/About",
     },
     {
         label: "SERVICES",
         icon: ComputerDesktopIcon,
+        link: "/Services",
     },
     {
         label: "SKILLS",
         icon: Cog8ToothIcon,
+        link: "/Skills",
     },
     {
         label: "PORTFOLIO",
         icon: Squares2X2Icon,
+        link: "/Portfolio",
     },
 ];
