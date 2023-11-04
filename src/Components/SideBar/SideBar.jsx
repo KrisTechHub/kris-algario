@@ -1,5 +1,4 @@
 import React from "react";
-import ContactDropdown from "../NavMenu/ContactDropdown";
 import MenuItems from "../NavMenu/MenuItems";
 
 import {
@@ -56,7 +55,7 @@ export default function SideBar() {
                                 <PhoneArrowDownLeftIcon className="h-5 w-5" />
                             </ListItemPrefix>
                             <Typography className="mr-auto font-normal">
-                                Contact
+                                Contact 
                             </Typography>
                         </AccordionHeader>
                     </ListItem>
@@ -65,7 +64,7 @@ export default function SideBar() {
                         <List className="p-0 text-mypink-800">
                             <ListItem>
                                 <ListItemPrefix>
-                                    <BriefcaseIcon strokeWidth={3} className="h-3 w-5" />
+                                    <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                 </ListItemPrefix>
                                 Work Profiles
                             </ListItem>
