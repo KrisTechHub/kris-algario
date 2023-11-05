@@ -20,7 +20,8 @@ export default function NavMenu() {
     }, []);
 
     return (
-            <Navbar className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6 tracking-wider">
+
+            <Navbar className="px-5 mx-auto p-2 lg:pl-6 tracking-wider h-max max-w-full rounded-none">
                 <div className="relative mx-auto flex items-center justify-between text-mypink-800 ">
 
                     <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans me-20 flex items-start mr-4 ml-2 cursor-pointer py-1.5 font-medium flex items-center">
@@ -49,5 +50,6 @@ export default function NavMenu() {
                 </Collapse>
 
             </Navbar>
+
     );
 }

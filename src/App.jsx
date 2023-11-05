@@ -36,7 +36,7 @@ function App() {
       <Router>
           <NavMenu />
           <div className="flex">
-              {showSidebar && <SidebarDrawer />}
+            {showSidebar && <SidebarDrawer />}
               <main className="flex-1 overflow-y-auto p-4 lg:pl-24">
                 <Routes>
                   <Route path="/Home" element={<Home />} />
