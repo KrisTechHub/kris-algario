@@ -25,7 +25,7 @@ export default function Sample() {
     }, []);
         useEffect(() => {
             console.log('isParagraphHidden:', isParagraphHidden);
-        }, [isParagraphHidden]); // Log the state when it changes
+        }, []); // Log the state when it changes
 
 
     return (

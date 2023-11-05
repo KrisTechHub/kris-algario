@@ -1,5 +1,6 @@
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
 import './App.css'
 import NavMenu from './Components/NavMenu/NavMenu'
 import SidebarDrawer from './Components/SideBar/SidebarDrawer'
@@ -8,20 +9,35 @@ import About from './Components/About/About'
 import Skills from './Components/Skills/Skills'
 import Services from './Components/Services/Services';
 import Portfolio from './Components/Portfolio/Portfolio'
-import Sample from "./Components/NavMenu/Sample";
+
 
 
 
 function App() {
-  
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowSidebar(true);
+      } else {
+        setShowSidebar(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
       <Router>
           <NavMenu />
           <div className="flex">
-              <SidebarDrawer/>
+              {showSidebar && <SidebarDrawer />}
               <main className="flex-1 overflow-y-auto p-4 lg:pl-24">
-          <Sample />
                 <Routes>
                   <Route path="/Home" element={<Home />} />
                   <Route path="/About" element={<About />} />
@@ -29,7 +45,6 @@ function App() {
                   <Route path="/Services" element={<Services />} />
                   <Route path="/Portfolio" element={<Portfolio />} />
                 </Routes>
-          <Sample />
               </main>
           </div>
       </Router>
