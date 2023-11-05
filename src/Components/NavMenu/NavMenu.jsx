@@ -21,8 +21,8 @@ export default function NavMenu() {
 
     return (
 
-            <Navbar className="px-5 mx-auto p-2 lg:pl-6 tracking-wider h-max max-w-full rounded-none">
-                <div className="relative mx-auto flex items-center justify-between text-mypink-800 ">
+            <Navbar className="bg-transparent mx-auto p-2 lg:pl-6 tracking-wider h-max max-w-full rounded-none">
+            <div className="px-20 relative mx-auto flex items-center justify-between text-mypink-800 ">
 
                     <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans me-20 flex items-start mr-4 ml-2 cursor-pointer py-1.5 font-medium flex items-center">
                     <img src="./src/assets/K.svg" className="h-12 w-12 pr-2" /> 
@@ -30,17 +30,19 @@ export default function NavMenu() {
                         <h1 className="px-2 lg:text-lg md:text-base ">Algario</h1>
                     </Typography>
                     
-                    <div className="hidden lg:block flex items-center ms-20 md:ms-10">
-                        <MenuItems navListItems={navItems} isVertical={false} />
-                    </div>
+                <div className="flex items-center">
+                        <div className="hidden lg:block flex items-center ms-20 md:ms-10">
+                            <MenuItems navListItems={navItems} isVertical={false} />
+                        </div>
 
-                    <div className="flex items-center">
-                        {/* Dropdown for Contact in Nav Bar */}
-                        <ContactDropdown /> 
+                        <div >
+                            {/* Dropdown for Contact in Nav Bar */}
+                            <ContactDropdown />
 
-                        <IconButton size="sm" variant="text" onClick={toggleIsNavOpen} className="mr-2 lg:hidden flex items-end text-mypink-800">
-                            <Bars3Icon className="h-6 w-6 text-mypink-800" />
-                        </IconButton>
+                            <IconButton size="sm" variant="text" onClick={toggleIsNavOpen} className="mr-2 lg:hidden flex items-end text-mypink-800">
+                                <Bars3Icon className="h-6 w-6 text-mypink-800" />
+                            </IconButton>
+                        </div>
                     </div>
 
                 </div> 
