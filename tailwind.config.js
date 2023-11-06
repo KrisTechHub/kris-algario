@@ -58,13 +58,9 @@ export default withMT ({
         "variable-collection-yellow-main": "var(--variable-collection-yellow-main)",
       },
       fontFamily: {
-        "header-1": "var(--header-1-font-family)",
-        "header-2": "var(--header-2-font-family)",
-        "header-3": "var(--header-3-font-family)",
-        "header-4": "var(--header-4-font-family)",
-        "header-5": "var(--header-5-font-family)",
-        "header-6": "var(--header-6-font-family)",
-        paragraph: "var(--paragraph-font-family)",
+        'Cinzel': ['CinzelDecorative', 'sans-serif'],
+        'CinzelBold': ['CinzelDecorativeBold', 'sans-serif'],
+        'CinzelBlack': ['CinzelDecorativeBlack', 'sans-serif']
       },
     },
   },

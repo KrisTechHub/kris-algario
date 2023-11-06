@@ -25,9 +25,8 @@ export default function NavMenu() {
             <div className="px-0 xl:px-20 relative mx-auto flex items-center justify-between text-mypink-800 ">
 
                     <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans me-20 flex items-start mr-4 cursor-pointer py-1.5 font-medium flex items-center">
-                    <img src="./src/assets/K.svg" className="h-12 w-12 pr-2" /> 
-                        
-                        <h1 className="px-2 text-xl lg:text-lg ">Kristine Algario</h1>
+                        <img src="./src/assets/K.svg" className="h-12 w-12 pr-2" /> 
+                    <h1 className="font-CinzelBold px-2 text-xl lg:text-2xl ">Kristine Algario</h1>
                     </Typography>
                     
                 <div className="flex items-center">

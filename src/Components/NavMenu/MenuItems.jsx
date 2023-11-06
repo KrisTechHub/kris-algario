@@ -19,7 +19,7 @@ function NavList({ navListItems, isVertical = false, showIcon = true }) {
                     <Link key={label} as="a" to={link} variant="small" className="pr-5" >
                         <MenuItem className="flex items-center gap-5 lg:rounded-full hover:bg-purple-50 text-mypink-800">
                             {showIcon && React.createElement(icon, { className: "h-[16px] w-[16px]" })}
-                            <span className="under-line text-[15px]">{label}</span>
+                            <span className="under-line text-[15px] text-mypink-800">{label}</span>
                         </MenuItem>
                     </Link>
                 ))}
