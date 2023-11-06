@@ -32,7 +32,7 @@ export default function NavMenu() {
                     
                 <div className="flex items-center">
                         <div className="hidden lg:block flex items-center ms-20 md:ms-10">
-                            <MenuItems navListItems={navItems} isVertical={false} />
+                            <MenuItems navListItems={navItems} isVertical={false} showIcon={false}/>
                         </div>
 
                         <div >

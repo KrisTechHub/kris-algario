@@ -1,7 +1,7 @@
 import React from "react";
 import MenuItems from "../NavMenu/MenuItems";
 
-import { Card, Typography, List, ListItem, ListItemPrefix, Accordion, AccordionHeader, AccordionBody, Alert } from "@material-tailwind/react";
+import { Typography, List, ListItem, ListItemPrefix, Accordion, AccordionHeader, AccordionBody, Alert } from "@material-tailwind/react";
 import { PhoneArrowDownLeftIcon } from "@heroicons/react/24/solid";
 import { ChevronRightIcon, ChevronDownIcon, CubeTransparentIcon } from "@heroicons/react/24/outline";
 
