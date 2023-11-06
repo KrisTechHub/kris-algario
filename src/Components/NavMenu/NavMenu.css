@@ -18,3 +18,7 @@
 .under-line:hover::before {
     width: 100%;
 }
+
+.navbar {
+    background-color: transparent !important;
+}

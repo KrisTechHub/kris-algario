@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'; // Import PropTypes
 import { Link } from "react-router-dom";
 import { navItems } from "./NavData";
 import { MenuItem } from "@material-tailwind/react";
-import './MenuItems.css'
+import './NavMenu.css'
 
 
 
