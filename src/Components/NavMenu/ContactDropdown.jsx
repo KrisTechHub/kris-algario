@@ -44,7 +44,7 @@ function ProfileMenu() {
             <MenuHandler>
                 <Button variant="text" className="tracking-wide flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto text-mypink-800 hover:bg-purple-50">
                     <Avatar variant="circular" size="sm" alt="kris algario" className="border border-mypink-800 p-0.5" src="./src/assets/krisphoto.jpg" />
-                    <p>Contact</p>
+                    <p className='text-base'>Contact</p>
                     <ChevronDownIcon strokeWidth={2.5} className={`h-3 w-3 transition-transform ${isMenuOpen ? "rotate-180" : "" }`} />
                 </Button>
             </MenuHandler>

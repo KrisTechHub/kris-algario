@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'; // Import PropTypes
 import { Link } from "react-router-dom";
 import { navItems } from "./NavData";
 import { MenuItem } from "@material-tailwind/react";
+import './MenuItems.css'
 
 
 
@@ -13,12 +14,12 @@ function NavList({ navListItems, isVertical = false, showIcon = true }) {
         : "mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center";
         
     return (
-            <ul className={containerClasses}>
+        <ul className={`${containerClasses} pr-3`}>
                 {navListItems.map(({ label, icon, link }) => (
-                    <Link key={label} as="a" to={link} variant="small" className="font-medium text-sm" >
-                        <MenuItem className="flex items-center gap-1 lg:rounded-full hover:bg-purple-50 text-mypink-800">
-                            {showIcon && React.createElement(icon, { className: "h-[16px] w-[16px]" })}{" "}
-                            <span >{label}</span>
+                    <Link key={label} as="a" to={link} variant="small" className="pr-5" >
+                        <MenuItem className="flex items-center gap-5 lg:rounded-full hover:bg-purple-50 text-mypink-800">
+                            {showIcon && React.createElement(icon, { className: "h-[16px] w-[16px]" })}
+                            <span className="under-line text-[15px]">{label}</span>
                         </MenuItem>
                     </Link>
                 ))}
