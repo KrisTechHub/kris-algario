@@ -22,7 +22,7 @@ export default function NavMenu() {
 
     return (
 
-        <Navbar color="blue-gray"  className="navbar mx-auto p-2 lg:pl-6 tracking-wider h-max max-w-full opacity-100">
+        <Navbar color="transparent"  className="mx-auto p-2 lg:pl-6 tracking-wider h-max max-w-full">
             <div className="px-0 xl:px-20 relative mx-auto flex items-center justify-between text-mypink-800">
 
                     <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans me-20 flex items-start mr-4 cursor-pointer py-1.5 font-medium flex items-center">
