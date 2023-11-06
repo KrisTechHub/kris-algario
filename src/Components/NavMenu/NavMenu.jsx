@@ -21,12 +21,12 @@ export default function NavMenu() {
 
     return (
 
-            <Navbar className="bg-transparent mx-auto p-2 lg:pl-6 tracking-wider h-max max-w-full rounded-none">
-            <div className="px-0 xl:px-20 relative mx-auto flex items-center justify-between text-mypink-800 ">
+        <Navbar className="mx-auto p-2 lg:pl-6 tracking-wider h-max max-w-full rounded-none bg-transparent">
+            <div className="px-0 xl:px-20 relative mx-auto flex items-center justify-between text-mypink-800 bg-transparent">
 
                     <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans me-20 flex items-start mr-4 cursor-pointer py-1.5 font-medium flex items-center">
                         <img src="./src/assets/K.svg" className="h-12 w-12 pr-2" /> 
-                    <h1 className="font-CinzelBold px-2 text-xl lg:text-2xl ">Kristine Algario</h1>
+                        <h1 className="font-CinzelBold px-2 text-xl lg:text-2xl ">Kristine Algario</h1>
                     </Typography>
                     
                 <div className="flex items-center">
@@ -50,7 +50,7 @@ export default function NavMenu() {
                     <MenuItems navListItems={navItems} isVertical={true} />
                 </Collapse>
 
-            </Navbar>
+        </Navbar>
 
     );
 }

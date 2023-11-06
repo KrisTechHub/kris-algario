@@ -24,66 +24,8 @@
     font-weight: 900;
 }
 
-@layer components {
+/* @layer components {
     .all-\[unset\] {
         all: unset;
     }
-}
-
-:root {
-    --branddark-purple: rgba(46, 0, 67, 1);
-    --header-1-font-family: "VollkornSC-Regular", Helvetica;
-    --header-1-font-size: 60px;
-    --header-1-font-style: normal;
-    --header-1-font-weight: 400;
-    --header-1-letter-spacing: 0px;
-    --header-1-line-height: normal;
-    --header-2-font-family: "VollkornSC-SemiBold", Helvetica;
-    --header-2-font-size: 50px;
-    --header-2-font-style: normal;
-    --header-2-font-weight: 600;
-    --header-2-letter-spacing: 0px;
-    --header-2-line-height: 55px;
-    --header-3-font-family: "VollkornSC-Regular", Helvetica;
-    --header-3-font-size: 42px;
-    --header-3-font-style: normal;
-    --header-3-font-weight: 400;
-    --header-3-letter-spacing: 0px;
-    --header-3-line-height: normal;
-    --header-4-font-family: "VollkornSC-Regular", Helvetica;
-    --header-4-font-size: 30px;
-    --header-4-font-style: normal;
-    --header-4-font-weight: 400;
-    --header-4-letter-spacing: 0px;
-    --header-4-line-height: normal;
-    --header-5-font-family: "VarelaRound-Regular", Helvetica;
-    --header-5-font-size: 24px;
-    --header-5-font-style: normal;
-    --header-5-font-weight: 400;
-    --header-5-letter-spacing: 0px;
-    --header-5-line-height: normal;
-    --header-6-font-family: "VarelaRound-Regular", Helvetica;
-    --header-6-font-size: 20px;
-    --header-6-font-style: normal;
-    --header-6-font-weight: 400;
-    --header-6-letter-spacing: 0px;
-    --header-6-line-height: normal;
-    --paragraph-font-family: "VarelaRound-Regular", Helvetica;
-    --paragraph-font-size: 16px;
-    --paragraph-font-style: normal;
-    --paragraph-font-weight: 400;
-    --paragraph-letter-spacing: 0px;
-    --paragraph-line-height: normal;
-    --variable-collection-background: rgba(255, 246, 237, 1);
-    --variable-collection-contact-purple: rgba(80, 0, 93, 1);
-    --variable-collection-dark-BG: rgba(28, 28, 28, 1);
-    --variable-collection-dark-green: rgba(2, 57, 1, 1);
-    --variable-collection-dark-pink: rgba(91, 0, 60, 1);
-    --variable-collection-dark-yellow: rgba(220, 157, 0, 1);
-    --variable-collection-darkest-pink: rgba(50, 0, 33, 0.96);
-    --variable-collection-light-font: rgba(237, 237, 237, 0.96);
-    --variable-collection-light-pink: rgba(188, 0, 124, 1);
-    --variable-collection-mid-gray: rgba(191, 191, 191, 1);
-    --variable-collection-pale-yellow: rgba(255, 228, 161, 1);
-    --variable-collection-yellow-main: rgba(253, 196, 53, 1);
-}
+} */

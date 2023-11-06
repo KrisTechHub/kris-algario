@@ -1,18 +1,11 @@
-/* body {
-    overflow-x: hidden;
-    position: relative;
-    background-image: url('.\assets\portfolio-bg.jpg'); 
-    background-size: cover;
-} */
-
-.sidebar {
+/* .sidebar {
     /* Your sidebar styles */
-    position: fixed;
+    /* position: fixed;
     width: 200px;
     top: 0;
     left: 0;
     bottom: 0;
     background-color: #333;
-    display: list-item;
+    display: list-item; */
     /* Adjust the background color as needed */
-}
+/* } */ 
