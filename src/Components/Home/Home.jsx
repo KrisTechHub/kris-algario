@@ -6,6 +6,10 @@ import { Property1UpworkDefaut } from "../../icons/Property1UpworkDefaut";
 import { Button } from "../Button";
 import './Home.css'
 
+//functionalities
+import
+
+
 export default function Home() {
     return (
         
@@ -14,14 +18,17 @@ export default function Home() {
                     <div className="relative bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200 text-white font-semibold py-2 px-4 rounded-lg">
                         Welcome to my Portfolio
                     </div>
-                    <img
-                        className="relative self-stretch w-full flex-[0_0_auto]"
-                        alt="My name is kristine"
-                        src="/img/my-name-is-kristine-algario.png"
-                    />
+                    
+                    <h1>{`Hi! I'm Kristine,`} <br />
+                        <span className="txt-rotate" data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>
+                            <span className="wrap">{text}</span>
+                        </span>
+                    </h1>
+
                     <p className="relative self-stretch font-header-6 font-[number:var(--header-6-font-weight)] text-variable-collection-mid-gray text-[length:var(--header-6-font-size)] tracking-[var(--header-6-letter-spacing)] leading-[var(--header-6-line-height)] [font-style:var(--header-6-font-style)]">
                         A fullstack Web Developer based in the Philippines.
                     </p>
+
                     <Button
                         buttonText="Contact Me"
                         className="![background:linear-gradient(180deg,rgba(108.42,0,159.44,0.96)_0%,rgba(164.89,0,108.83,0.96)_100%)] !w-[129px]"
