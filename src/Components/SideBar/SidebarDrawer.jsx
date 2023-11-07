@@ -15,12 +15,13 @@ import {
 
 export default function SidebarDrawer() {
     const [open, setOpen] = React.useState(false);
+    
 
     const openDrawer = () => setOpen(true);
     const closeDrawer = () => setOpen(false);
 
     return (
-        <div className="hidden lg:block w-16 text-mypink-800 bg-transparent shadow-xl shadow-blue-gray-900/5 custom-rounded-tr fixed sb ">    
+        <div className="hidden lg:block w-16 text-mypink-800 bg-transparent shadow-xl shadow-blue-gray-900/5 custom-rounded-tr fixed sb opacity-100 ">    
             <div className="p-2 pt-5">
                 <img className="w-10 py-2" src="./src/assets/K.svg" />
                 <hr className="w-12 my-2 border-gray-400" />

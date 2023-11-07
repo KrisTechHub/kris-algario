@@ -10,19 +10,39 @@ import './NavMenu.css'
 
 
 export default function NavMenu() {
-    const [isNavOpen, setIsNavOpen] = useState(false);
-    const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
+    const [isNavOpen, setIsNavOpen] = useState(false); //collapse on smaller screens
+    const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);//collapse on smaller screens
+    const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
+    const [topNavClass, setTopNavClass] = useState('top-0');
 
-    useEffect(() => {
+
+    useEffect(() => { //collapse on smaller screens
         window.addEventListener(
             "resize",
             () => window.innerWidth >= 960 && setIsNavOpen(false),
         );
     }, []);
 
+    useEffect(() => {
+        const handdleScroll = () => {
+            const currentScrollPos = window.scrollY;
+            if (prevScrollpos > currentScrollPos) {
+                setTopNavClass('top-0');
+            } else {
+                setTopNavClass('-top-[50px]')
+            }
+            setPrevScrollpos(currentScrollPos);
+        };
+        window.onscroll = handdleScroll;
+
+        return () => {
+            window.onscroll = null;
+        };
+    }, [prevScrollpos]);
+
     return (
 
-        <Navbar color="transparent"  className="mx-auto p-2 lg:pl-6 tracking-wider h-max max-w-full">
+        <Navbar color="transparent" className={`mx-auto p-2 lg:pl-6 tracking-wider h-max max-w-full fixed ease-in-out duration-300 ${topNavClass}`}>
             <div className="px-0 xl:px-20 relative mx-auto flex items-center justify-between text-mypink-800">
 
                     <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans me-20 flex items-start mr-4 cursor-pointer py-1.5 font-medium flex items-center">
