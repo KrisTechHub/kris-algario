@@ -4,13 +4,14 @@ import { Property1Indeed } from "../../icons/Property1Indeed";
 import { Property1LinkedinDefault } from "../../icons/Property1LinkedinDefault";
 import { Property1UpworkDefaut } from "../../icons/Property1UpworkDefaut";
 import { Button } from "../Button";
+import './Home.css'
 
 export default function Home() {
     return (
         
             <div className="flex w-[1152px] items-center justify-between relative">
-                <div className="flex flex-col w-[576px] items-start justify-center gap-[20px] relative self-stretch">
-                    <div className="relative text-mypink-800 tagline">
+                <div className="flex flex-col w-[576px] items-start justify-center gap-[20px] relative self-stretch lg:ps-5">
+                    <div className="relative bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200 text-white font-semibold py-2 px-4 rounded-lg">
                         Welcome to my Portfolio
                     </div>
                     <img
@@ -46,7 +47,7 @@ export default function Home() {
 
 
                  <div className="relative w-[643px] h-[629px]">
-                    <div className="relative top-[-90px] flex text-center left-[150px]">
+                    <div className="relative top-[-90px] flex left-[150px]">
                         <img src="./src/assets/home-portrait.svg" alt="home portrait" />
                     </div>
                 </div>
