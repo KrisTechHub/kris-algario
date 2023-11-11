@@ -1,5 +1,4 @@
-<div className="flex w-[1152px] items-center justify-between relative">
-                <div className="flex flex-col w-[576px] items-start justify-center gap-[20px] relative self-stretch lg:ps-5">
+                <!-- 
                     <div className="relative bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200 text-white font-semibold py-2 px-4 rounded-lg">
                         Welcome to my Portfolio
                     </div>
@@ -38,5 +37,11 @@
                     <div className="relative top-[-90px] flex left-[150px]">
                         <img src="./src/assets/home-portrait.svg" alt="home portrait" />
                     </div>
-                </div>
-            </div>
+
+
+
+
+
+
+
+> -->
