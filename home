@@ -1,18 +1,4 @@
-import { Property1GithubDefault } from "../../icons/Property1GithubDefault";
-import { Property1GmailDefault } from "../../icons/Property1GmailDefault";
-import { Property1Indeed } from "../../icons/Property1Indeed";
-import { Property1LinkedinDefault } from "../../icons/Property1LinkedinDefault";
-import { Property1UpworkDefaut } from "../../icons/Property1UpworkDefaut";
-import { Button } from "../Button";
-import './Home.css'
-
-//functionalities
-
-
-export default function Home() {
-    return (
-        
-            <div className="flex w-[1152px] items-center justify-between relative">
+<div className="flex w-[1152px] items-center justify-between relative">
                 <div className="flex flex-col w-[576px] items-start justify-center gap-[20px] relative self-stretch lg:ps-5">
                     <div className="relative bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200 text-white font-semibold py-2 px-4 rounded-lg">
                         Welcome to my Portfolio
@@ -54,6 +40,3 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
-    );
-}
