@@ -6,7 +6,7 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 import PropTypes from "prop-types";
 import React from "react";
 
-export const Property1GithubDefault = ({ color = "#BFBFBF", className }) => {
+export const Property1GithubDefault = ({ color = "#90a4ae", className }) => {
   return (
     <svg
       className={`${className}`}

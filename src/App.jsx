@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 150) {
         setShowSidebar(true);
       } else {
         setShowSidebar(false);

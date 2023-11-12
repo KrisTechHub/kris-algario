@@ -31,7 +31,11 @@ export default withMT ({
       fontFamily: {
         'Cinzel': ['CinzelDecorative', 'sans-serif'],
         'CinzelBold': ['CinzelDecorativeBold', 'sans-serif'],
-        'CinzelBlack': ['CinzelDecorativeBlack', 'sans-serif']
+        'CinzelBlack': ['CinzelDecorativeBlack', 'sans-serif'],
+        'JosefinSemibold': ['JosefinSansSemiBold', 'sans-serif'],
+        'JosefinBold': ['JosefinSansBold', 'sans-serif'],
+        'RalewayLight': ['RalewayLight', 'sans serif'],
+        'RalewayMedium': ['RalewayMedium', 'sans serif']
       },
     },
     screens: {
