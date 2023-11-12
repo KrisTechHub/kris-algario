@@ -57,9 +57,9 @@ export default function Intro() {
         <TrackVisibility>
             {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated aimate__fadeIn" : ""}>
-                    <div className="bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200 text-[10px] text-white font-semibold py-2 px-4 rounded-lg lg:w-[220px] w-[150px]">
+                    <span className="bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200 sm:text-[10px] md:text-[12px] text-white font-semibold py-2 px-4 rounded-lg">
                         Welcome to my Portfolio
-                    </div>
+                    </span>
 
                     <h1 className="block text-[50px] md:text-[30px] font-bold tracking-wider">{`Hi! I'm Kristine,`} <br />
                         <span className="txt-rotate" data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>

@@ -42,7 +42,7 @@ export default function NavMenu() {
 
     return (
 
-        <Navbar color="transparent" className={` xl:pl-6 mx-auto tracking-wider max-w-full fixed ease-in-out duration-300 ${topNavClass}`}>
+        <Navbar color="transparent" className={`mx-auto 2xl:px-[90px] tracking-wider max-w-full fixed ease-in-out duration-300 ${topNavClass}`}>
             <div className="relative flex items-center justify-between text-mypink-800">
 
                     <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans flex items-start cursor-pointer py-1.5 font-medium flex items-center">

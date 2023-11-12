@@ -4,9 +4,9 @@ import './Home.css'
 export default function Home() {
     return (
         <div className="container mx-auto">
-            <div className="flex-row">
-                <div className="flex flex-col sm:flex-row w-full">
-                    <div className="order-2 sm:order-1 flex items-center w-full lg:w-1/2 md:pt-[80px]">
+            <div className="flex-row mx-auto">
+                <div className="flex flex-col sm:flex-row xl:px-[50px]">
+                    <div className="order-2 sm:order-1 flex items-center w-full lg:w-1/2 ">
                         <Intro />
                     </div>
 
