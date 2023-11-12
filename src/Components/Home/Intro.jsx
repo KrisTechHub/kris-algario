@@ -57,7 +57,7 @@ export default function Intro() {
         <TrackVisibility>
             {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated aimate__fadeIn" : ""}>
-                    <div className="relative bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200 text-white font-semibold py-2 px-4 rounded-lg w-[220px]">
+                    <div className="bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200 text-white font-semibold py-2 px-4 rounded-lg w-[220px]">
                         Welcome to my Portfolio
                     </div>
 
@@ -83,7 +83,7 @@ export default function Intro() {
                         </div>
                     </div>
 
-                    <p className="relative self-stretch [font-family:'Varela_Round',Helvetica] font-normal text-variable-collection-mid-gray text-[16px] tracking-[0] leading-[normal]">
+                    <p className="self-stretch [font-family:'Varela_Round',Helvetica] font-normal text-variable-collection-mid-gray text-[16px] tracking-[0] leading-[normal]">
                         <span className="text-[#bfbfbf] font-paragraph [font-style:var(--paragraph-font-style)] font-[number:var(--paragraph-font-weight)] tracking-[var(--paragraph-letter-spacing)] leading-[var(--paragraph-line-height)] text-[length:var(--paragraph-font-size)]">
                             Get to know me more{" "}
                         </span>

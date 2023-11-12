@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 100) {
         setShowSidebar(true);
       } else {
         setShowSidebar(false);
@@ -33,12 +33,7 @@ function App() {
   return (
       <Router>
           <NavMenu />
-          <Home />
-          <About/>
-          <Skills />
-          <Services/>
-          <Portfolio />
-          <Contact/>
+
           <div className="flex">
             {showSidebar && <SidebarDrawer />}
               <main className="flex-1 overflow-y-auto p-4 lg:pl-24">
@@ -52,6 +47,7 @@ function App() {
               </main>
           </div>
       </Router>
+      
   )
 }
 
