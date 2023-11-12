@@ -70,16 +70,16 @@ export default function Intro() {
                     <div className="self-stretch text-stone-300 text-xl font-normal font-['Varela Round']">A fullstack Web Developer based in the Philippines.</div>
 
                     <div className="inline-flex my-3">
-                        <button className="rounded-md w-[110px] py-1 border border-mypink-600 border-[2px] hover:border-mypink-100">
+                        <a href="/Contact" rel="noopener noreferrer" className="rounded-md w-[110px] py-1 border border-mypink-600 border-[2px] hover:border-mypink-100">
                             Contact me
-                        </button>
+                        </a>
 
                         <div className="inline-flex items-center gap-[20px] ps-5">
                             <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><Property1GithubDefault className="w-[20px] h-[20px]" /></a>
                             <a href="https://www.linkedin.com/in/kmjalgario" rel="noopener noreferrer" target="_blank"><Property1LinkedinDefault className="w-[20px] h-[20px]" /></a>
-                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><Property1UpworkDefaut className="w-[20px] h-[20px]" /></a>
+                            <a href="https://www.upwork.com/freelancers/~014703744c9fc2e64f" rel="noopener noreferrer" target="_blank"><Property1UpworkDefaut className="w-[20px] h-[20px]" /></a>
                             <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><Property1GmailDefault className="w-[20px] h-[20px]" /></a>
-                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><Property1Indeed className="w-[20px] h-[20px]"/></a>
+                            <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend" rel="noopener noreferrer" target="_blank"><Property1Indeed className="w-[20px] h-[20px]"/></a>
                         </div>
                     </div>
 
