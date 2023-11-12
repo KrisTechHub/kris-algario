@@ -42,24 +42,24 @@ export default function NavMenu() {
 
     return (
 
-        <Navbar color="transparent" className={`mx-auto p-2 lg:pl-6 tracking-wider h-max max-w-full fixed ease-in-out duration-300 z-100 ${topNavClass}`}>
-            <div className="px-0 xl:px-20 relative mx-auto flex items-center justify-between text-mypink-800">
+        <Navbar color="transparent" className={` xl:pl-6 mx-auto tracking-wider max-w-full fixed ease-in-out duration-300 ${topNavClass}`}>
+            <div className="relative flex items-center justify-between text-mypink-800">
 
-                    <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans me-20 flex items-start mr-4 cursor-pointer py-1.5 font-medium flex items-center">
-                        <img src="./src/assets/K.svg" className="h-15 w-15 pr-2" /> 
-                        <h1 className="font-CinzelBlack px-2 text-xl lg:text-2xl ">Kristine Algario</h1>
+                    <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans flex items-start cursor-pointer py-1.5 font-medium flex items-center">
+                        <img src="./src/assets/K.svg" className="h-15 w-15 xs:h-12 xs:w-12 pr-2" /> 
+                        <h1 className="font-CinzelBlack pl-2 text-sm md:text-lg lg:text-xl xl:text-2xl ">Kristine Algario</h1>
                     </Typography>
                     
-                <div className="flex items-center">
-                        <div className="hidden lg:block flex items-center ms-20 md:ms-10">
+                    <div className="flex items-center">
+                        <div className="hidden lg:block flex">
                             <MenuItems navListItems={navItems} isVertical={false} showIcon={false}/>
                         </div>
 
-                        <div className="flex text-inline">
+                        <div className="flex text-inline items-center">
                             {/* Dropdown for Contact in Nav Bar */}
                             <ContactDropdown />
 
-                            <IconButton size="sm" variant="text" onClick={toggleIsNavOpen} className="mr-2 lg:hidden flex items-end text-mypink-800">
+                            <IconButton size="sm" variant="text" onClick={toggleIsNavOpen} className="lg:hidden flex items-end text-mypink-800 ">
                                 <Bars3Icon className="h-6 w-6 text-mypink-800" />
                             </IconButton>
                         </div>
@@ -67,7 +67,7 @@ export default function NavMenu() {
 
                 </div> 
 
-                <Collapse open={isNavOpen} className="overflow-scroll">
+                <Collapse open={isNavOpen} className="overflow-scroll bg-white">
                     <MenuItems navListItems={navItems} isVertical={true} />
                 </Collapse>
 

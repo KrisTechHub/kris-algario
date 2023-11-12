@@ -13,7 +13,7 @@ export const navItems = [
         link: "/Home",
     },
     {
-        label: "ABOUT ME",
+        label: "ABOUT",
         icon: UserCircleIcon,
         link: "/About",
     },
