@@ -9,16 +9,14 @@ import About from './Components/About/About'
 import Skills from './Components/Skills/Skills'
 import Services from './Components/Services/Services';
 import Portfolio from './Components/Portfolio/Portfolio'
-
-
-
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 50) {
         setShowSidebar(true);
       } else {
         setShowSidebar(false);
@@ -40,6 +38,7 @@ function App() {
           <Skills />
           <Services/>
           <Portfolio />
+          <Contact/>
           <div className="flex">
             {showSidebar && <SidebarDrawer />}
               <main className="flex-1 overflow-y-auto p-4 lg:pl-24">

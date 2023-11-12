@@ -52,7 +52,6 @@ export default function Intro() {
         }
     }
 
-
     return (
         
         <TrackVisibility>
@@ -76,20 +75,20 @@ export default function Intro() {
                         </button>
 
                         <div className="inline-flex items-center gap-[20px] ps-5">
-                            <Link to="www.github.com"><Property1GithubDefault className="w-[20px] h-[20px]" /></Link>
-                            <button><Property1LinkedinDefault className="w-[20px] h-[20px]" /></button>
-                            <button><Property1UpworkDefaut className="w-[20px] h-[20px]" /></button>
-                            <button><Property1GmailDefault className="w-[20px] h-[20px]" /></button>
-                            <button><Property1Indeed className="w-[20px] h-[20px]"/></button>
+                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><Property1GithubDefault className="w-[20px] h-[20px]" /></a>
+                            <a href="https://www.linkedin.com/in/kmjalgario" rel="noopener noreferrer" target="_blank"><Property1LinkedinDefault className="w-[20px] h-[20px]" /></a>
+                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><Property1UpworkDefaut className="w-[20px] h-[20px]" /></a>
+                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><Property1GmailDefault className="w-[20px] h-[20px]" /></a>
+                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><Property1Indeed className="w-[20px] h-[20px]"/></a>
                         </div>
                     </div>
 
                     <p className="relative self-stretch [font-family:'Varela_Round',Helvetica] font-normal text-variable-collection-mid-gray text-[16px] tracking-[0] leading-[normal]">
                         <span className="text-[#bfbfbf] font-paragraph [font-style:var(--paragraph-font-style)] font-[number:var(--paragraph-font-weight)] tracking-[var(--paragraph-letter-spacing)] leading-[var(--paragraph-line-height)] text-[length:var(--paragraph-font-size)]">
-                            Get to know me{" "}
+                            Get to know me more{" "}
                         </span>
-                        <a href="https://me.com" rel="noopener noreferrer" target="_blank">
-                            <span className="text-[#d13d9f] underline">more here</span>
+                        <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank">
+                            <span className="text-[#d13d9f] underline"> here</span>
                         </a>
                     </p>
                 </div>
