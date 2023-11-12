@@ -35,6 +35,11 @@ function App() {
   return (
       <Router>
           <NavMenu />
+          <Home />
+          <About/>
+          <Skills />
+          <Services/>
+          <Portfolio />
           <div className="flex">
             {showSidebar && <SidebarDrawer />}
               <main className="flex-1 overflow-y-auto p-4 lg:pl-24">
