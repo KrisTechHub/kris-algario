@@ -21,7 +21,7 @@ export default function SidebarDrawer() {
     const closeDrawer = () => setOpen(false);
 
     return (
-        <div className="hidden lg:block w-16 text-mypink-800 bg-blue-gray-50 shadow-xl shadow-blue-gray-900/5 custom-rounded-tr fixed sb">    
+        <div className="hidden lg:block lg:mt-[70px] xl:mt-[90px] xl:mt-[110px] w-16 text-mypink-800 bg-blue-gray-50 shadow-xl shadow-blue-gray-900/5 custom-rounded-tr fixed sb">    
             <div className="p-2 pt-5">
                 <img className="w-10 py-2" src="./src/assets/K.svg" />
                 <hr className="w-12 my-2 border-gray-400" />
