@@ -7,6 +7,7 @@ import { Property1UpworkDefaut } from "../../icons/Property1UpworkDefaut";
 //functionalities
 import { useState, useEffect } from "react";
 import TrackVisibility from 'react-on-screen';
+import { HashLink } from 'react-router-hash-link';
 
 
 export default function Intro() {
@@ -66,7 +67,7 @@ export default function Intro() {
                         </span>
                     </h1>
 
-                    <div className="self-stretch text-stone-300 text-xl font-normal font-RalewayMedium">A fullstack Web Developer based in the Philippines.</div>
+                    <div className="self-stretch text-gray-700 text-xl font-normal font-RalewayMedium">A fullstack Web Developer based in the Philippines.</div>
 
                     <div className="inline-flex my-3">
                         <a href="/Contact" rel="noopener noreferrer" className="text-[14px] rounded-md py-[3px] px-3 border border-mypink-600 border-[2px] hover:border-mypink-100 font-RalewayMedium">
@@ -83,12 +84,14 @@ export default function Intro() {
                     </div>
 
                     <p className="self-stretch [font-family:'Varela_Round',Helvetica] font-normal text-variable-collection-mid-gray text-[16px] tracking-[0] leading-[normal]">
-                        <span className="text-[#bfbfbf] font-paragraph [font-style:var(--paragraph-font-style)] font-[number:var(--paragraph-font-weight)] tracking-[var(--paragraph-letter-spacing)] leading-[var(--paragraph-line-height)] text-[length:var(--paragraph-font-size)]">
+                        <span className="text-gray-600 font-paragraph [font-style:var(--paragraph-font-style)] font-[number:var(--paragraph-font-weight)] tracking-[var(--paragraph-letter-spacing)] leading-[var(--paragraph-line-height)] text-[length:var(--paragraph-font-size)]">
                             Get to know me more{" "}
                         </span>
-                        <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank">
-                            <span className="text-[#d13d9f] underline"> here</span>
-                        </a>
+
+                        <HashLink to='/About'>
+                            <span className="text-mypink-800 underline"> here</span>
+                        </HashLink>
+
                     </p>
                 </div>
             }
