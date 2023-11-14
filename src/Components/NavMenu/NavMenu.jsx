@@ -29,7 +29,7 @@ export default function NavMenu() {
             if (prevScrollpos > currentScrollPos) {
                 setTopNavClass('top-0');
             } else {
-                setTopNavClass('-top-[50px]')
+                setTopNavClass('-top-[100px]')
             }
             setPrevScrollpos(currentScrollPos);
         };

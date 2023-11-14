@@ -1,9 +1,3 @@
-import { Property1GithubDefault } from "../../icons/Property1GithubDefault";
-import { Property1GmailDefault } from "../../icons/Property1GmailDefault";
-import { Property1Indeed } from "../../icons/Property1Indeed";
-import { Property1LinkedinDefault } from "../../icons/Property1LinkedinDefault";
-import { Property1UpworkDefaut } from "../../icons/Property1UpworkDefaut";
-
 //functionalities
 import { useState, useEffect } from "react";
 import TrackVisibility from 'react-on-screen';
@@ -75,11 +69,11 @@ export default function Intro() {
                         </a>
 
                         <div className="inline-flex items-center gap-[20px] ps-5">
-                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><Property1GithubDefault className="w-[20px] h-[20px]"/></a>
-                            <a href="https://www.linkedin.com/in/kmjalgario" rel="noopener noreferrer" target="_blank"><Property1LinkedinDefault className="w-[20px] h-[20px]" /></a>
-                            <a href="https://www.upwork.com/freelancers/~014703744c9fc2e64f" rel="noopener noreferrer" target="_blank"><Property1UpworkDefaut className="w-[20px] h-[20px]" /></a>
-                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><Property1GmailDefault className="w-[20px] h-[20px]" /></a>
-                            <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend" rel="noopener noreferrer" target="_blank"><Property1Indeed className="w-[20px] h-[20px]"/></a>
+                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/github.svg"/></a>
+                            <a href="https://www.linkedin.com/in/kmjalgario" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/linkedin.svg" /></a>
+                            <a href="https://www.upwork.com/freelancers/~014703744c9fc2e64f" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/upwork.svg" /></a>
+                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/gmail.svg" /></a>
+                            <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/indeed.svg" /></a>
                         </div>
                     </div>
 
@@ -89,7 +83,7 @@ export default function Intro() {
                         </span>
 
                         <HashLink to='/About'>
-                            <span className="text-mypink-800 underline"> here</span>
+                            <span className="text-mypink-600 underline"> here</span>
                         </HashLink>
 
                     </p>
