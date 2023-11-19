@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div className="container mx-auto py-28">
             <div className="flex-row mx-auto">
-                <div className="flex flex-col sm:flex-row xl:px-[50px]">
+                <div className="flex flex-col md:flex-row xl:px-[50px]">
                     <div className="order-1 sm:order-1 items-center w-full lg:w-1/2">
                         <img src="./src/assets/about-portrait.svg" alt="home portrait" />
                     </div>

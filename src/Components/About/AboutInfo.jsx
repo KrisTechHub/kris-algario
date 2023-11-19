@@ -15,7 +15,7 @@ export default function AboutInfo() {
                 </p>
             </div>
 
-            <div className="flex-row sm:justify-content">
+            <div className="flex-row">
                 <div className="flex flex-wrap gap-3 pt-2">
                         <div className="rounded-full bg-mypurple-900">
                             <img className="w-1/7 p-2" src="./src/icons/html5.svg" alt="html5" />  
