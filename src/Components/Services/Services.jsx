@@ -7,8 +7,8 @@ export default function Services() {
             
             <div className="container mx-auto py-28">
                 <div className="flex">
-                    <div className="flex-row xl:px-[50px]">
-                        <h1 className="md:pt-10 flex items-center justify-center font-JosefinBold text-[30px] lg:text-[45px] text-mypink-800">S<span className="text-[22px] lg:text-[30px]">ERVICES</span></h1>
+                    <div className="flex-row xl:px-[50px] text-center">
+                        <h1 className="md:pt-10 justify-center font-JosefinBold text-[30px] lg:text-[45px] text-mypink-800">S<span className="text-[22px] lg:text-[30px]">ERVICES</span></h1>
 
                         <p className="md:indent-32 flex text-center font-RalewayMedium px-10 text-gray-800"> I offer a range of web development services designed to elevate your online presence. From creating stunning, user-friendly
                             websites to optimizing performance and ensuring seamless functionality, my expertise spans front-end and back-end technologies.
@@ -53,11 +53,31 @@ export default function Services() {
                             </Card>
                         </div>
 
+                        <a href="#" className="inline-block py-10 ">
+                            <Button size="lg" variant="text" className="flex inline-flex gap-2 text-lg hover:bg-transparent font-JosefinBold hover:scale-110 transition-transform duration-300 transform-gpu">
+                                See Projects
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth={2}
+                                    stroke="currentColor"
+                                    className="h-6 w-6"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M19 9l-7 7-7-7"
+                                    />
+                                </svg>
+                            </Button>
+                        </a>
+
                     </div>
                 </div>
             </div>
 
-            <img className="w-44 md:w-56 lg:w-auto float-right mr-[-64px] mt-[-130px]" src="./src/icons/Design 1.svg" alt="bg design" />
+            <img className="w-44 md:w-56 lg:w-auto float-right mr-[-64px] mt-[-200px]" src="./src/icons/Design 1.svg" alt="bg design" />
         </div>
     );
 }
