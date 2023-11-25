@@ -1,9 +1,4 @@
-import { Carousel, IconButton } from '@material-tailwind/react';
-
-export default function Skills() {
-    return (
-        <div className='container mx-auto py-28'>
-            <Carousel className='rounded-xl' prevArrow={({ handlePrev }) => (
+<Carousel className='rounded-xl' prevArrow={({ handlePrev }) => (
                 <IconButton variant='text' color='white' size='lg' onClick={handlePrev} className='!absolute top-2/4 left-4 -translate-y-2/4'>
                     <svg xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -38,14 +33,10 @@ export default function Skills() {
                     </IconButton>
                 )}
             >
-                <h1>slide 1</h1>
-                <img  src="./src/icons/Design 1.svg" alt="bg design" />
-
-                <h1>slide 2</h1>
-                <h1>slide 3</h1>
+                <div>
+                    
+                </div>
+                
 
 
             </Carousel>
-        </div>
-    );
-}
