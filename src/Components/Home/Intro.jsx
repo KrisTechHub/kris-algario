@@ -64,8 +64,8 @@ export default function Intro() {
                     <div className="self-stretch text-gray-700 text-xl font-normal font-RalewayMedium">A fullstack Web Developer based in the Philippines.</div>
 
                     <div className="inline-flex my-3">
-                        <a href="/Contact" rel="noopener noreferrer" className="text-[14px] rounded-md py-[3px] px-3 border border-mypink-600 border-[2px] hover:border-mypink-100 font-RalewayMedium">
-                            Contact me
+                        <a href="/Contact" rel="noopener noreferrer" className="text-[16px] rounded-md py-[6px] px-4 border border-mypink-600 border-[2px] hover:border-mypink-100 font-RalewayMedium">
+                            CONTACT ME
                         </a>
 
                         <div className="inline-flex items-center gap-[20px] ps-5">

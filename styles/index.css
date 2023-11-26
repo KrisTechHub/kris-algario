@@ -45,6 +45,17 @@
     src: url('fonts/Raleway-Medium.ttf');
 }
 
+
+@font-face {
+    font-family: 'VollkornSCSemi';
+    src: url('fonts/VollkornSC-SemiBold.ttf');
+}
+
+
+@font-face {
+    font-family: 'VollkornSCReg';
+    src: url('fonts/VollkornSC-Regular.ttf');
+}
 /* @layer components {
     .all-\[unset\] {
         all: unset;

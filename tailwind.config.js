@@ -37,7 +37,10 @@ export default withMT ({
         'JosefinSemibold': ['JosefinSansSemiBold', 'sans-serif'],
         'JosefinBold': ['JosefinSansBold', 'sans-serif'],
         'RalewayLight': ['RalewayLight', 'sans serif'],
-        'RalewayMedium': ['RalewayMedium', 'sans serif']
+        'RalewayMedium': ['RalewayMedium', 'sans serif'],
+        'VollkornSCSemi': ['VollkornSCSemi', 'sans serif'],
+        'VollkornSCReg': ['VollkornSCReg', 'sans serif'],
+
       },
     },
     screens: {
