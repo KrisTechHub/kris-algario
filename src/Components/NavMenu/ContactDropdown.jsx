@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import {
     Typography,
@@ -22,14 +23,17 @@ const profileMenuItems = [
     {
         label: "Job Profiles",
         icon: BriefcaseIcon,
+        link: "/JobProfiles"
     },
     {
         label: "Socials",
         icon: UserIcon,
+        link: "/Socials"
     },
     {
         label: "Email",
         icon: EnvelopeIcon,
+        link: "/Contact"
     }
 ];
 
@@ -50,14 +54,16 @@ function ProfileMenu() {
             </MenuHandler>
 
             <MenuList className="p-1">
-                {profileMenuItems.map(({ label, icon }) => {
+                {profileMenuItems.map(({ label, icon, link }) => {
                     return (
-                        <MenuItem key={label} onClick={closeMenu} className={"flex gap-2 rounded text-mypink-800 tracking-wide bg-white"}>
-                            {React.createElement(icon, { className: "h-4 w-4", strokeWidth: 2, })}
-                            <Typography as="span" variant="small" className="font-normal" >
-                                {label}
-                            </Typography>
-                        </MenuItem>
+                        <Link key={label} as="a" to={link}>
+                            <MenuItem key={label} onClick={closeMenu} className={"flex gap-2 rounded text-mypink-800 tracking-wide bg-white"}>
+                                {React.createElement(icon, { className: "h-4 w-4", strokeWidth: 2, })}
+                                <Typography as="span" variant="small" className="font-normal" >
+                                    {label}
+                                </Typography>
+                            </MenuItem>
+                        </Link>
                     );
                 })}
             </MenuList>
