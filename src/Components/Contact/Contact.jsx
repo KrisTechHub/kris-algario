@@ -1,5 +1,5 @@
 // import InputField from "./Input";
-import SendEmail from "./SendEmail";
+import ContactForm from "./ContactForm";
 
 export default function Contact() {
     return (
@@ -7,7 +7,7 @@ export default function Contact() {
             <div className="flex-row mx-auto">
                 <div className="flex flex-col md:flex-row xl:px-[50px] ">
                     <div className="order-2 sm:order-1 items-center w-full lg:w-1/2 px-8 lg:px-24">
-                        <SendEmail />
+                        <ContactForm />
                     </div>
 
                     <div className="order-1 sm:order-2 flex items-center justify-center w-full lg:w-1/2 ">
