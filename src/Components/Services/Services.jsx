@@ -1,5 +1,7 @@
 import { Card, CardBody, CardFooter, Typography, Button, } from "@material-tailwind/react";
 import PropTypes from 'prop-types'; // Import PropTypes
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll';
 
 
 export default function Services({id}) {
@@ -55,7 +57,8 @@ export default function Services({id}) {
                             </Card>
                         </div>
 
-                        <a href="#" className="inline-block py-10 ">
+                        <ScrollLink to="Portfolio" smooth={true} duration={500} className="inline-block py-10 ">
+                            
                             <Button size="lg" variant="text" className="flex inline-flex gap-2 text-lg hover:bg-transparent font-JosefinBold hover:scale-110 transition-transform duration-300 transform-gpu">
                                 See Projects
                                 <svg
@@ -72,8 +75,12 @@ export default function Services({id}) {
                                         d="M19 9l-7 7-7-7"
                                     />
                                 </svg>
+                                
                             </Button>
-                        </a>
+
+                        </ScrollLink>
+
+
 
                     </div>
                 </div>

@@ -58,13 +58,10 @@ function App() {
                   </ScrollLink>
                   <ScrollLink to="Contact" smooth={true} duration={500}>
                     <Contact id="Contact" />
-                  </ScrollLink>
-    
+                  </ScrollLink>   
               </main>
-
           </div>
-
-
+          
       </Router>
       
   )
