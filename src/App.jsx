@@ -47,6 +47,12 @@ function App() {
                 </Routes>
               </main>
           </div>
+          <Home />
+          <About />
+          <Services />
+          <Skills />
+          <Portfolio />
+          <Contact />
       </Router>
       
   )

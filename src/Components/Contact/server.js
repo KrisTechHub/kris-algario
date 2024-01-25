@@ -3,14 +3,20 @@ import express from 'express';
 import nodemailer from 'nodemailer';
 const router = express.Router();
 import cors from 'cors';
+import path from 'path'
+
 
 
 //server that will run on port 5173
 const app = express();
+const __dirname = path.resolve();
+
 app.use(cors());
 app.use(express.json());
-app.use('/', router);
-app.listen(5000, () => console.log("Server running"));
+
+// app.use('/', router);
+app.use(express.static(path.join(__dirname, 'dev')));
+
 
 
 // Create a SMTP transporter
@@ -26,10 +32,34 @@ const transporter = nodemailer.createTransport({
 });
 
 // Send mail with defined transport object
-transporter.verify((error) => {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log("Ready to send");
-    }
+router.post("/Contact", (req, res) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    const subject = req.body.subject;
+    const message = req.body.message;
+    const mail = {
+        from: name,
+        to: "kmj.algario@gmail.com",
+        subject: `${subject}`,
+        html: `<p>Name: ${name}</p>
+                <p>Email: ${email}</p>
+                <p>Message: ${message}</p>`,
+    };
+    transporter.sendMail(mail,(error) => {
+        if (error) {
+            console.log(error);
+            res.json({ status: "ERROR"});
+        } else {
+            console.log("email sent");
+            res.json({status: "Message Sent" });
+        }
+    });
 });
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'dev', 'index.html'));
+});
+
+const PORT = process.env.PORT || 5173;
+app.listen(PORT, () => console.log(`Server running. Listening on Port ${PORT}`));
+
