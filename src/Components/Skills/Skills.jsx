@@ -1,8 +1,10 @@
 import { Carousel, IconButton } from '@material-tailwind/react';
+import PropTypes from 'prop-types'; // Import PropTypes
 
-export default function Skills() {
+
+export default function Skills({id}) {
     return (
-        <div className='container mx-auto py-28'>
+        <div className='container mx-auto py-28' id={id}>
             <div className='text-center'>
                 <h3 className="font-JosefinBold">SKILLS</h3>
                 <h1 className="justify-center font-JosefinBold text-[30px] lg:text-[45px] text-mypink-800">W<span className="text-[22px] lg:text-[30px]">hat I do</span></h1>
@@ -106,3 +108,7 @@ export default function Skills() {
         </div>
     );
 }
+
+Skills.propTypes = {
+    id: PropTypes.string.isRequired
+};

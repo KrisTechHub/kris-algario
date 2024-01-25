@@ -1,9 +1,11 @@
 import Intro from "./Intro";
 import './Home.css'
+import PropTypes from 'prop-types'; // Import PropTypes
 
-export default function Home() {
+
+export default function Home({id}) {
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto" id={id} >
             <div className="flex-row mx-auto">
                 <div className="flex flex-col sm:flex-row xl:px-[50px] mt-5 sm:mt-[100px] lg:mt-2">
                     <div className="order-2 sm:order-1 flex items-center w-full lg:w-1/2 ">
@@ -21,3 +23,8 @@ export default function Home() {
 
     );
 }
+
+
+Home.propTypes = {
+    id: PropTypes.string.isRequired
+};

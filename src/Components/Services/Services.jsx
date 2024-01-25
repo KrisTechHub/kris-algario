@@ -1,8 +1,10 @@
 import { Card, CardBody, CardFooter, Typography, Button, } from "@material-tailwind/react";
+import PropTypes from 'prop-types'; // Import PropTypes
 
-export default function Services() {
+
+export default function Services({id}) {
     return (
-        <div>
+        <div id={id}>
             <img className="w-44 md:w-56 lg:w-auto rotate-180 absolute ml-[-65px] mt-14 md:mt-28" src="./src/icons/Design 1.svg" alt="bg design" />
             
             <div className="container mx-auto py-28">
@@ -81,3 +83,7 @@ export default function Services() {
         </div>
     );
 }
+
+Services.propTypes = {
+    id: PropTypes.string.isRequired
+};

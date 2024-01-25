@@ -1,5 +1,7 @@
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
 import { useEffect, useState } from "react";
 import '/styles/App.css'
 import NavMenu from './Components/NavMenu/NavMenu'
@@ -37,22 +39,30 @@ function App() {
           <div className="flex">
             {showSidebar && <SidebarDrawer />}
               <main className="flex-1 overflow-y-auto">
-                <Routes>
-                  <Route path="/Home" element={<Home />} />
-                  <Route path="/About" element={<About />} />
-                  <Route path="/Skills" element={<Skills />} />
-                  <Route path="/Services" element={<Services />} />
-                  <Route path="/Portfolio" element={<Portfolio />} />
-                  <Route path="/Contact" element={<Contact />} />
-                </Routes>
+                  <ScrollLink to="Home" smooth={true} duration={500}>
+                    <Home id="Home" />
+                  </ScrollLink>
+                  <ScrollLink to="About" smooth={true} duration={500}>
+                    <About id="About" />
+                  </ScrollLink>
+
+                  <ScrollLink to="Services" smooth={true} duration={500}>
+                    <Services id="Services" />
+                  </ScrollLink>
+
+                  <ScrollLink to="Skills" smooth={true} duration={500}>
+                    <Skills id="Skills" />
+                  </ScrollLink>
+                  <ScrollLink to="Portfolio" smooth={true} duration={500}>
+                    <Portfolio id="Portfolio" />
+                  </ScrollLink>
+                  <ScrollLink to="Contact" smooth={true} duration={500}>
+                    <Contact id="Contact" />
+                  </ScrollLink>
+
               </main>
           </div>
-          <Home />
-          <About />
-          <Services />
-          <Skills />
-          <Portfolio />
-          <Contact />
+
       </Router>
       
   )

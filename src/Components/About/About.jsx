@@ -1,8 +1,9 @@
 import AboutInfo from "./AboutInfo";
+import PropTypes from 'prop-types'; // Import PropTypes
 
-export default function About() {
+export default function About({id}) {
     return (
-        <div className="container mx-auto py-28">
+        <div className="container mx-auto py-28" id={id}>
             <div className="flex-row mx-auto">
                 <div className="flex flex-col md:flex-row xl:px-[50px]">
                     <div className="order-1 sm:order-1 items-center w-full lg:w-1/2">
@@ -17,3 +18,7 @@ export default function About() {
         </div>
     );
 }
+
+About.propTypes = {
+    id: PropTypes.string.isRequired
+};

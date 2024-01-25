@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { navItems } from "./NavData";
 import { MenuItem } from "@material-tailwind/react";
 import './NavMenu.css'
+import { Link as ScrollLink } from 'react-scroll';
+
 
 
 
@@ -14,16 +16,24 @@ function NavList({ navListItems, isVertical = false, showIcon = true }) {
         : "mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center";
         
     return (
-        <ul className={`${containerClasses}`}>
+        <nav className={`${containerClasses}`}>
                 {navListItems.map(({ label, icon, link }) => (
-                    <Link key={label} as="a" to={link} variant="small" className="pr-1 xl:pr-3" >
+                    <ScrollLink 
+                    key={label} 
+                    to={link} 
+                    spy={true}
+                    smooth={true}
+                    duration={500} 
+                    variant="small" 
+                    className="pr-1 xl:pr-3" 
+                    >
                         <MenuItem className="flex items-center lg:rounded-full hover:bg-purple-50 text-mypink-800">
                             {showIcon && React.createElement(icon, { className: "h-[16px] w-[16px]" })}
-                            <span className="under-line text-[15px] text-mypink-800 ">{label}</span>
+                            <span className="under-line text-[15px] text-mypink-800 ">{label}</span>    
                         </MenuItem>
-                    </Link>
+                    </ScrollLink>
                 ))}
-            </ul>
+        </nav>
     );
 }
 
@@ -36,7 +46,7 @@ NavList.propTypes = {
 export default function MenuItems({ isVertical = true, showIcon = true }) {
     return (
             <div>
-            <NavList navListItems={navItems} isVertical={isVertical} showIcon={showIcon} />
+                <NavList navListItems={navItems} isVertical={isVertical} showIcon={showIcon} />
             </div>
     );
 }

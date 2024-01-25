@@ -1,9 +1,15 @@
-import React from 'react';
+import PropTypes from 'prop-types'; // Import PropTypes
 
-export default function Portfolio() {
+
+
+export default function Portfolio({id}) {
     return (
-        <div>
+        <div id={id}>
             <h1>Portfolio page</h1>
         </div>
     );
 }
+
+Portfolio.propTypes = {
+    id: PropTypes.string.isRequired
+};
