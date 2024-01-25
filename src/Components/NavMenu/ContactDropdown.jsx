@@ -25,17 +25,17 @@ const profileMenuItems = [
     {
         label: "Work Profiles",
         icon: BriefcaseIcon,
-        link: "/contact"
+        link: "Contact"
     },
     {
         label: "Socials",
         icon: UserIcon,
-        link: "/contact"
+        link: "Contact"
     },
     {
         label: "Email",
         icon: EnvelopeIcon,
-        link: "/contact"
+        link: "Contact"
     }
 ];
 
@@ -60,9 +60,8 @@ function ProfileMenu() {
             <MenuList className="p-1">
                 {profileMenuItems.map(({ label, icon, link }) => {
                     return (
-                        <Link key={label} to={link}>
+                        <ScrollLink key={label} to={link} smooth={true} duration={500}>
                             <MenuItem 
-                            id={link} 
                             key={label} 
                             onClick={closeMenu} 
                             className={"flex gap-2 rounded text-mypink-800 tracking-wide bg-white"}
@@ -72,7 +71,7 @@ function ProfileMenu() {
                                     {label}
                                 </Typography>
                             </MenuItem>
-                        </Link>
+                        </ScrollLink>
 
                     );
                 })}

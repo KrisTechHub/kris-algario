@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 import PropTypes from 'prop-types'; // Import PropTypes
 
 
-export default function Contact(id) {
+export default function Contact({id}) {
     return (
         <div className="py-36 bg-blue-gray-100 h-screen" id={id}>
             <div className="flex-row mx-auto">
