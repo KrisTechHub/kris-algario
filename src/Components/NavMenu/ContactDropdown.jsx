@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 import {
     Typography,
@@ -21,27 +23,29 @@ import {
 // profile menu component
 const profileMenuItems = [
     {
-        label: "Job Profiles",
+        label: "Work Profiles",
         icon: BriefcaseIcon,
-        link: "/JobProfiles"
+        link: "/contact"
     },
     {
         label: "Socials",
         icon: UserIcon,
-        link: "/Socials"
+        link: "/contact"
     },
     {
         label: "Email",
         icon: EnvelopeIcon,
-        link: "/Contact"
+        link: "/contact"
     }
 ];
+
 
 
 function ProfileMenu() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const closeMenu = () => setIsMenuOpen(false);
+
 
     return (
         <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
@@ -56,14 +60,20 @@ function ProfileMenu() {
             <MenuList className="p-1">
                 {profileMenuItems.map(({ label, icon, link }) => {
                     return (
-                        <Link key={label} as="a" to={link}>
-                            <MenuItem key={label} onClick={closeMenu} className={"flex gap-2 rounded text-mypink-800 tracking-wide bg-white"}>
+                        <Link key={label} to={link}>
+                            <MenuItem 
+                            id={link} 
+                            key={label} 
+                            onClick={closeMenu} 
+                            className={"flex gap-2 rounded text-mypink-800 tracking-wide bg-white"}
+                            >
                                 {React.createElement(icon, { className: "h-4 w-4", strokeWidth: 2, })}
                                 <Typography as="span" variant="small" className="font-normal" >
                                     {label}
                                 </Typography>
                             </MenuItem>
                         </Link>
+
                     );
                 })}
             </MenuList>

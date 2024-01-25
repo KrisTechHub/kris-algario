@@ -1,7 +1,6 @@
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll';
 import { useEffect, useState } from "react";
 import '/styles/App.css'
 import NavMenu from './Components/NavMenu/NavMenu'
@@ -12,6 +11,7 @@ import Skills from './Components/Skills/Skills'
 import Services from './Components/Services/Services';
 import Portfolio from './Components/Portfolio/Portfolio'
 import Contact from "./Components/Contact/Contact";
+
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -59,9 +59,11 @@ function App() {
                   <ScrollLink to="Contact" smooth={true} duration={500}>
                     <Contact id="Contact" />
                   </ScrollLink>
-
+    
               </main>
+
           </div>
+
 
       </Router>
       
