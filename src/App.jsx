@@ -11,6 +11,7 @@ import Skills from './Components/Skills/Skills'
 import Services from './Components/Services/Services';
 import Portfolio from './Components/Portfolio/Portfolio'
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Contact/Footer";
 
 
 function App() {
@@ -45,11 +46,9 @@ function App() {
                   <ScrollLink to="About" smooth={true} duration={500}>
                     <About id="About" />
                   </ScrollLink>
-
                   <ScrollLink to="Services" smooth={true} duration={500}>
                     <Services id="Services" />
                   </ScrollLink>
-
                   <ScrollLink to="Skills" smooth={true} duration={500}>
                     <Skills id="Skills" />
                   </ScrollLink>
@@ -59,9 +58,12 @@ function App() {
                   <ScrollLink to="Contact" smooth={true} duration={500}>
                     <Contact id="Contact" />
                   </ScrollLink>   
+                  <ScrollLink to="Footer" smooth={true} duration={500}>
+                    <Footer id="Footer" />
+                  </ScrollLink>   
               </main>
           </div>
-          
+
       </Router>
       
   )

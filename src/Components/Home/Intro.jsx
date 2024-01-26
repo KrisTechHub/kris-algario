@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import TrackVisibility from 'react-on-screen';
 import { HashLink } from 'react-router-hash-link';
+import { Link as ScrollLink } from 'react-scroll';
+
 
 
 export default function Intro() {
@@ -64,16 +66,17 @@ export default function Intro() {
                     <div className="self-stretch text-gray-700 text-xl font-normal font-RalewayMedium">A fullstack Web Developer based in the Philippines.</div>
 
                     <div className="inline-flex my-3">
-                        <a href="/Contact" rel="noopener noreferrer" className="text-[16px] rounded-md py-[6px] px-4 border border-mypink-600 border-[2px] hover:border-mypink-100 font-RalewayMedium">
+                        <ScrollLink to="Contact" smooth={true} duration={500} className="text-[16px] rounded-md py-[6px] px-4 border border-mypink-600 border-[2px] hover:border-black font-RalewayMedium cursor-pointer">
                             CONTACT ME
-                        </a>
+                        </ScrollLink>
+
 
                         <div className="inline-flex items-center gap-[20px] ps-5">
-                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/github.svg"/></a>
-                            <a href="https://www.linkedin.com/in/kmjalgario" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/linkedin.svg" /></a>
-                            <a href="https://www.upwork.com/freelancers/~014703744c9fc2e64f" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/upwork.svg" /></a>
-                            <a href="https://github.com/KrisTechHub" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/gmail.svg" /></a>
-                            <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/indeed.svg" /></a>
+                            <a href="https://github.com/KrisTechHub" onClick="window.open(`https://github.com/KrisTechHub`)" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/github.svg"/></a>
+                            <a href="https://www.linkedin.com/in/kmjalgario" onClick="window.open(`hhttps://www.linkedin.com/in/kmjalgario`)" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/linkedin.svg" /></a>
+                            <a href="https://www.upwork.com/freelancers/~014703744c9fc2e64f" onClick="window.open(`https://www.upwork.com/freelancers/~014703744c9fc2e64f`)" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/upwork.svg" /></a>
+                            <ScrollLink to="Contact" smooth={true} duration={500}><img className="w-[20px] h-[20px]" src="./src/icons/gmail.svg" /></ScrollLink>
+                            <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend" onClick="window.open(`https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend`)" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/indeed.svg" /></a>
                         </div>
                     </div>
 
@@ -82,9 +85,9 @@ export default function Intro() {
                             Get to know me more{" "}
                         </span>
 
-                        <HashLink to='/About'>
+                        <ScrollLink to='About' smooth={true} duration={300}>
                             <span className="text-mypink-600 underline"> here</span>
-                        </HashLink>
+                        </ScrollLink>
 
                     </p>
                 </div>
