@@ -1,7 +1,6 @@
 //functionalities
 import { useState, useEffect } from "react";
 import TrackVisibility from 'react-on-screen';
-import { HashLink } from 'react-router-hash-link';
 import { Link as ScrollLink } from 'react-scroll';
 
 

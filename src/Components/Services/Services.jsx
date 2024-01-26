@@ -1,9 +1,8 @@
-import { Card, CardBody, CardFooter, Typography, Button, } from "@material-tailwind/react";
+import { Card, CardBody, Typography, Button, } from "@material-tailwind/react";
 import PropTypes from 'prop-types'; // Import PropTypes
-import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
 
-
+ 
 export default function Services({id}) {
     return (
         <div id={id}>
@@ -16,7 +15,7 @@ export default function Services({id}) {
 
                         <p className="md:indent-32 flex text-center font-RalewayMedium px-10 text-gray-800"> I offer a range of web development services designed to elevate your online presence. From creating stunning, user-friendly
                             websites to optimizing performance and ensuring seamless functionality, my expertise spans front-end and back-end technologies.
-                            Let's collaborate to bring your digital vision to life with responsive design, custom solutions, and a commitment to delivering an exceptional user experience.
+                            Let&#39;s collaborate to bring your digital vision to life with responsive design, custom solutions, and a commitment to delivering an exceptional user experience.
                         </p>
 
                         <div className="flex flex-wrap justify-between pt-6 2xl:px-20 ">

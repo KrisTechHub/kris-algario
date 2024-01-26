@@ -1,5 +1,14 @@
+import CV from '/AlgarioCV.pdf';
+
+
 export default function AboutInfo() {
+
+    const handleDownload = () => {
+        window.open(CV);
+    };
+
     return (
+        
         <div>
             <div className="flex-row items-center">
                 <h3 className="font-JosefinBold pb-1">ABOUT ME</h3>
@@ -40,11 +49,13 @@ export default function AboutInfo() {
                         </div>
                 </div>
 
-                <a href='' download='' target="_blank" rel="noopener noreferrer">
-                    <button className="mt-4 font-RalewayMedium tracking-wider text-white text-sm rounded-lg p-2 bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200">
-                        DOWNLOAD CV
-                    </button>
-                </a>
+                    <a href={CV} download='AlgarioCV.pdf' target="_blank" rel="noopener noreferrer">
+                        <button onClick={handleDownload} className="flex mt-4 font-RalewayMedium tracking-wider text-white text-sm rounded-lg p-2 bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200">
+                            VIEW CV 
+                        <span><img className="h-6 w-6 mx-2" src="./src/icons/open-file.svg" alt="openfile" /></span>
+                        </button>
+                    </a>
+
             </div>
 
             <div className="flex-row items-center">

@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
 import { useEffect, useState } from "react";
 import '/styles/App.css'
