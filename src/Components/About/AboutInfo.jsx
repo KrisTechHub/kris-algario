@@ -51,8 +51,8 @@ export default function AboutInfo() {
 
                     <a href={CV} download='AlgarioCV.pdf' target="_blank" rel="noopener noreferrer">
                         <button onClick={handleDownload} className="flex mt-4 font-RalewayMedium tracking-wider text-white text-sm rounded-lg p-2 bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200">
-                            VIEW CV 
-                        <span><img className="h-6 w-6 mx-2" src="./src/icons/open-file.svg" alt="openfile" /></span>
+                            <h1 className='text-center justify-center ps-2 p-1'>VIEW CV</h1> 
+                            <span><img className="h-6 w-6 mx-2" src="./src/icons/open-file.svg" alt="openfile" /></span>
                         </button>
                     </a>
 

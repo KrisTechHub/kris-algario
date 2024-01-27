@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
 
 
@@ -25,17 +24,17 @@ const profileMenuItems = [
     {
         label: "Work Profiles",
         icon: BriefcaseIcon,
-        link: "Contact"
+        link: "Footer"
     },
     {
         label: "Socials",
         icon: UserIcon,
-        link: "Contact"
+        link: "Footer"
     },
     {
         label: "Email",
         icon: EnvelopeIcon,
-        link: "Contact"
+        link: "Footer"
     }
 ];
 
