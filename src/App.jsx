@@ -49,9 +49,11 @@ function App() {
                   <ScrollLink to="Services" smooth={true} duration={500}>
                     <Services id="Services" />
                   </ScrollLink>
-                  <ScrollLink to="Skills" smooth={true} duration={500}>
-                    <Skills id="Skills" />
-                  </ScrollLink>
+                  <div className="bg-gradient-to-r from-mypink-900 to-mypurple-900">
+                      <ScrollLink to="Skills" smooth={true} duration={500}>
+                        <Skills id="Skills" />
+                      </ScrollLink>
+                  </div>
                   <ScrollLink to="Portfolio" smooth={true} duration={500}>
                     <Portfolio id="Portfolio" />
                   </ScrollLink>

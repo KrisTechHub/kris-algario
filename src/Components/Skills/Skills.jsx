@@ -4,12 +4,17 @@ import PropTypes from 'prop-types'; // Import PropTypes
 
 export default function Skills({id}) {
     return (
-        <div className='container mx-auto py-28' id={id}>
+        <div className='container mx-auto py-28 ' id={id}>
             <div className='text-center'>
-                <h3 className="font-JosefinBold">SKILLS</h3>
-                <h1 className="justify-center font-JosefinBold text-[30px] lg:text-[45px] text-mypink-800">W<span className="text-[22px] lg:text-[30px]">hat I do</span></h1>
+                <div className='flex bg-blue-gray-100 rounded-xl mx-[550px] items-center justify-center'>
+                    <div className='shadow-xl w-1/8 m-4 bg-mypurple-900 rounded-xl text-mypurple-900 h-6 w-7'></div>
+                    <h3 className="w-10/12 font-JosefinBold text-xl tracking-wider">SKILLS</h3>
+                    <div className='w-1/8 m-4 bg-mypurple-900 rounded-xl text-mypurple-900 h-6 w-7'></div>
+                </div>
+                <h1 className="my-6 font-JosefinBold text-[30px] lg:text-[45px] text-blue-gray-100">W<span className="text-[22px] lg:text-[30px]">hat I do</span></h1>
             </div>
-            <Carousel className='rounded-xl' prevArrow={({ handlePrev }) => (
+
+            <Carousel className='rounded-xl bg-mypink-900 pb-8' prevArrow={({ handlePrev }) => (
                 <IconButton onClick={handlePrev} className='!absolute top-1/2 left-4 -translate-y-2/4 bg-transparent text-blue-gray-400'>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -47,23 +52,23 @@ export default function Skills({id}) {
 
                 <div className='flex-row'>
                     <div className='flex flex-wrap gap-7 px-32 text-center justify-center my-8'>
-                        <div className='bg-mypink-900 rounded-lg text-center'>
+                        <div className='shadow-xl bg-mypink-900 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>
                             <img className='h-28  p-5 mb-[-10px]' src="./src/icons/html5.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-blue-gray-50'>HTML5</h6>
                         </div>
-                        <div className='bg-mypink-900 rounded-lg text-center'>
+                        <div className='shadow-xl bg-mypink-900 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>
                             <img className='h-28  p-5 mb-[-10px]' src="./src/icons/css3.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-blue-gray-50'>CSS3</h6>
                         </div>
-                        <div className='bg-mypink-900 rounded-lg text-center'>
+                        <div className='shadow-xl bg-mypink-900 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>
                             <img className='h-28  p-5 mb-[-10px]' src="./src/icons/JS.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-blue-gray-50'>JS</h6>
                         </div>
-                        <div className='bg-mypink-900 rounded-lg text-center'>
+                        <div className='shadow-xl bg-mypink-900 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>
                             <img className='h-28  p-5 mb-[-10px]' src="./src/icons/SASS.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-blue-gray-50'>SASS</h6>
                         </div>
-                        <div className='bg-mypink-900 rounded-lg text-center'>
+                        <div className='shadow-xl bg-mypink-900 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>
                             <img className='h-28  p-5 mb-[-10px]' src="./src/icons/GIT.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-blue-gray-50'>Git/Github</h6>
                         </div>

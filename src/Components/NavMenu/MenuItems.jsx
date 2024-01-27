@@ -27,8 +27,8 @@ function NavList({ navListItems, isVertical = false, showIcon = true }) {
                     className="pr-1 xl:pr-3" 
                     >
                         <MenuItem className="flex items-center lg:rounded-full hover:bg-purple-50 text-mypink-800">
-                            {showIcon && React.createElement(icon, { className: "h-[16px] w-[16px]" })}
-                            <span className="under-line text-[15px] text-mypink-800 ">{label}</span>    
+                            {showIcon && React.createElement(icon, { className: "me-3 h-[16px] w-[16px]" })}
+                            <span className="under-line text-[15px] text-mypink-800 font-bold tracking-wider">{label}</span>    
                         </MenuItem>
                     </ScrollLink>
                 ))}

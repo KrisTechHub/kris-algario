@@ -85,7 +85,7 @@ export default function Intro() {
                         </span>
 
                         <ScrollLink to='About' smooth={true} duration={300}>
-                            <span className="text-mypink-600 underline"> here</span>
+                            <span className="text-mypink-600 underline cursor-pointer">here</span>.
                         </ScrollLink>
 
                     </p>
