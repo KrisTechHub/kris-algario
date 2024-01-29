@@ -78,7 +78,7 @@ function App() {
 
                   <div className="mx-auto text-end">
                     <ScrollLink to="Home" smooth={true} duration={500}>
-                      <button className="text-right">
+                      <button className="back-to-top">
                         Back to Top
                       </button>
                     </ScrollLink>

@@ -10,7 +10,25 @@
     /* Adjust the background color as needed */
 /* } */ 
 
-.custom-gradient {
+/* .custom-gradient {
     background-image: linear-gradient(to bottom, #eceff1, #d1d5db, #eceff1);
     
+} */
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    /* Ensure it's above other content */
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: #555;
 }
