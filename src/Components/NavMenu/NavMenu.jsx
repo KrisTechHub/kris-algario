@@ -65,8 +65,8 @@ export default function NavMenu() {
                     </Typography>
                     
                     <div className="flex items-center">
-                        <div className="hidden lg:block flex text-mypink-800 navItems">
-                            <MenuItems className="under-line" navListItems={navItems} isVertical={false} showIcon={false}/>
+                        <div className="hidden lg:block flex text-mypink-800">
+                        <MenuItems className="" navListItems={navItems} isVertical={false} showIcon={false}/>
                         </div>
 
                         <div className="flex text-inline items-center">

@@ -5,7 +5,7 @@ import MenuItems from '../NavMenu/MenuItems';
 
 export default function Footer({ id }) {
     return (
-        <div className="py-8 bg-gray-600 text-blue-gray-100 " id={id}>
+        <div className="py-8 bg-darkpink-800 text-blue-gray-100 " id={id}>
             <div className="flex-row mx-auto ">
 
                 <div className="flex md:flex-row xl:px-[50px] ">

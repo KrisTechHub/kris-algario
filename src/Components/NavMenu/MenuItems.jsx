@@ -2,12 +2,8 @@ import React from "react";
 import PropTypes from 'prop-types'; // Import PropTypes
 import { navItems } from "./NavData";
 import { MenuItem } from "@material-tailwind/react";
-import './NavMenu.css'
 import { Link as ScrollLink } from 'react-scroll';
-
-
-
-
+import './NavMenu.css'
 
 function NavList({ className, navListItems, isVertical = false, showIcon = true }) {
     const containerClasses = isVertical
@@ -26,7 +22,7 @@ function NavList({ className, navListItems, isVertical = false, showIcon = true 
                     variant="small" 
                     className="pr-1 xl:pr-3" 
                     >
-                        <MenuItem className="{className} menuItems flex items-center lg:rounded-full">
+                        <MenuItem className={`${className} menuItems flex items-center lg:rounded-full`}>
                             {showIcon && React.createElement(icon, { className: "me-3 h-[16px] w-[16px]" })}
                             <span className=" tracking-wider">{label}</span>    
                         </MenuItem>
@@ -39,18 +35,20 @@ function NavList({ className, navListItems, isVertical = false, showIcon = true 
 NavList.propTypes = {
     navListItems: PropTypes.array.isRequired, // Define prop validation for navListItems
     isVertical: PropTypes.bool,
-    showIcon: PropTypes.bool
+    showIcon: PropTypes.bool,
+    className: PropTypes.string
 };
 
-export default function MenuItems({ isVertical = true, showIcon = true }) {
+export default function MenuItems({ className, isVertical = true, showIcon = true }) {
     return (
             <div>
-                <NavList navListItems={navItems} isVertical={isVertical} showIcon={showIcon} />
+            <NavList className="text-blue" navListItems={navItems} isVertical={isVertical} showIcon={showIcon} />
             </div>
     );
 }
 
 MenuItems.propTypes = {
     isVertical: PropTypes.bool,
-    showIcon: PropTypes.bool
+    showIcon: PropTypes.bool,
+    className: PropTypes.string
 };
