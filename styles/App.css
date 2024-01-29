@@ -9,3 +9,8 @@
     display: list-item; */
     /* Adjust the background color as needed */
 /* } */ 
+
+.custom-gradient {
+    background-image: linear-gradient(to bottom, #eceff1, #d1d5db, #eceff1);
+    
+}

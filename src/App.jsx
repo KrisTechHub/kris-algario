@@ -43,13 +43,22 @@ function App() {
                   <ScrollLink to="Home" smooth={true} duration={500}>
                     <Home id="Home" />
                   </ScrollLink>
-                  <ScrollLink to="About" smooth={true} duration={500}>
-                    <About id="About" />
-                  </ScrollLink>
-                  <ScrollLink to="Services" smooth={true} duration={500}>
-                    <Services id="Services" />
-                  </ScrollLink>
-                  <div className="bg-gradient-to-r from-mypink-900 to-mypurple-900">
+
+                  <div className="bg-gradient-to-t from-blue-gray-100 to-blue-gray-50">
+                      <ScrollLink to="About" smooth={true} duration={500}>
+                        <About id="About" />
+                      </ScrollLink>
+                  </div>
+                  
+
+                  <div className="bg-gradient-to-b from-blue-gray-100 to-blue-gray-50">
+                      <ScrollLink to="Services" smooth={true} duration={500}>
+                        <Services id="Services" />
+                      </ScrollLink>
+                  </div>
+
+
+                  <div className="bg-gradient-to-t from-blue-gray-100 to-blue-gray-50">
                       <ScrollLink to="Skills" smooth={true} duration={500}>
                         <Skills id="Skills" />
                       </ScrollLink>
@@ -60,9 +69,20 @@ function App() {
                   <ScrollLink to="Contact" smooth={true} duration={500}>
                     <Contact id="Contact" />
                   </ScrollLink>   
-                  <ScrollLink to="Footer" smooth={true} duration={500}>
-                    <Footer id="Footer" />
-                  </ScrollLink>   
+    
+                  <div className="bg-gradient-to-t from-blue-gray-100 to-blue-gray-50">
+                      <ScrollLink to="Footer" smooth={true} duration={500}>
+                        <Footer id="Footer" />
+                      </ScrollLink>  
+                  </div>
+
+                  <div className="mx-auto text-end">
+                    <ScrollLink to="Home" smooth={true} duration={500}>
+                      <button className="text-right">
+                        Back to Top
+                      </button>
+                    </ScrollLink>
+                  </div>
               </main>
           </div>
 

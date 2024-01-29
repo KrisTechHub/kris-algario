@@ -14,6 +14,7 @@ export default function NavMenu() {
     const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);//collapse on smaller screens
     const [prevScrollpos, setPrevScrollpos] = useState(window.scrollY);
     const [topNavClass, setTopNavClass] = useState('top-0');
+    const [scrolled, setScrolled] = useState(false)
 
 
     useEffect(() => { //collapse on smaller screens
@@ -27,9 +28,9 @@ export default function NavMenu() {
         const handdleScroll = () => {
             const currentScrollPos = window.scrollY;
             if (prevScrollpos > currentScrollPos) {
-                setTopNavClass('top-0');
+                setTopNavClass('top-0'); //scrolling
             } else {
-                setTopNavClass('-top-[100px]')
+                setTopNavClass('-top-[100px]') //when on top
             }
             setPrevScrollpos(currentScrollPos);
         };
@@ -40,9 +41,22 @@ export default function NavMenu() {
         };
     }, [prevScrollpos]);
 
-    return (
+    useEffect(() => {
+        const onScroll = () => {
+            if (window.scrollY > 50 ) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        }
 
-        <Navbar color="transparent" className={`mx-auto 2xl:px-[90px] tracking-wider max-w-full fixed ease-in-out duration-300 ${topNavClass}`}>
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+    }, [])
+
+    return (
+        <Navbar color="transparent" className={scrolled ? `z-50 bg-blue-gray-50 mx-auto 2xl:px-[90px] tracking-wider max-w-full fixed ease-in-out duration-300 ${topNavClass}` : `z-50 mx-auto 2xl:px-[90px] tracking-wider max-w-full fixed ease-in-out duration-300 ${topNavClass}`}>
+            {/* `mx-auto 2xl:px-[90px] tracking-wider max-w-full fixed ease-in-out duration-300 ${topNavClass}` */}
             <div className="relative flex items-center justify-between text-mypink-800">
 
                     <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans flex items-start cursor-pointer py-1.5 font-medium flex items-center">
