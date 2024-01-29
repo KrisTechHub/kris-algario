@@ -13,7 +13,7 @@ export default function Skills({id}) {
                 <h1 className="my-6 font-JosefinBold text-[30px] lg:text-[45px] text-mypink-800">W<span className="text-[22px] lg:text-[30px]">hat I do</span></h1>
             </div>
 
-            <div className='rounded-xl shadow-xl bg-mypink-900 py-5 mx-auto w-3/4' >
+            <div className='rounded-xl shadow-xl bg-darkpink-800 py-5 mx-auto w-3/4' >
                 <div className='flex-row'>
                     <div className='flex flex-wrap gap-10 lg:px-32 text-center justify-center my-8'>
                         <div className='shadow-xl bg-blue-gray-100 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>

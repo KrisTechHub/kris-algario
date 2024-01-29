@@ -18,15 +18,15 @@
 .back-to-top {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     z-index: 999;
     /* Ensure it's above other content */
     padding: 10px 20px;
     color: white;
     border: none;
     cursor: pointer;
-    opacity: 0.9;
-    transition: bottom 0.3s ease;
+    opacity: 0.8;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
 }
 
 .back-to-top:hover {

@@ -21,6 +21,10 @@ export default withMT ({
           800: "#4C0033",
           900: "#320021"
         },
+        darkpink: {
+          800: "#2b0018",
+          900: "#13000a"
+        },
         mypurple: {
           50: "#E5CFF7",
           100: "#9D76C1",
