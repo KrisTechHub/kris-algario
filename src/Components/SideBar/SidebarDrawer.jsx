@@ -23,7 +23,7 @@ export default function SidebarDrawer() {
     return (
         <div className="shadow-xl z-50 opacity-95 hidden lg:block lg:mt-[70px] xl:mt-[90px] xl:mt-[110px] w-16 text-mypink-800 bg-blue-gray-50 shadow-xl shadow-blue-gray-900/5 custom-rounded-tr custom-rounded-br fixed sb">    
             <div className="p-2 pt-5">
-                <img className="w-10 py-2" src="./src/assets/K.svg" />
+                <img className="w-10 py-2" src="./src/assets/Kpink.svg" />
                 <hr className="w-12 my-2 border-gray-400" />
                 <HomeIcon className="cursor-pointer p-2 m-1" />
                 <UserCircleIcon className="cursor-pointer p-2 m-1" />

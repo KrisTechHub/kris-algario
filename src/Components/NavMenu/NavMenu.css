@@ -23,3 +23,15 @@
     padding: 0px 0;
     background-color: #14021b;
 }
+
+.navItems {
+    color: #320021;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: dashed;
+
+}
+
+/* .navItems:hover {
+    background-color: #E5CFF7;
+} */

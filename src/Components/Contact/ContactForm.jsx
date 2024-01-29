@@ -43,7 +43,7 @@ export default function ContactForm() {
                 <Input id='subject' required color="purple" label="Subject" />
                 <Textarea id='message' required color="purple" label="Message" />
 
-                <button type='submit' className="font-RalewayMedium tracking-wider text-white text-sm rounded-lg px-6 py-2 bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200">
+                <button type='submit' className="font-RalewayMedium tracking-wider text-white text-sm rounded-lg px-6 py-2 bg-gradient-to-r from-darkpink-800 to-mypurple-900 hover:from-mypink-800 hover:to-mypurple-900">
                     {status}
                 </button>
             </form>

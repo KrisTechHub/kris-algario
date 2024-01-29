@@ -60,13 +60,13 @@ export default function NavMenu() {
             <div className="relative flex items-center justify-between text-mypink-800">
 
                     <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans flex items-start cursor-pointer py-1.5 font-medium flex items-center">
-                        <img src="./src/assets/K.svg" className="h-15 w-15 xs:h-12 xs:w-12 pr-2" /> 
+                        <img src="./src/assets/Kpink.svg" className="h-15 w-15 xs:h-12 xs:w-12 pr-2" /> 
                         <h1 className="font-CinzelBlack pl-2 text-sm md:text-lg lg:text-xl xl:text-2xl ">Kristine Algario</h1>
                     </Typography>
                     
                     <div className="flex items-center">
-                        <div className="hidden lg:block flex">
-                            <MenuItems navListItems={navItems} isVertical={false} showIcon={false}/>
+                        <div className="hidden lg:block flex text-mypink-800 navItems">
+                            <MenuItems className="under-line" navListItems={navItems} isVertical={false} showIcon={false}/>
                         </div>
 
                         <div className="flex text-inline items-center">
