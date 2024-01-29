@@ -21,11 +21,12 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 150) {
+      if (window.scrollY > 300) {
         setShowSidebar(true);
         setIsVisible(true)
       } else {
         setShowSidebar(false);
+        setIsVisible(false)
       }
     };
 
@@ -79,13 +80,15 @@ function App() {
                       </ScrollLink>  
                   </div>
 
-                  <div className="mx-auto text-end">
-                    <ScrollLink to="Home" smooth={true} duration={500}>
-                      <button className="back-to-top">
-                        <img className="h-14" src="/src/icons/backtotop.svg" alt="" />
-                      </button>
-                    </ScrollLink>
-                  </div>
+                  {isVisible && (
+                    <div className="mx-auto text-end">
+                      <ScrollLink to="Home" smooth={true} duration={500}>
+                        <button className="back-to-top">
+                          <img className="h-14" src="/src/icons/backtotop.svg" alt="" />
+                        </button>
+                      </ScrollLink>
+                    </div>
+                  )}
               </main>
           </div>
 
