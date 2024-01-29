@@ -22,13 +22,14 @@
     z-index: 999;
     /* Ensure it's above other content */
     padding: 10px 20px;
-    background-color: #333;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    opacity: 0.9;
+    transition: bottom 0.3s ease;
 }
 
 .back-to-top:hover {
-    background-color: #555;
+    opacity: 1;
+    bottom: 25px;
 }

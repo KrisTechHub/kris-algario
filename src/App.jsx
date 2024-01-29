@@ -16,11 +16,14 @@ import Footer from "./Components/Contact/Footer";
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 150) {
         setShowSidebar(true);
+        setIsVisible(true)
       } else {
         setShowSidebar(false);
       }
@@ -79,7 +82,7 @@ function App() {
                   <div className="mx-auto text-end">
                     <ScrollLink to="Home" smooth={true} duration={500}>
                       <button className="back-to-top">
-                        Back to Top
+                        <img className="h-14" src="/src/icons/backtotop.svg" alt="" />
                       </button>
                     </ScrollLink>
                   </div>
