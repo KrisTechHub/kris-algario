@@ -21,7 +21,7 @@ export default function SideBar() {
             </div>
             
             <Typography variant="h5" className="font-mono flex items-center text-mypink-800 justify-center p-4">
-                <img src="./src/assets/K.svg" alt="brand" className="h-8 w-8" />
+                <img src="./src/assets/Kpink.svg" alt="brand" className="h-8 w-8" />
                 ristine Algario
             </Typography>
 
@@ -35,7 +35,7 @@ export default function SideBar() {
                             <ListItemPrefix>
                                 <PhoneArrowDownLeftIcon className="h-5 w-5" />
                             </ListItemPrefix>
-                            <Typography className="mr-auto font-normal">
+                            <Typography className="mr-auto font-bold">
                                 Contact 
                             </Typography>
                         </AccordionHeader>
@@ -67,7 +67,7 @@ export default function SideBar() {
             
                 <hr className="my-2 border-blue-gray-50" />
                 <div>
-                    <MenuItems />
+                    <MenuItems className="text-mypink-800 font-bold"/>
                 </div>
                 
             </List>

@@ -66,7 +66,7 @@ export default function NavMenu() {
                     
                     <div className="flex items-center">
                         <div className="hidden lg:block flex text-mypink-800">
-                        <MenuItems className="" navListItems={navItems} isVertical={false} showIcon={false}/>
+                            <MenuItems className="uppercase font-bold" navListItems={navItems} isVertical={false} showIcon={false}/>
                         </div>
 
                         <div className="flex text-inline items-center">
@@ -82,7 +82,7 @@ export default function NavMenu() {
                 </div> 
 
                 <Collapse open={isNavOpen} className="overflow-scroll bg-white">
-                    <MenuItems navListItems={navItems} isVertical={true} />
+                    <MenuItems className="text-mypink-800" navListItems={navItems} isVertical={true} />
                 </Collapse>
 
         </Navbar>

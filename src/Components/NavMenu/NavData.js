@@ -8,27 +8,27 @@ import {
 
 export const navItems = [
     {
-        label: "HOME",
+        label: "Home",
         icon: HomeIcon,
         link: "Home",
     },
     {
-        label: "ABOUT",
+        label: "About",
         icon: UserCircleIcon,
         link: "About",
     },
     {
-        label: "SERVICES",
+        label: "Services",
         icon: ComputerDesktopIcon,
         link: "Services",
     },
     {
-        label: "SKILLS",
+        label: "Skills",
         icon: Cog8ToothIcon,
         link: "Skills",
     },
     {
-        label: "PORTFOLIO",
+        label: "Portfolio",
         icon: Squares2X2Icon,
         link: "Portfolio",
     },

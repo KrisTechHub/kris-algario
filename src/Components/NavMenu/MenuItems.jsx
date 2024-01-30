@@ -7,11 +7,11 @@ import './NavMenu.css'
 
 function NavList({ className, navListItems, isVertical = false, showIcon = true }) {
     const containerClasses = isVertical
-        ? "mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-col lg:items-start"
-        : "mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center";
+        ? "lg:flex-col lg:items-start"
+        : "lg:flex-row lg:items-center";
         
     return (
-        <nav className={`${containerClasses}`}>
+        <nav className={`${containerClasses} flex gap-2 lg:mb-0 lg:mt-0 `}>
                 {navListItems.map(({ label, icon, link }) => (
                     <ScrollLink 
                     key={label} 
@@ -42,7 +42,7 @@ NavList.propTypes = {
 export default function MenuItems({ className, isVertical = true, showIcon = true }) {
     return (
             <div>
-            <NavList className="text-blue" navListItems={navItems} isVertical={isVertical} showIcon={showIcon} />
+                <NavList className={className} navListItems={navItems} isVertical={isVertical} showIcon={showIcon} />
             </div>
     );
 }
