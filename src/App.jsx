@@ -67,9 +67,14 @@ function App() {
                         <Skills id="Skills" />
                       </ScrollLink>
                   </div>
-                  <ScrollLink to="Portfolio" smooth={true} duration={500}>
-                    <Portfolio id="Portfolio" />
-                  </ScrollLink>
+
+                  <div className="bg-gradient-to-t from-blue-gray-50 to-blue-gray-100">
+                      <ScrollLink to="Portfolio" smooth={true} duration={500}>
+                        <Portfolio id="Portfolio" />
+                      </ScrollLink>
+
+                  </div>
+
                   <ScrollLink to="Contact" smooth={true} duration={500}>
                     <Contact id="Contact" />
                   </ScrollLink>   
