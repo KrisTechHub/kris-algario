@@ -20,7 +20,10 @@ export default function AboutInfo() {
 
             <div className="flex-row items-center">
                 <p className="font-RalewayMedium pb-2 text-gray-800">
-                    As a self-taught front-end developer, I have gained proficiency in React development with growing experience. My skill set includes JavaScript, CSS Frameworks, and MERN Stack. Creating visually appealing, user-friendly, and responsive web pages and applications is where my passion lies. My motivation and enthusiasm are driven by this passion, and my commitment to continuous learning keeps me humble and open to new knowledge. 
+                    Fully committed to the philosophy of life-long learning, I&#39;m a full stack developer with a deep passion for JavaScript, 
+                    React and all things in web development. As a self-taught front-end developer, I have gained proficiency in React development 
+                    with growing experience. My skill set includes JavaScript, CSS Frameworks, and MERN Stack. Creating visually appealing, user-friendly, 
+                    and responsive web pages and applications is where my passion lies. My motivation and enthusiasm are driven by this passion, and my commitment to continuous learning keeps me humble and open to new knowledge.
                 </p>
             </div>
 
