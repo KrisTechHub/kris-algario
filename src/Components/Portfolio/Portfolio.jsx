@@ -15,8 +15,15 @@ export default function Portfolio({id}) {
                     </p>
 
                     <div className='bg-darkpink-900 my-5 rounded-lg'>
-                        <div className='h-36'>
-
+                        <div className='h-auto flex'>
+                            <div className='w-1/2'>
+                                <img className='pe-24 w-full rounded-lg' src="./src/assets/projects/yelpcamp.png" alt="" />
+                            </div>
+                            <div className='bg-blue-gray-100 w-1/2 m-8 rounded-lg'>
+                                <h1>YelpCamp</h1>
+                                <p>A project created from the Web Development Bootcamp.</p>
+                                <p>Tech stack: </p> <span> Express JS </span>
+                            </div>
                         </div>
                     </div>
 
