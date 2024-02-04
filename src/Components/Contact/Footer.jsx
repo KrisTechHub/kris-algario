@@ -9,7 +9,7 @@ export default function Footer({ id }) {
             <div className="flex-row mx-auto ">
 
                 <div className="flex md:flex-row xl:px-[50px] font-RalewayLight">
-                    <div className="order-2 flex-col text-center sm:order-1 flex items-center justify-center w-full w-9/12">
+                    <div className="order-2 flex-col text-center sm:order-1 flex items-center justify-center w-full w-4/6">
                         <div className='w-full flex justify-center'>
                             <MenuItems className="px-6 text-sm hover:bg-transparent hover:text-white" isVertical={false} showIcon={false} />
                         </div>
@@ -31,7 +31,7 @@ export default function Footer({ id }) {
                         </div>
                     </div>
 
-                    <div className="order-3 sm:order-3 flex justify-center w-full flex-col w-3/12">
+                    <div className="order-3 sm:order-3 flex justify-center w-full flex-col w-1/6">
                         <h1 className='font-bold pb-2'>Contact Details:</h1>
                         <div className='flex flex-row items-right '>
                             <div className='flex items-center justify-center pe-1'>
@@ -47,7 +47,7 @@ export default function Footer({ id }) {
                         </div>
                     </div>
 
-                    <div className="order-3 sm:order-3 flex items-start justify-center px-18 w-full flex-col w-2/12">
+                    <div className="order-3 sm:order-3 flex items-start justify-center w-full flex-col w-1/6">
                         <img className='h-24' src="./src/assets/Kwhite.svg" alt="" />
                         <h1 className='border-b mt-2 text-2xl font-JosefinSemibold'>Kristine Algario</h1>
                     </div>
