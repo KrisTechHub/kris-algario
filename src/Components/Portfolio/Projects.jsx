@@ -1,4 +1,6 @@
 import { Card, CardHeader, CardBody, CardFooter, Typography, Button } from "@material-tailwind/react"
+import '/styles/App.css'
+
 
 const projItems = [
     {
@@ -43,7 +45,7 @@ export default function Projects() {
 
                     return (
                         <Card className={`flex flex-row ${isEven ? 'flex-row' : 'flex-row-reverse'} text-darkpink-800 m-10 shadow-xl`} key={title}>
-                            <CardHeader className="p-0 m-4 w-7/12 h-6/8 overflow-hidden">
+                            <CardHeader className="text-center justify-center m-4 w-7/12 h-full overflow-hidden">
                                 <img className="shadow-xl object-cover object-center hover:scale-110 transition-transform duration-500 transform-gpu" src={img} alt={title} />
                             </CardHeader>
                             
