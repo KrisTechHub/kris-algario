@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'; // Import PropTypes
+import Projects from './Projects';
 
 
 
@@ -9,35 +10,13 @@ export default function Portfolio({id}) {
                 <div className="flex-row xl:px-[50px] text-center">
                     <h1 className="md:pt-10 justify-center font-JosefinBold text-[30px] lg:text-[45px] text-mypink-800">P<span className="text-[22px] lg:text-[30px]">ORTFOLIO</span></h1>
 
-                    <p className="pt-4 md:indent-32 flex text-center font-RalewayMedium px-10 text-gray-800"> This section serves as a showcase for various projects I&#39;ve developed during 
+                    <p className="py-4 md:indent-32 flex text-center font-RalewayMedium px-10 text-gray-800"> This section serves as a showcase for various projects I&#39;ve developed during 
                     my journey in web development. I love spending time coding and encountering new opportunities and highly adaptable to new challenges and projects. From personal websites 
                     to full-stack applications, each project demonstrates my skills, creativity, and problem-solving abilities. Explore the projects below to learn more about my work.
                     </p>
 
-                    <div className='bg-darkpink-900 my-5 rounded-lg'>
-                        <div className='h-auto flex'>
-                            <div className='w-1/2'>
-                                <img className='pe-24 w-full rounded-lg' src="./src/assets/projects/yelpcamp.png" alt="" />
-                            </div>
-                            <div className='bg-blue-gray-100 w-1/2 m-8 rounded-lg'>
-                                <h1>YelpCamp</h1>
-                                <p>A project created from the Web Development Bootcamp.</p>
-                                <p>Tech stack: </p> <span> Express JS </span>
-                            </div>
-                        </div>
-                    </div>
+                    <Projects />
 
-                    <div className='bg-mypurple-900 my-5 rounded-lg'>
-                        <div className='h-36'>
-
-                        </div>
-                    </div>
-
-                    <div className='bg-mypink-900 my-5 rounded-lg'>
-                        <div className='h-36'>
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
