@@ -5,15 +5,9 @@ import copy from 'rollup-plugin-copy';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      plugins: [
-        copy({
-          targets: [
-            { src: './src/assets/AlgarioCV.pdf', dest: 'dist/assets' }
-          ]
-        })
-      ]
-    }
+  server: {
+    host: true,
+    strictPort: true,
+    port: 8000,
   }
 });
