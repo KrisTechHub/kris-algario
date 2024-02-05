@@ -57,7 +57,7 @@ export default function NavMenu() {
     return (
         <Navbar color="transparent" className={scrolled ? `z-50 bg-blue-gray-50 mx-auto 2xl:px-[90px] tracking-wider max-w-full fixed ease-in-out duration-300 ${topNavClass}` : `z-50 mx-auto 2xl:px-[90px] tracking-wider max-w-full fixed ease-in-out duration-300 ${topNavClass}`}>
             {/* `mx-auto 2xl:px-[90px] tracking-wider max-w-full fixed ease-in-out duration-300 ${topNavClass}` */}
-            <div className="relative flex items-center justify-between text-mypink-800">
+                <div className="relative flex items-center justify-between text-mypink-800">
 
                     <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans flex items-start cursor-pointer py-1.5 font-medium flex items-center">
                         <img src="./src/assets/Kpink.svg" className="h-15 w-15 xs:h-12 xs:w-12 pr-2" /> 
@@ -81,8 +81,8 @@ export default function NavMenu() {
 
                 </div> 
 
-                <Collapse open={isNavOpen} className="overflow-scroll bg-white">
-                    <MenuItems className="text-mypink-800" navListItems={navItems} isVertical={true} />
+                <Collapse open={isNavOpen} className="overflow-scroll bg-white ">
+                    <MenuItems className="text-mypink-800" isVertical={true} />
                 </Collapse>
 
         </Navbar>

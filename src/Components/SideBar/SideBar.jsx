@@ -67,7 +67,7 @@ export default function SideBar() {
             
                 <hr className="my-2 border-blue-gray-50" />
                 <div>
-                    <MenuItems className="text-mypink-800 font-bold"/>
+                    <MenuItems className="text-mypink-800 font-bold" />
                 </div>
                 
             </List>

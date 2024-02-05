@@ -44,9 +44,11 @@ function App() {
           <div className="flex">
             {showSidebar && <SidebarDrawer />}
               <main className="flex-1 overflow-y-auto">
-                  <ScrollLink to="Home" smooth={true} duration={500}>
-                    <Home id="Home" />
-                  </ScrollLink>
+                  <div className="bg-gradient-to-b from-blue-gray-100 to-blue-gray-50">
+                      <ScrollLink to="Home" smooth={true} duration={500}>
+                        <Home id="Home" />
+                      </ScrollLink>
+                  </div>
 
                   <div className="bg-gradient-to-t from-blue-gray-100 to-blue-gray-50">
                       <ScrollLink to="About" smooth={true} duration={500}>

@@ -7,8 +7,8 @@ import './NavMenu.css'
 
 function NavList({ className, navListItems, isVertical = false, showIcon = true }) {
     const containerClasses = isVertical
-        ? "lg:flex-col lg:items-start"
-        : "lg:flex-row lg:items-center";
+        ? "flex-col items-start"
+        : "flex-row items-center";
         
     return (
         <nav className={`${containerClasses} flex gap-2 lg:mb-0 lg:mt-0 `}>
