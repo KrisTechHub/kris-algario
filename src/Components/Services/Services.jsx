@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll';
 export default function Services({id}) {
     return (
         <div id={id} >
-            <img className="w-44 md:w-56 lg:w-auto rotate-180 absolute ml-[-65px] mt-14 md:mt-28" src="./src/icons/Design 1.svg" alt="bg design" />
+            <img className="h-48 lg:h-72 xl:h-80 rotate-180 absolute mt-14 md:mt-28" src="./src/icons/design1.png" alt="bg design" />
             
             <div className="container mx-auto py-28">
                 <div className="flex">
@@ -85,7 +85,7 @@ export default function Services({id}) {
                 </div>
             </div>
 
-            <img className="w-44 md:w-56 lg:w-auto float-right mr-[-64px] mt-[-200px]" src="./src/icons/Design 1.svg" alt="bg design" />
+            <img className="h-48 lg:h-72 xl:h-80 float-right  mt-[-200px]" src="./src/icons/design1.png" alt="bg design" />
         </div>
     );
 }

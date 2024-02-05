@@ -29,7 +29,7 @@ export default function ContactForm() {
 
     return (
         <div>
-            <div className="flex-row items-center mb-8">
+            <div className="flex-row items-center md:text-left mb-8">
                 <h1 className="font-VollkornSCSemi text-4xl pb-1 text-mypurple-900">Get in Touch</h1>
                 <h3 className="font-VollkornSCReg text-2xl">Tell me about your project</h3>
                 <p className="font-RalewayMedium pb-1 text-gray-700 text-lg">
@@ -37,7 +37,7 @@ export default function ContactForm() {
                 </p>
             </div>
 
-            <form className="flex flex-col w-5/6 gap-5" onSubmit={handleSubmit}>
+            <form className="flex flex-col w-5/6 gap-5 mx-auto md:mx-0" onSubmit={handleSubmit}>
                 <Input id='name' required color="purple" label="Name" className="caret-purple-600 " />
                 <Input id='email' required color="purple" label="Your Email" />
                 <Input id='subject' required color="purple" label="Subject" />

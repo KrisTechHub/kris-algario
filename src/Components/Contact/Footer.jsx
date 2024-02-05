@@ -9,9 +9,9 @@ export default function Footer({ id }) {
         <div className="py-8 bg-darkpink-800 text-blue-gray-100 " id={id}>
             <div className="flex-row mx-auto ">
 
-                <div className="flex md:flex-row font-RalewayLight">
+                <div className="flex flex-col lg:flex-row font-RalewayLight">
 
-                    <div className="flex-col text-center flex items-center justify-center w-[68%]">
+                    <div className="flex flex-col text-center items-center justify-center lg:w-[68%] order-2 lg:order-1">
                         <div className='w-full flex justify-center'>
                             <MenuItems className="px-6 text-sm hover:bg-transparent hover:text-white" isVertical={false} showIcon={false} />
                         </div>
@@ -31,26 +31,28 @@ export default function Footer({ id }) {
                     </div>
 
 
-                    <div className=" flex justify-center flex-col w-[16%]">
-                        <h1 className='font-bold pb-2'>Contact Details:</h1>
-                        <div className='flex flex-row items-right '>
-                            <div className='flex items-center justify-center pe-1'>
-                                <EnvelopeIcon className="h-4 w-5 text-gray-400" />
+                    <div className='flex flex-row justify-center lg:w-[32%] order-1 lg:order-2'>
+                        <div className="flex flex-col justify-center text-center items-center w-1/2 pb-4">
+                            <h1 className='font-bold pb-2'>Contact Details:</h1>
+                            <div className='flex flex-row items-right '>
+                                <div className='flex items-center justify-center pe-1'>
+                                    <EnvelopeIcon className="h-4 w-5 text-gray-400" />
+                                </div>
+                                <p>kmj.algario@gmail.com</p>
                             </div>
-                            <p>kmj.algario@gmail.com</p>
-                        </div>
-                        <div className='flex flex-row items-right pb-1'>
-                            <div className='flex items-center justify-center pe-1'>
-                                <PhoneArrowDownLeftIcon className="h-4 w-5 text-gray-400" />
+                            <div className='flex flex-row items-right pb-1'>
+                                <div className='flex items-center justify-center pe-1'>
+                                    <PhoneArrowDownLeftIcon className="h-4 w-5 text-gray-400" />
+                                </div>
+                                <p>+63 956 305 1174</p>
                             </div>
-                            <p>+63 956 305 1174</p>
                         </div>
-                    </div>
-                    
 
-                    <div className="flex items-start flex-col w-[16%]">
-                        <img className='h-24' src="./src/assets/Kwhite.svg" alt="" />
-                        <h1 className='border-b mt-2 text-2xl font-JosefinSemibold'>Kristine Algario</h1>
+
+                        <div className="lg:flex flex-col items-center hidden lg:items-start text-center justify-center w-1/2">
+                            <img className='lg:h-16 xl2:h-24' src="./src/assets/Kwhite.svg" alt="" />
+                            <h1 className='border-b mt-2 font-JosefinSemibold'>Kristine Algario</h1>
+                        </div>
                     </div>
 
                 </div>
