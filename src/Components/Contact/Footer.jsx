@@ -3,13 +3,14 @@ import PropTypes from 'prop-types'; // Import PropTypes
 import MenuItems from '../NavMenu/MenuItems';
 import { PhoneArrowDownLeftIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
+
 export default function Footer({ id }) {
     return (
         <div className="py-8 bg-darkpink-800 text-blue-gray-100 " id={id}>
             <div className="flex-row mx-auto ">
 
                 <div className="flex md:flex-row font-RalewayLight">
-                    <div className="order-2 flex-col text-center sm:order-1 flex items-center justify-center w-full w-4/6">
+                    <div className="order-2 flex-col text-center sm:order-1 flex items-center justify-center w-full w-[68%]">
                         <div className='w-full flex justify-center'>
                             <MenuItems className="px-6 text-sm hover:bg-transparent hover:text-white" isVertical={false} showIcon={false} />
                         </div>
@@ -26,12 +27,13 @@ export default function Footer({ id }) {
 
                         <div className=" border-blue-gray-300 mx-8 my-4 lg:mx-12 w-6/12 border-b "></div>
 
+
                         <div className='text-center text-blue-gray-100 text-xs'>
                             <p>&copy; 2024 Kristine Marie Joy Algario. All rights reserved.</p>
                         </div>
                     </div>
 
-                    <div className="order-3 sm:order-3 flex justify-center w-full flex-col w-1/6">
+                    <div className="order-3 sm:order-3 flex justify-center w-full flex-col w-[16%]">
                         <h1 className='font-bold pb-2'>Contact Details:</h1>
                         <div className='flex flex-row items-right '>
                             <div className='flex items-center justify-center pe-1'>
@@ -47,7 +49,7 @@ export default function Footer({ id }) {
                         </div>
                     </div>
 
-                    <div className="order-3 sm:order-3 flex items-start justify-center w-full flex-col w-1/6">
+                    <div className="order-3 sm:order-3 flex items-start justify-center w-full flex-col w-[16%]">
                         <img className='h-24' src="./src/assets/Kwhite.svg" alt="" />
                         <h1 className='border-b mt-2 text-2xl font-JosefinSemibold'>Kristine Algario</h1>
                     </div>
