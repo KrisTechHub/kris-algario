@@ -27,17 +27,17 @@ export default function Skills({id}) {
                         </div>
 
                         <div className='shadow-xl bg-blue-gray-100 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>
-                            <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/JS.svg" alt="" />
+                            <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/js.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-mypink-800'>JS</h6>
                         </div>
 
                         <div className='shadow-xl bg-blue-gray-100 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>
-                            <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/SASS.svg" alt="" />
+                            <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/sass.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-mypink-800'>SASS</h6>
                         </div>
 
                         <div className='shadow-xl bg-blue-gray-100 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>
-                            <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/GIT.svg" alt="" />
+                            <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/git.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-mypink-800'>Git/Github</h6>
                         </div>
                     </div>
@@ -95,7 +95,7 @@ export default function Skills({id}) {
                         </div>
 
                         <div className='shadow-xl bg-blue-gray-100 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>
-                            <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/Node.svg" alt="" />
+                            <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/node.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-mypink-800'>NodeJS</h6>
                         </div>
                     </div>
