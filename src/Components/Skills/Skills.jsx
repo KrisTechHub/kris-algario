@@ -5,11 +5,12 @@ export default function Skills({id}) {
     return (
         <div className='container mx-auto py-28' id={id}>
             <div className='text-center'>
-                <div className='shadow-xl flex bg-gray-50 rounded-xl mx-[550px] items-center justify-center'>
-                    <div className='w-1/8 m-4 bg-mypink-900 rounded-xl h-6 w-7'></div>
+                <div className='shadow-xl flex bg-gray-50 rounded-xl mx-auto xs:w-1/2 md:w-1/3 items-center justify-center'>
+                    <div className='m-4 bg-mypink-900 rounded-xl h-6 w-7'></div>
                     <h3 className="w-10/12 font-JosefinBold text-xl tracking-wider text-mypink-800">SKILLS</h3>
-                    <div className='w-1/8 m-4 bg-mypink-900 rounded-xl h-6 w-7'></div>
+                    <div className='m-4 bg-mypink-900 rounded-xl h-6 w-7'></div>
                 </div>
+                
                 <h1 className="my-6 font-JosefinBold text-[30px] lg:text-[45px] text-mypink-800">W<span className="text-[22px] lg:text-[30px]">hat I do</span></h1>
             </div>
 
@@ -40,11 +41,10 @@ export default function Skills({id}) {
                             <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/git.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-mypink-800'>Git/Github</h6>
                         </div>
-                    </div>
 
 
 
-                    <div className='flex flex-wrap  gap-10 lg:px-32 text-center justify-center my-8'>
+
                         <div className='shadow-xl bg-blue-gray-100 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>
                             <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/bootstrap5.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-mypink-800'>Bootstrap5</h6>
@@ -69,11 +69,11 @@ export default function Skills({id}) {
                             <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/figma.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-mypink-800'>Figma</h6>
                         </div>
-                    </div>
 
 
 
-                    <div className='flex flex-wrap gap-10 lg:px-32 text-center justify-center my-8'>
+
+
                         <div className='shadow-xl bg-blue-gray-100 rounded-lg text-center hover:scale-105 transition-transform duration-300 transform-gpu'>
                             <img className='w-28 h-28  p-5 mb-[-10px]' src="./src/icons/react.svg" alt="" />
                             <h6 className='pb-4 font-JosefinSemibold text-mypink-800'>react</h6>
