@@ -30,9 +30,9 @@ export default function ContactForm() {
     return (
         <div>
             <div className="flex-row items-center md:text-left mb-8">
-                <h1 className="font-VollkornSCSemi text-4xl pb-1 text-mypurple-900">Get in Touch</h1>
-                <h3 className="font-VollkornSCReg text-2xl">Tell me about your project</h3>
-                <p className="font-RalewayMedium pb-1 text-gray-700 text-lg">
+                <h1 className="font-VollkornSCSemi text-2xl sm:text-4xl pb-1 text-mypurple-900">Get in Touch</h1>
+                <h3 className="font-VollkornSCReg text-lg sm:text-2xl">Tell me about your project</h3>
+                <p className="font-RalewayMedium pb-1 text-gray-700 text-xs sm:text-lg">
                     Let&apos;s create something together
                 </p>
             </div>

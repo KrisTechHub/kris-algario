@@ -13,9 +13,9 @@ export default function Footer({ id }) {
 
                     <div className="flex flex-col text-center items-center justify-center lg:w-[68%] order-2 lg:order-1">
                         <div className='w-full flex justify-center'>
-                            <MenuItems className="px-6 text-sm hover:bg-transparent hover:text-white" isVertical={false} showIcon={false} />
+                            <MenuItems className="px-2 sm:px-6 text-sm hover:bg-transparent hover:text-white" isVertical={false} showIcon={false} />
                         </div>
-                            <div className="inline-flex items-center gap-8 p-5">
+                            <div className="inline-flex items-center gap-3 sm:gap-8 p-3 sm:p-5">
                             <a href="https://github.com/KrisTechHub" onClick="window.open(`https://github.com/KrisTechHub`)" rel="noopener noreferrer" target="_blank"><img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/github.svg" /></a>
                             <a href="https://www.linkedin.com/in/kmjalgario" onClick="window.open(`hhttps://www.linkedin.com/in/kmjalgario`)" rel="noopener noreferrer" target="_blank"><img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/linkedin.svg" /></a>
                             <a href="https://www.upwork.com/freelancers/~014703744c9fc2e64f" onClick="window.open(`https://www.upwork.com/freelancers/~014703744c9fc2e64f`)" rel="noopener noreferrer" target="_blank"><img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/upwork.svg" /></a>
@@ -32,7 +32,7 @@ export default function Footer({ id }) {
 
 
                     <div className='flex flex-row justify-center lg:w-[32%] order-1 lg:order-2'>
-                        <div className="flex flex-col justify-center text-center items-center w-1/2 pb-4">
+                        <div className="flex flex-col justify-center text-center items-center w-1/2 pb-4 lg:p">
                             <h1 className='font-bold pb-2'>Contact Details:</h1>
                             <div className='flex flex-row items-right '>
                                 <div className='flex items-center justify-center pe-1'>
@@ -49,7 +49,7 @@ export default function Footer({ id }) {
                         </div>
 
 
-                        <div className="lg:flex flex-col items-center hidden lg:items-start text-center justify-center w-1/2">
+                        <div className="lg:flex flex-col items-center hidden text-center justify-center w-1/2">
                             <img className='lg:h-16 xl2:h-24' src="./src/assets/Kwhite.svg" alt="" />
                             <h1 className='border-b mt-2 font-JosefinSemibold'>Kristine Algario</h1>
                         </div>

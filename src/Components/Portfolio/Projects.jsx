@@ -34,6 +34,14 @@ const projItems = [
         desc: "A sample quiz app using just HTML, CSS, and Javascript.",
         link: "https://kristechhub.github.io/Quiz-App-JS/",
         source: "https://github.com/KrisTechHub/Quiz-App-JS",
+    },
+    {
+        img: "./src/assets/projects/portfolio.png",
+        title: "My Portfolio",
+        techstack: "React Vite, Material Tailwind, Tailwind CSS, ",
+        desc: "An online resume showcasing my skills, projects, services, contact details, and my pd resume.",
+        link: "https://krisalgario.onrender.com/",
+        source: "https://github.com/KrisTechHub/kris-algario",
     }
 ]
 
@@ -44,26 +52,26 @@ export default function Projects() {
                     const isEven = index % 2 === 0;
 
                     return (
-                        <Card className={`flex flex-row ${isEven ? 'flex-row' : 'flex-row-reverse'} text-darkpink-800 m-10 shadow-xl`} key={title}>
-                            <CardHeader className="text-center justify-center m-4 w-7/12 h-full overflow-hidden">
-                                <img className="shadow-xl object-cover object-center hover:scale-110 transition-transform duration-500 transform-gpu" src={img} alt={title} />
+                        <Card className={`flex ${isEven ? 'flex-col lg:flex-row' : 'flex-col lg:flex-row-reverse'} text-darkpink-800 m-5 md:m-10 shadow-xl`} key={title}>
+                            <CardHeader className="text-center justify-center m-4 lg:w-7/12 h-full overflow-hidden">
+                                <img className="object-cover h-64 lg:h-full w-full shadow-xl object-cover object-center hover:scale-110 transition-transform duration-500 transform-gpu" src={img} alt={title} />
                             </CardHeader>
                             
-                            <div className="text-left w-5/12 bg-gray-100 m-5 rounded-lg p-5 ps-0">
-                                <CardBody>
-                                    <Typography variant="h5" className=" py-1">
+                            <div className="text-left lg:w-5/12 rounded-lg p-0 my-auto align-center">
+                                <CardBody className="pb-1">
+                                    <Typography variant="h5">
                                         {title}
                                     </Typography>
                                     <Typography variant="p" className="mb-2 text-[14px]">
                                         <span className="font-bold">Tech stack:</span> {techstack}
                                     </Typography>
-                                    <Typography className="">
+                                    <Typography>
                                         {desc}
                                     </Typography>
                                 </CardBody>
-                                <CardFooter className="opacity-90 text-base">
+                                <CardFooter className="text-base p-3 pt-0">
                                     <a href={link} onClick={() => window.open(link)} rel="noopener noreferrer" target="_blank">
-                                        <Button className="shadow-xl bg-gray-900 mx-2 hover:scale-105 transition-transform duration-500 transform-gpu">
+                                        <Button className="shadow-xl bg-gray-900 m-2 hover:scale-105 transition-transform duration-500 transform-gpu">
                                             View Project
                                         </Button>
                                     </a>
