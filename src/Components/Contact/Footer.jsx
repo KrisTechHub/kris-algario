@@ -8,7 +8,7 @@ export default function Footer({ id }) {
         <div className="py-8 bg-darkpink-800 text-blue-gray-100 " id={id}>
             <div className="flex-row mx-auto ">
 
-                <div className="flex md:flex-row xl:px-[50px] font-RalewayLight">
+                <div className="flex md:flex-row font-RalewayLight">
                     <div className="order-2 flex-col text-center sm:order-1 flex items-center justify-center w-full w-4/6">
                         <div className='w-full flex justify-center'>
                             <MenuItems className="px-6 text-sm hover:bg-transparent hover:text-white" isVertical={false} showIcon={false} />
