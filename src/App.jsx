@@ -90,7 +90,7 @@ function App() {
                     <div className="mx-auto text-end">
                       <ScrollLink to="Home" smooth={true} duration={500}>
                         <button className="back-to-top">
-                          <img className="h-14" src="/src/icons/backtotop.svg" alt="" />
+                          <img className="h-8 sm:h-12 md:h-14" src="/src/icons/backtotop.svg" alt="" />
                         </button>
                       </ScrollLink>
                     </div>
