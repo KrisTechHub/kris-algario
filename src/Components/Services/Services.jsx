@@ -39,8 +39,8 @@ export default function Services({id}) {
                             {service.map(( {icon, title, desc} ) => {
                                 return (
                                     <Card key={title} className="shadow-xl mt-6 mx-2 sm:w-48 md:w-60 lg:w-80 xl:w-[350px] 2xl:w-96 py-7 flex items-center text-center bg-mypink-900 border-2 border-blue-gray-900 text-blue-gray-100 hover:scale-105 transition-transform duration-300 transform-gpu">
-                                        <img className="h-12 md:h-16 lg:h-20 text-blue-gray-900" src={icon} alt="webdev icon" />
-                                        <CardBody className="p-2">
+                                        <img className="h-12 md:h-16 lg:h-18 text-blue-gray-900" src={icon} alt="webdev icon" />
+                                        <CardBody className="p-2 md:p-4">
                                             <Typography className="text-base lg:text-lg xl:text-xl mb-2 font-JosefinBold">
                                                 {title}
                                             </Typography>

@@ -11,11 +11,11 @@ export default function AboutInfo() {
         
         <div>
             <div className="flex-row items-center">
-                <h3 className="font-JosefinBold pb-2">ABOUT ME</h3>
+                <h3 className="font-JosefinBold pb-2 text-xs sm:text-base xl:text-xl">ABOUT ME</h3>
             </div>
 
             <div className="flex-row items-center">
-                <h1 className="font-JosefinBold text-4xl pb-2 text-mypurple-900">Why hire me for your project?</h1>
+                <h1 className="font-JosefinBold text-xl sm:text-2xl lg:text-3xl xl:text-4xl pb-2 text-mypurple-900">Why hire me for your project?</h1>
             </div>
 
             <div className="flex-row items-center">
@@ -29,34 +29,34 @@ export default function AboutInfo() {
 
             <div className="flex-row">
                 <div className="flex flex-wrap gap-3 pt-2 pb-2">
-                        <div className="rounded-full bg-mypurple-900">
+                        <div className="rounded-full bg-mypurple-900 w-10 h-10 lg:w-12 lg:h-12">
                             <img className="w-1/7 p-2" src="./src/icons/html5.svg" alt="html5" />  
                         </div>
-                        <div className="rounded-full bg-mypurple-900">
-                            <img className="w-1/7 p-2" src="./src/icons/css3.svg" alt="css3" /> 
+                        <div className="rounded-full bg-mypurple-900 w-10 h-10 lg:w-12 lg:h-12">
+                            <img className="p-2" src="./src/icons/css3.svg" alt="css3" /> 
                         </div>
-                        <div className="rounded-full bg-mypurple-900">
-                            <img className="w-1/7 p-2" src="./src/icons/js.svg" alt="js" />
+                        <div className="rounded-full bg-mypurple-900 w-10 h-10 lg:w-12 lg:h-12">
+                            <img className=" p-2" src="./src/icons/js.svg" alt="js" />
                         </div>
-                        <div className="rounded-full bg-mypurple-900">
-                            <img className="w-1/7 p-2" src="./src/icons/bootstrap5.svg" alt="bootstrap5" />
+                        <div className="rounded-full bg-mypurple-900 w-10 h-10 lg:w-12 lg:h-12">
+                            <img className="p-2" src="./src/icons/bootstrap5.svg" alt="bootstrap5" />
                         </div>
-                        <div className="rounded-full bg-mypurple-900">
-                            <img className="w-1/7 p-2" src="./src/icons/sass.svg" alt="sass" />
+                        <div className="rounded-full bg-mypurple-900 w-10 h-10 lg:w-12 lg:h-12">
+                            <img className="p-2" src="./src/icons/sass.svg" alt="sass" />
                         </div>
-                        <div className="rounded-full bg-mypurple-900">
-                            <img className="w-1/7 p-2" src="./src/icons/git.svg" alt="git" />
+                        <div className="rounded-full bg-mypurple-900 w-10 h-10 lg:w-12 lg:h-12">
+                            <img className="p-2" src="./src/icons/git.svg" alt="git" />
                         </div>
-                        <div className="rounded-full bg-mypurple-900">
-                            <img className="w-1/7 p-2" src="./src/icons/react.svg" alt="react" />  
+                        <div className="rounded-full bg-mypurple-900 w-10 h-10 lg:w-12 lg:h-12">
+                            <img className="p-2" src="./src/icons/react.svg" alt="react" />  
                         </div>
                 </div>
 
                 <div className='pt-1'>
                     <a href={CV} download='AlgarioCV.pdf' target="_blank" rel="noopener noreferrer">
-                        <button onClick={handleDownload} className="shadow-xl flex mt-8 font-RalewayMedium tracking-wider text-white text-sm rounded-lg p-2 bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200">
+                        <button onClick={handleDownload} className="shadow-xl flex mt-2 md:mt-4 lg:mt-8 font-RalewayMedium tracking-wider text-white text-xs lg:text-sm rounded-lg p-1 lg:p-2 bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200">
                             <h1 className='text-center justify-center ps-2 p-1'>VIEW CV</h1>
-                            <span><img className="h-6 w-6 mx-2" src="./src/icons/open-file.svg" alt="openfile" /></span>
+                            <span className='m-auto'><img className="h-4 lg:h-6 lg:px-1" src="./src/icons/open-file.svg" alt="openfile" /></span>
                         </button>
                     </a>
                 </div>
