@@ -56,21 +56,21 @@ export default function Intro() {
                         Welcome to my Portfolio
                     </span>
 
-                    <h1 className="pt-4 block text-[35px] lg:text-[50px] xl:text-[60px] tracking-wider font-JosefinBold xs:justify-content">{`Hi! I'm Kristine,`} <br />
+                    <h1 className="pt-4 block text-4xl lg:text-5xl xl:text-6xl tracking-wider font-JosefinBold xs:justify-content">{`Hi! I'm Kristine,`} <br />
                         <span className="txt-rotate" data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>
                             <span className="border-r border-white border-solid">{text}</span>
                         </span>
                     </h1>
 
-                    <div className="self-stretch text-gray-700 text-xl font-normal font-RalewayMedium">A fullstack Web Developer based in the Philippines.</div>
+                    <div className="self-stretch text-gray-700 lg:text-lg xl:text-xl font-normal font-RalewayMedium">A fullstack Web Developer based in the Philippines.</div>
 
-                    <div className="inline-flex my-3 py-2">
-                        <ScrollLink to="Contact" smooth={true} duration={500} className="shadow-lg text-[16px] rounded-md py-[6px] px-4 border border-mypink-600 border-[2px] hover:border-black font-RalewayMedium cursor-pointer">
+                    <div className="inline-flex my-1 lg:my-3 py-2">
+                        <ScrollLink to="Contact" smooth={true} duration={500} className="shadow-lg text-xs md:text-sm  xl:text-base rounded-md py-[6px] px-4 border border-mypink-600 border-[2px] hover:border-black font-RalewayMedium cursor-pointer">
                             CONTACT ME
                         </ScrollLink>
 
 
-                        <div className="inline-flex items-center gap-[20px] ps-5">
+                        <div className="inline-flex items-center gap-2 sm:gap-4 lg:gap-5 ps-5">
                             <a href="https://github.com/KrisTechHub" onClick="window.open(`https://github.com/KrisTechHub`)" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/github.svg"/></a>
                             <a href="https://www.linkedin.com/in/kmjalgario" onClick="window.open(`hhttps://www.linkedin.com/in/kmjalgario`)" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/linkedin.svg" /></a>
                             <a href="https://www.upwork.com/freelancers/~014703744c9fc2e64f" onClick="window.open(`https://www.upwork.com/freelancers/~014703744c9fc2e64f`)" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/upwork.svg" /></a>
