@@ -65,11 +65,11 @@ export default function Projects() {
                                     <Typography variant="p" className="mb-2 text-[14px]">
                                         <span className="font-bold">Tech stack:</span> {techstack}
                                     </Typography>
-                                    <Typography>
+                                    <Typography className="text-sm lg:text-base">
                                         {desc}
                                     </Typography>
                                 </CardBody>
-                                <CardFooter className="text-base p-3 pt-0">
+                                <CardFooter className="text-base p-3 pt-0 ">
                                     <a href={link} onClick={() => window.open(link)} rel="noopener noreferrer" target="_blank">
                                         <Button className="shadow-xl bg-gray-900 m-2 hover:scale-105 transition-transform duration-500 transform-gpu">
                                             View Project

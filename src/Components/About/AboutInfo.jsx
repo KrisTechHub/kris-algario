@@ -19,7 +19,7 @@ export default function AboutInfo() {
             </div>
 
             <div className="flex-row items-center">
-                <p className="font-RalewayMedium pb-2 text-gray-800">
+                <p className="font-RalewayMedium pb-2 text-gray-800 text-sm lg:text-base">
                     Fully committed to the philosophy of life-long learning, I&#39;m a full stack developer with a deep passion for JavaScript, 
                     React and all things in web development. As a self-taught front-end developer, I have gained proficiency in React development 
                     with growing experience. My skill set includes JavaScript, CSS Frameworks, and MERN Stack. Creating visually appealing, user-friendly, 

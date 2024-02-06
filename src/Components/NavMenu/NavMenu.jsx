@@ -81,7 +81,7 @@ export default function NavMenu() {
 
                 </div> 
 
-                <Collapse open={isNavOpen} className="overflow-scroll bg-white ">
+                <Collapse open={isNavOpen} className="overflow-scroll bg-blue-gray-50 ">
                     <MenuItems className="text-mypink-800" isVertical={true} />
                 </Collapse>
 

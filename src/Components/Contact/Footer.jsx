@@ -34,13 +34,13 @@ export default function Footer({ id }) {
                     <div className='flex flex-row justify-center lg:w-[32%] order-1 lg:order-2'>
                         <div className="flex flex-col justify-center text-center items-center w-1/2 pb-4 lg:p">
                             <h1 className='font-bold pb-2'>Contact Details:</h1>
-                            <div className='flex flex-row items-right '>
+                            <div className='flex flex-row items-right text-sm lg:text-base'>
                                 <div className='flex items-center justify-center pe-1'>
                                     <EnvelopeIcon className="h-4 w-5 text-gray-400" />
                                 </div>
                                 <p>kmj.algario@gmail.com</p>
                             </div>
-                            <div className='flex flex-row items-right pb-1'>
+                            <div className='flex flex-row items-right pb-1 text-sm lg:text-base'>
                                 <div className='flex items-center justify-center pe-1'>
                                     <PhoneArrowDownLeftIcon className="h-4 w-5 text-gray-400" />
                                 </div>
