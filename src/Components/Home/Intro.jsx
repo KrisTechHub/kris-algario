@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import TrackVisibility from 'react-on-screen';
 import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -71,11 +73,25 @@ export default function Intro() {
 
 
                         <div className="inline-flex items-center gap-2 sm:gap-4 lg:gap-5 ps-5">
-                            <a href="https://github.com/KrisTechHub" onClick="window.open(`https://github.com/KrisTechHub`)" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/github.svg"/></a>
-                            <a href="https://www.linkedin.com/in/kmjalgario" onClick="window.open(`hhttps://www.linkedin.com/in/kmjalgario`)" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/linkedin.svg" /></a>
-                            <a href="https://www.upwork.com/freelancers/~014703744c9fc2e64f" onClick="window.open(`https://www.upwork.com/freelancers/~014703744c9fc2e64f`)" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/upwork.svg" /></a>
-                            <ScrollLink to="Contact" smooth={true} duration={500}><img className="w-[20px] h-[20px]" src="./src/icons/gmail.svg" /></ScrollLink>
-                            <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend" onClick="window.open(`https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend`)" rel="noopener noreferrer" target="_blank"><img className="w-[20px] h-[20px]" src="./src/icons/indeed.svg" /></a>
+                            <a onClick={() => window.open("https://www.github.com/KrisTechHub")} rel="noopener noreferrer">
+                                <img className="w-[20px] h-[20px] cursor-pointer" src="./src/icons/github.svg"/>
+                            </a>
+
+                            <a onClick={() => window.open("https://www.linkedin.com/in/kmjalgario")} rel="noopener noreferrer" target="_blank">
+                                <img className="w-[20px] h-[20px] cursor-pointer" src="./src/icons/linkedin.svg" />
+                            </a>
+
+                            <a onClick={() => window.open("https://www.upwork.com/freelancers/~014703744c9fc2e64f")} rel="noopener noreferrer" target="_blank">
+                                <img className="w-[20px] h-[20px] cursor-pointer" src="./src/icons/upwork.svg" />
+                            </a>
+
+                            <ScrollLink to="Contact" smooth={true} duration={500}>
+                                <img className="w-[20px] h-[20px]" src="./src/icons/gmail.svg" />
+                            </ScrollLink>
+
+                            <a onClick={() => window.open("https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend")} rel="noopener noreferrer" target="_blank">
+                                <img className="w-[20px] h-[20px] cursor-pointer" src="./src/icons/indeed.svg" />
+                            </a>
                         </div>
                     </div>
 

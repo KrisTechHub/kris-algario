@@ -53,12 +53,10 @@ export default function AboutInfo() {
                 </div>
 
                 <div className='pt-1'>
-                    <a href={CV} download='AlgarioCV.pdf' target="_blank" rel="noopener noreferrer">
                         <button onClick={handleDownload} className="shadow-xl flex mt-2 md:mt-4 lg:mt-8 font-RalewayMedium tracking-wider text-white text-xs lg:text-sm rounded-lg p-1 lg:p-2 bg-gradient-to-r from-mypink-600 to-mypurple-400 hover:from-mypink-500 hover:to-mypurple-200">
                             <h1 className='text-center justify-center ps-2 p-1'>VIEW CV</h1>
                             <span className='m-auto'><img className="h-4 lg:h-6 lg:px-1" src="./src/icons/open-file.svg" alt="openfile" /></span>
                         </button>
-                    </a>
                 </div>
             </div>
 

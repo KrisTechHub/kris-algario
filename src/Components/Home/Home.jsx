@@ -1,6 +1,7 @@
 import Intro from "./Intro";
-import './Home.css'
+import './Home.css';
 import PropTypes from 'prop-types'; // Import PropTypes
+import Sampleform from "./Sampleform";
 
 
 export default function Home({id}) {

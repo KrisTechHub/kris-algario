@@ -62,7 +62,7 @@ export default function Projects() {
                                     <Typography variant="h5">
                                         {title}
                                     </Typography>
-                                    <Typography variant="p" className="mb-2 text-[14px]">
+                                    <Typography className="mb-2 text-[14px]">
                                         <span className="font-bold">Tech stack:</span> {techstack}
                                     </Typography>
                                     <Typography className="text-sm lg:text-base">

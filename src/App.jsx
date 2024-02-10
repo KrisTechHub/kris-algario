@@ -1,6 +1,6 @@
 
 import { BrowserRouter as Router } from "react-router-dom";
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink, Link } from 'react-scroll';
 import { useEffect, useState } from "react";
 import '/styles/App.css'
 import NavMenu from './Components/NavMenu/NavMenu'
@@ -12,11 +12,16 @@ import Services from './Components/Services/Services';
 import Portfolio from './Components/Portfolio/Portfolio'
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Contact/Footer";
+import '@fortawesome/fontawesome-free/css/all.css';
+import Loading from "./Components/Loading";
+import Sampleform from "./Components/Home/Sampleform";
+
 
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [isLoading, setIsLoading] = useState(true)
 
 
   useEffect(() => {
@@ -30,6 +35,12 @@ function App() {
       }
     };
 
+    // Simulate loading delay with setTimeout
+    setTimeout(() => {
+      setIsLoading(false);
+    }, ); // Change this time to simulate your actual loading time
+
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -37,67 +48,67 @@ function App() {
     };
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    // Handle form submission logic here
+    const name = e.target.body
+    console.log(`Form submitted from App.jsx`);
+    alert("form subitted from App.jsx")
+  }
+
   return (
       <Router>
-          <NavMenu />
+          { isLoading ? ( <Loading />) : (
+            
+        <div className="flex">
+              {showSidebar && <SidebarDrawer />}
+                <main className="flex-1 overflow-y-auto">
+                    <NavMenu />
 
-          <div className="flex">
-            {showSidebar && <SidebarDrawer />}
-              <main className="flex-1 overflow-y-auto">
-            <ScrollLink to="Home" smooth={true} duration={500}>
-              <Home id="Home" />
-            </ScrollLink>
-
-
-                  <div className="bg-gradient-to-t from-blue-gray-100 to-blue-gray-50">
-                      <ScrollLink to="About" smooth={true} duration={500}>
-                        <About id="About" />
-                      </ScrollLink>
-                  </div>
-                  
-
-                  <div className="bg-gradient-to-b from-blue-gray-100 to-blue-gray-50">
-                      <ScrollLink to="Services" smooth={true} duration={500}>
-                        <Services id="Services" />
-                      </ScrollLink>
-                  </div>
-
-
-                  <div className="bg-gradient-to-t from-blue-gray-100 to-blue-gray-50">
-                      <ScrollLink to="Skills" smooth={true} duration={500}>
-                        <Skills id="Skills" />
-                      </ScrollLink>
-                  </div>
-
-                  <div className="bg-gradient-to-t from-blue-gray-50 to-blue-gray-100">
-                      <ScrollLink to="Portfolio" smooth={true} duration={500}>
-                        <Portfolio id="Portfolio" />
-                      </ScrollLink>
-
-                  </div>
-
-                  <ScrollLink to="Contact" smooth={true} duration={500}>
-                    <Contact id="Contact" />
-                  </ScrollLink>   
-    
-                  <div className="bg-gradient-to-t from-blue-gray-100 to-blue-gray-50">
-                      <ScrollLink to="Footer" smooth={true} duration={500}>
-                        <Footer id="Footer" />
-                      </ScrollLink>  
-                  </div>
-
-                  {isVisible && (
-                    <div className="mx-auto text-end">
-                      <ScrollLink to="Home" smooth={true} duration={500}>
-                        <button className="back-to-top">
-                          <img className="h-8 sm:h-12 md:h-14" src="/src/icons/backtotop.svg" alt="" />
-                        </button>
-                      </ScrollLink>
+                    <div>
+                            <Home id="Home" />
                     </div>
-                  )}
-              </main>
-          </div>
 
+
+                    <div className="bg-gradient-to-t from-blue-gray-100 to-blue-gray-50">
+                          <About id="About" />
+                    </div>
+                    
+
+                    <div className="bg-gradient-to-b from-blue-gray-100 to-blue-gray-50">
+                          <Services id="Services" />
+                    </div>
+
+
+                    <div className="bg-gradient-to-t from-blue-gray-100 to-blue-gray-50">
+                          <Skills id="Skills" />
+                    </div>
+
+                    <div className="bg-gradient-to-t from-blue-gray-50 to-blue-gray-100">
+                          <Portfolio id="Portfolio" />
+                    </div>
+
+                    {/* <Link to="Contact" smooth={true} duration={500}> */}
+                          <Contact id="Contact" />
+                    {/* </Link> */}
+      
+                    <div className="bg-gradient-to-t from-blue-gray-100 to-blue-gray-50">
+                          <Footer id="Footer" />
+                    </div>
+
+                    {isVisible && (
+                      <div className="mx-auto text-end">
+                        <ScrollLink to="Home" smooth={true} duration={500}>
+                          <button className="back-to-top">
+                            <img className="h-8 sm:h-12 md:h-14" src="/src/icons/backtotop.svg" alt="" />
+                          </button>
+                        </ScrollLink>
+                      </div>
+                    )}
+                </main>
+            </div>
+          )}
       </Router>
       
   )

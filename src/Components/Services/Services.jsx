@@ -1,6 +1,7 @@
 import { Card, CardBody, Typography, Button, } from "@material-tailwind/react";
 import PropTypes from 'prop-types'; // Import PropTypes
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink, Link } from 'react-scroll';
+
 
 const service = [
     {
@@ -53,27 +54,13 @@ export default function Services({id}) {
                             })}
                         </div>
 
-                        <ScrollLink to="Portfolio" smooth={true} duration={500} className="inline-block py-10 ">  
-                            <Button size="lg" variant="text" className="pt-6 flex inline-flex gap-2 text-lg hover:bg-transparent font-JosefinBold hover:scale-110 transition-transform duration-300 transform-gpu">
-                                See Projects
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth={2}
-                                    stroke="currentColor"
-                                    className="h-6 w-6"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M19 9l-7 7-7-7"
-                                    />
-                                </svg>
-                                
-                            </Button>
+                        <Link to="Portfolio" smooth={true} duration={500} className="inline-block py-10 pt-6 flex inline-flex gap-2 text-lg hover:bg-transparent font-JosefinBold hover:scale-110 transition-transform duration-300 transform-gpu">
+                                <Button size="lg" variant="text" className="pt-6 flex inline-flex gap-2 text-lg hover:bg-transparent font-JosefinBold hover:scale-110 transition-transform duration-300 transform-gpu">
+                                    See Projects
+                                    <i className="pt-[2px] fas fa-chevron-down"></i>
+                                </Button>
+                        </Link>
 
-                        </ScrollLink>
 
                     </div>
                 </div>

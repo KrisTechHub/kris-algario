@@ -16,13 +16,33 @@ export default function Footer({ id }) {
                             <MenuItems className="px-2 sm:px-6 text-sm hover:bg-transparent hover:text-white" isVertical={false} showIcon={false} />
                         </div>
                             <div className="inline-flex items-center gap-3 sm:gap-8 p-3 sm:p-5">
-                            <a href="https://github.com/KrisTechHub" onClick="window.open(`https://github.com/KrisTechHub`)" rel="noopener noreferrer" target="_blank"><img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/github.svg" /></a>
-                            <a href="https://www.linkedin.com/in/kmjalgario" onClick="window.open(`hhttps://www.linkedin.com/in/kmjalgario`)" rel="noopener noreferrer" target="_blank"><img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/linkedin.svg" /></a>
-                            <a href="https://www.upwork.com/freelancers/~014703744c9fc2e64f" onClick="window.open(`https://www.upwork.com/freelancers/~014703744c9fc2e64f`)" rel="noopener noreferrer" target="_blank"><img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/upwork.svg" /></a>
-                            <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend" onClick="window.open(`https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend`)" rel="noopener noreferrer" target="_blank"><img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/indeed.svg" /></a>
-                            <a href="https://www.instagram.com" onClick="window.open(`hhttps://www.instagram.com`)" rel="noopener noreferrer" target="_blank"><img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/insta.svg" /></a>
-                            <a href="https://facebook.com" onClick="window.open(`https://facebook.com`)" rel="noopener noreferrer" target="_blank"><img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/fb.svg" /></a>
-                            <a href="https://twitter.com" onClick="window.open(`https://twitter.com`)" rel="noopener noreferrer" target="_blank"><img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/twitter.svg" /></a>
+                            <a onClick={() => window.open("https://www.github.com/KrisTechHub", "_blank")} rel="noopener noreferrer" >
+                                <img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/github.svg" />
+                            </a>
+                            
+                            <a onClick={() => window.open("https://www.linkedin.com/in/kmjalgario")} rel="noopener noreferrer" target="_blank">
+                                <img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/linkedin.svg" />
+                            </a>
+                            
+                            <a onClick={() => window.open("https://www.upwork.com/freelancers/~014703744c9fc2e64f")} rel="noopener noreferrer" target="_blank">
+                                <img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/upwork.svg" />
+                            </a>
+                            
+                            <a onClick={() => window.open("https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-jobseeker-profile--profile-one-frontend")} rel="noopener noreferrer" target="_blank">
+                                <img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/indeed.svg" />
+                            </a>
+                            
+                            <a onClick={() => window.open("https://www.instagram.com")} rel="noopener noreferrer" target="_blank">
+                                <img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/insta.svg" />
+                            </a>
+                            
+                            <a onClick={() => window.open("https://www.facebook.com")} rel="noopener noreferrer" target="_blank">
+                                <img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/fb.svg" />
+                            </a>
+                            
+                            <a onClick={() => window.open("https://www.twitter.com")} rel="noopener noreferrer" target="_blank">
+                                <img className="hover:scale-110 w-[20px] h-[20px]" src="./src/icons/twitter.svg" />
+                            </a>
                             </div>
                         <div className=" border-blue-gray-300 mx-8 my-4 lg:mx-12 w-6/12 border-b "></div>
                         <div className='text-center text-blue-gray-100 text-xs'>
