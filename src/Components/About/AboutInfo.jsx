@@ -1,5 +1,4 @@
-import CV from '/AlgarioCV.pdf';
-
+import CV from '/src/assets/AlgarioCV.pdf';
 
 export default function AboutInfo() {
 
