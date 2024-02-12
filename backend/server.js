@@ -17,6 +17,7 @@ if (process.env.NODE_ENV !== "production") {
 
 //********** STEP 5. SET UP SERVER  **********
 const app = express();
+const __dirname = path.resolve();
 app.use(express.json());
 app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
 app.use(express.static(path.join(__dirname)));
