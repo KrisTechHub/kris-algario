@@ -1,14 +1,20 @@
 // ******** THIS IS THE SERVER FILE ********
 
 import express from "express";
-import dotenv from "dotenv";
 import cors from "cors";
+import dotenv from 'dotenv';
 import EmailSender from "./SendEmail.js";
+
+
+//running dotenv when in development mode, and not on production
+if (process.env.NODE_ENV !== "production") {
+    // Import dotenv only in non-production environment
+    dotenv.config();
+}
 
 
 
 //********** STEP 5. SET UP SERVER  **********
-dotenv.config(); // used to load variables from .env file into process.env in Node.js applications
 const app = express();
 app.use(express.json());
 app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
