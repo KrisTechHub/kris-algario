@@ -3,6 +3,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from 'dotenv';
+import path from 'path';
 import EmailSender from "./SendEmail.js";
 
 
@@ -18,6 +19,7 @@ if (process.env.NODE_ENV !== "production") {
 const app = express();
 app.use(express.json());
 app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
+app.use(express.static(path.join(__dirname)));
 const port = process.env.PORT || 5000;
 
 // ********SEND API
