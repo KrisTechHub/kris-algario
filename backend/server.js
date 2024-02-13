@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
 
 //Serve static files including .jsx extensions
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 const port = process.env.PORT || 5000;
 
@@ -39,7 +39,7 @@ app.post("/send", async (req, res) => {
 
 // Serve 'index.html' for any other requests
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(port, () => {
