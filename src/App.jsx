@@ -1,6 +1,6 @@
 
 import { BrowserRouter as Router } from "react-router-dom";
-import { Link as ScrollLink, Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import { useEffect, useState } from "react";
 import '/styles/App.css'
 import NavMenu from './Components/NavMenu/NavMenu'
@@ -14,7 +14,6 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Contact/Footer";
 import '@fortawesome/fontawesome-free/css/all.css';
 import Loading from "./Components/Loading";
-import Sampleform from "./Components/Home/Sampleform";
 
 
 
