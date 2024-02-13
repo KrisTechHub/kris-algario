@@ -38,9 +38,11 @@ app.post("/send", async (req, res) => {
 });
 
 // Serve 'index.html' for any other requests
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+app.get('*.jsx', (req, res) => {
+    res.set('Content-Type', 'application/javascript');
+    res.sendFile(path.join(__dirname, 'dist', req.path));
 });
+
 
 app.listen(port, () => {
     console.log(`Server is running on ${port}`);
