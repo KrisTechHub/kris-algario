@@ -15,7 +15,6 @@ export default function Toast() {
             draggable
             pauseOnHover
             theme="dark"
-            transition: Bounce
         />
     );
 }
