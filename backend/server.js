@@ -4,6 +4,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from 'dotenv';
 import path from 'path';
+import { Mime } from "mime";
 import EmailSender from "./SendEmail.js";
 
 
@@ -20,7 +21,16 @@ const app = express();
 const __dirname = path.resolve();
 app.use(express.json());
 app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
-app.use(express.static(path.join(__dirname)));
+
+//Serve static files including .jsx extensions
+app.use(express.static(path.join(__dirname), {
+    setHeaders: (res, path) => {
+        if (Mime.getType(path) === 'text/jsx') {
+            res.type('application/javascript');
+        }
+    }
+}));
+
 const port = process.env.PORT || 5000;
 
 // ********SEND API
