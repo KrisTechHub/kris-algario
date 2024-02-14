@@ -57,6 +57,14 @@ const config = {
     // Set webpack mode to development or production
     mode: 'development', // or 'production'
 
+    devServer: {
+        // Other devServer options...
+        headers: {
+            'Content-Type': 'application/javascript'
+        }
+    },
+
+
     resolve: {
         extensions: ['.js', '.jsx'], // Specify file extensions to resolve
         alias: {
