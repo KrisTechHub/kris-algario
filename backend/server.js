@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
 
 //Serve static files including .jsx extensions
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname)));
 
 const port = process.env.PORT || 5000;
 
