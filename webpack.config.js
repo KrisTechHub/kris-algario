@@ -7,11 +7,11 @@ const __dirname = path.dirname(__filename);
 
 const config = {
     //This property defines where the application starts
-    entry: './src/main.jsx',
+    entry: path.resolve(__dirname, 'src', 'main.jsx'),
 
     //This property defines the file path and the file name which will be used for deploying the bundled file
     output: {
-        path: path.join(__dirname, '/dist'),
+        path: path.join(__dirname, 'dist'),
         filename: 'bundle.js'
     },
 
