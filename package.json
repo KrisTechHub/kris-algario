@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --mode development --open --hot true",
     "build": "babel src --out-dir dist --presets=@babel/preset-react && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "server": "nodemon server.js"
+    "server": "nodemon backend/server.js"
   },
   "dependencies": {
     "@babel/cli": "^7.23.9",
@@ -58,6 +58,7 @@
     "tailwindcss": "^3.3.4",
     "vite": "^4.5.0",
     "webpack": "^5.90.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.1"
   }
 }

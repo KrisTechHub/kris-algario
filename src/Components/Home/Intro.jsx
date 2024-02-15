@@ -1,8 +1,8 @@
 //functionalities
+import React from 'react';
 import { useState, useEffect } from "react";
 import TrackVisibility from 'react-on-screen';
 import { Link as ScrollLink } from 'react-scroll';
-import { Link } from 'react-router-dom';
 
 
 

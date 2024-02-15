@@ -1,3 +1,4 @@
+import React from 'react';
 import CV from '/src/assets/AlgarioCV.pdf';
 
 export default function AboutInfo() {

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Card, CardHeader, CardBody, CardFooter, Typography, Button } from "@material-tailwind/react"
 import '/styles/App.css'
 

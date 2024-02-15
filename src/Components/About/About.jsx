@@ -1,3 +1,4 @@
+import React from 'react';
 import AboutInfo from "./AboutInfo";
 import PropTypes from 'prop-types'; // Import PropTypes
 

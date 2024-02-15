@@ -1,3 +1,4 @@
+import React from 'react';
 import { Card, CardBody, Typography, Button, } from "@material-tailwind/react";
 import PropTypes from 'prop-types'; // Import PropTypes
 import { Link as ScrollLink, Link } from 'react-scroll';
