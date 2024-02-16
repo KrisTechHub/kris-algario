@@ -22,67 +22,67 @@ import mongodb from '../../icons/mongodb.svg';
 const skills = [
     {
         skill: "HTML5",
-        img: { html5 }
+        img:  html5 
     },
     {
         skill: "CSS3",
-        img: { css3 }
+        img:  css3 
     },
     {
         skill: "Javascript",
-        img: { js }
+        img:  js 
     },
     {
         skill: "React",
-        img: { react }
+        img:  react 
     },
     {
         skill: "Git",
-        img: { git }
+        img:  git 
     },
     {
         skill: "Github",
-        img: { githubblack }
+        img:  githubblack 
     },
     {
         skill: "My SQL",
-        img: { mysql }
+        img:  mysql 
     },
     {
         skill: "Node JS",
-        img: { node }
+        img:  node 
     },
     {
         skill: "SASS",
-        img: { sass }
+        img:  sass 
     },
     {
         skill: "Bootstrap5",
-        img: { bootstrap5 }
+        img:  bootstrap5 
     },
     {
         skill: "Tailwind",
-        img: { tailwind }
+        img:  tailwind 
     },
     {
         skill: "Material UI",
-        img: { materialui }
+        img:  materialui 
     },
     {
         skill: "Canva",
-        img: { canva }
+        img:  canva 
     },
     {
         skill: "Figma",
-        img: { figma }
+        img:  figma 
     },
     {
         skill: "Express",
-        img: { express }
+        img:  express 
     },
     {
         skill: "Mongo DB",
-        img: { mongodb }
+        img:  mongodb 
     }
 ]
 

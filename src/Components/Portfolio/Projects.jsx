@@ -9,7 +9,7 @@ import portfolio from '../../assets/projects/portfolio.png';
 
 const projItems = [
     {
-        img: { yelpcamp },
+        img:  yelpcamp ,
         title: "YelpCamp",
         techstack: "MongoDB, ExpressJS, NodeJS",
         desc: "A functional fullstack website where user can create new account, log in to existing account, add a new campground registered under a specific user's account, then update or delete that campground.",
@@ -17,7 +17,7 @@ const projItems = [
         source: "https://github.com/KrisTechHub/YelpCamp",
     },
     {
-        img: { news },
+        img:  news ,
         title: "Daily News Report",
         techstack: "API, Express, Material UI, React Vite, Tailwind",
         desc: "Just a sample website execute my knowlede on API, Material Tailwind and Express.",
@@ -25,7 +25,7 @@ const projItems = [
         source: "https://github.com/KrisTechHub/Daily-News-Report",
     },
     {
-        img: { tierra },
+        img:  tierra ,
         title: "Tierra Verde",
         techstack: "HTML, CSS3, Bootstrap5",
         desc: "A simple website built on practice for HTML, CSS, and Bootstrap5.",
@@ -33,7 +33,7 @@ const projItems = [
         source: "https://github.com/KrisTechHub/Tierra-Verde/",
     },
     {
-        img: { quiz },
+        img:  quiz ,
         title: "Family Quiz",
         techstack: "HTML, CSS3, Vanila JS",
         desc: "A sample quiz app using just HTML, CSS, and Javascript.",
@@ -41,7 +41,7 @@ const projItems = [
         source: "https://github.com/KrisTechHub/Quiz-App-JS",
     },
     {
-        img: { portfolio },
+        img:  portfolio ,
         title: "My Portfolio",
         techstack: "React Vite, Material Tailwind, Tailwind CSS, ",
         desc: "An online resume showcasing my skills, projects, services, contact details, and my pd resume.",

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardBody, Typography, Button, } from "@material-tailwind/react";
 import PropTypes from 'prop-types'; // Import PropTypes
-import { Link as ScrollLink, Link } from 'react-scroll';
+import { Link } from 'react-scroll';
 import webdev from '../../icons/webdev.svg';
 import uxui from '../../icons/uxui.svg';
 import webapp from '../../icons/webapp.svg';
@@ -10,17 +10,17 @@ import design1 from '../../icons/design1.png';
 
 const service = [
     {
-        icon: {webdev},
+        icon: webdev,
         title: "Web Development",
         desc: "As a Web Developer, I use coding languages like HTML5, CSS3, and Javascript to build websites."
     },
     {
-        icon: { uxui },
+        icon:  uxui ,
         title: "UX/UI Designing",
         desc: "My areas of expertise in Web Designing includes web graphic and UX/UI designing."
     },
     {
-        icon: { webapp },
+        icon:  webapp ,
         title: "Web Application",
         desc: "I offer Web Application Development built specifically for your business needs."
     },
