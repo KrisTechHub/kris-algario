@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const config = {
     //This property defines where the application starts
-    entry: path.resolve(__dirname, 'src', 'main.jsx'),
+    entry: './src/main.jsx',
 
     //This property defines the file path and the file name which will be used for deploying the bundled file
     output: {
@@ -19,21 +19,32 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/, // Match both .js and .jsx files
+                test: /\.(jsx|js)$/, // Match both .js and .jsx files
+                include: path.resolve(__dirname, 'src'),
                 exclude: /node_modules/,
-                use: {
+                use: [{
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-env', '@babel/preset-react'] // Add presets for React
+                        presets: [
+                            ['@babel/preset-env', {
+                                "targets": "defaults"
+                            }],
+                            '@babel/preset-react'
+                        ]
                     }
-                }
+                }]
             },
             {
-                test: /\.css$/, // Match CSS files
-                use: ['style-loader', 'css-loader'] // Use style-loader and css-loader
+                test: /\.css$/i, // Match CSS files 
+                include: path.resolve(__dirname),
+                use: [
+                    'style-loader', 
+                    'css-loader', 
+                    'postcss-loader'
+                ] // Use style-loader and css-loader
             },
             {
-                test: /\.pdf$/,
+                test: /\.pdf$/, //FILE
                 use: [
                     {
                         loader: 'file-loader',
@@ -43,6 +54,23 @@ const config = {
                         },
                     },
                 ],
+            },
+            {
+                test: /\.(jpeg|jpg|svg|png|gif|ico)$/i, //MEDIA
+                use: [
+                    {
+                        loader: 'asset/resource',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'dist/media',
+        
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i, //FONTS
+                type: 'asset/resource',
             },
         ]
     },
@@ -61,12 +89,15 @@ const config = {
         // Other devServer options...
         headers: {
             'Content-Type': 'application/javascript'
+        },
+        static: {
+            directory: path.join(__dirname, 'dist'),
         }
     },
 
 
     resolve: {
-        extensions: ['.js', '.jsx'], // Specify file extensions to resolve
+        extensions: ['.js', '.jsx', '.css'], // Specify file extensions to resolve
         alias: {
             // Create aliases for frequently used paths
             '@components': path.resolve(__dirname, 'src', 'Components'),

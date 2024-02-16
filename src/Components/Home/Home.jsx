@@ -15,7 +15,7 @@ export default function Home({id}) {
 
 
                     <div className="order-1 sm:order-2 items-center mt-[-70px] w-full lg:w-1/2">
-                        <img src="./src/assets/home-portrait.svg" alt="home portrait" />
+                        <img src="./assets/home-portrait.svg" alt="home portrait" />
                     </div>
                 </div>
             </div>

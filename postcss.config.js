@@ -1,6 +1,9 @@
-export default {
+import tailwindcss from 'tailwindcss';
+
+export default () => ({
   plugins: {
-    tailwindcss: {},
     autoprefixer: {},
+    'postcss-preset-env': {},
+    tailwindcss
   },
-}
+});

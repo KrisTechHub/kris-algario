@@ -4,8 +4,10 @@ import withMT from "@material-tailwind/react/utils/withMT";
 export default withMT ({
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./dist/*.html"
   ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -55,6 +57,9 @@ export default withMT ({
       'xl': '1280px',
       '2xl': '1536px',      
     }
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 })

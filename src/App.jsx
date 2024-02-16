@@ -2,18 +2,18 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
 import { useEffect, useState } from "react";
-import '/styles/App.css'
-import NavMenu from './Components/NavMenu/NavMenu'
-import SidebarDrawer from './Components/SideBar/SidebarDrawer'
-import Home from './Components/Home/Home'
-import About from './Components/About/About'
-import Skills from './Components/Skills/Skills'
+import './styles/App.css'
+import NavMenu from './Components/NavMenu/NavMenu';
+import SidebarDrawer from './Components/SideBar/SidebarDrawer';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import Skills from './Components/Skills/Skills';
 import Services from './Components/Services/Services';
-import Portfolio from './Components/Portfolio/Portfolio'
+import Portfolio from './Components/Portfolio/Portfolio';
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Contact/Footer";
 import '@fortawesome/fontawesome-free/css/all.css';
-import Loading from "./Components/Loading";
+// import Loading from "./Components/Loading";
 
 
 
@@ -47,18 +47,10 @@ function App() {
     };
   }, []);
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
-
-    // Handle form submission logic here
-    const name = e.target.body
-    console.log(`Form submitted from App.jsx`);
-    alert("form subitted from App.jsx")
-  }
 
   return (
       <Router>
-          { isLoading ? ( <Loading />) : (
+          {/* { isLoading ? ( <Loading />) : ( */}
             
         <div className="flex">
               {showSidebar && <SidebarDrawer />}
@@ -107,7 +99,7 @@ function App() {
                     )}
                 </main>
             </div>
-          )}
+          {/* )} */}
       </Router>
       
   )
