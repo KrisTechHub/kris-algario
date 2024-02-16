@@ -1,3 +1,4 @@
+import React from 'react'; 
 import PropTypes from 'prop-types'; // Import PropTypes
 
 export default function InlineError({error}) {

@@ -3,16 +3,16 @@ import axios from 'axios';
 
 
 // ********STEP 3. GET IP ADDRESS ******** (OPTIONAL: This is only for location)
-export const IpAdress = async ({ setIpData }) => {
-    try {
-        let res = await axios.get(`http://api.ipstack.com/check?access_key=${import.meta.env.VITE_IP_ADDRESS_API_KEY}`); //import.meta.env for vite and process.env for CRA
-        if (res) {
-            setIpData(res.data.country_name);
-        }
-    } catch (error) {
-        alert(`IP Address Error: ${error.message}`)
-    }
-};
+// export const IpAdress = async ({ setIpData }) => {
+//     try {
+//         let res = await axios.get(`http://api.ipstack.com/check?access_key=${import.meta.env.VITE_IP_ADDRESS_API_KEY}`); //import.meta.env for vite and process.env for CRA
+//         if (res) {
+//             setIpData(res.data.country_name);
+//         }
+//     } catch (error) {
+//         alert(`IP Address Error: ${error.message}`)
+//     }
+// };
 
 
 

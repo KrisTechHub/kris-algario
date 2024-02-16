@@ -16,14 +16,14 @@ export default function ContactForm() {
     const [emailError, setEmailError] = useState();
     const [subjectError, setSubjectError] = useState();
     const [messageError, setMessageError] = useState();
-    const [ipData, setIpData] = useState();
+    // const [ipData, setIpData] = useState();
     const [buttonLoading, setButtonLoading] = useState(false);
     const [send, setSend] = useState();
 
     useEffect(() => {
-        if (!ipData) {
-            IpAdress({setIpData});
-        };
+        // if (!ipData) {
+        //     IpAdress({setIpData});
+        // };
 
         //************STEP 2. ADD VALIDATION*************
         validateName({ name, setNameError }); //call function from Validate.js
@@ -41,8 +41,8 @@ export default function ContactForm() {
             setMessage('');
             setSend();
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [name, email, subject, message, send, ipData]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps add ipData below
+    }, [name, email, subject, message, send]);
 
 
     //********** STEP 6. INTEGRATE API IN CLIENT SIDE  **********
@@ -68,7 +68,7 @@ export default function ContactForm() {
                     <h1 className="font-VollkornSCSemi text-2xl sm:text-4xl pb-1 text-mypurple-900">Get in Touch</h1>
                     <h3 className="font-VollkornSCReg text-lg sm:text-2xl">Tell me about your project</h3>
                     <p className="font-RalewayMedium pb-1 text-gray-700 text-xs sm:text-lg">
-                        Thank you for reaching me out from {ipData && ipData}.
+                        {/* Thank you for reaching me out from {ipData && ipData}. */}
                         Let&apos;s create something together
                     </p>
                 </div>

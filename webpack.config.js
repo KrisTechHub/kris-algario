@@ -1,6 +1,11 @@
 import { fileURLToPath } from 'url';
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import Dotenv from 'dotenv-webpack';
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+// const envPath = `.env.${process.env.NODE_ENV}`;
+// require(dotenv).config({ path: envPath})
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,10 +43,24 @@ const config = {
                 test: /\.css$/i, // Match CSS files 
                 include: path.resolve(__dirname),
                 use: [
-                    'style-loader', 
-                    'css-loader', 
-                    'postcss-loader'
-                ] // Use style-loader and css-loader
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    tailwindcss,
+                                    autoprefixer
+                                ]
+                            }
+                        }
+                    }] // Use style-loader and css-loader
             },
             {
                 test: /\.pdf$/, //FILE
@@ -76,7 +95,10 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'index.html'
-        })
+        }),
+        new Dotenv({
+            systemVars: true,
+        }),
     ],
 
     // Set webpack mode to development or production
@@ -101,6 +123,7 @@ const config = {
             // Add more aliases as needed for your project
         },
     },
+    watch: true,
 };
 
 export default config;
