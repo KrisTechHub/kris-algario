@@ -1,71 +1,88 @@
 import React from "react";
 import PropTypes from 'prop-types'; // Import PropTypes
+import html5 from '../../icons/html5.svg';
+import css3 from '../../icons/css3.svg';
+import js from '../../icons/js.svg';
+import react from '../../icons/react.svg';
+import git from '../../icons/git.svg';
+import githubblack from '../../icons/githubblack.svg';
+import mysql from '../../icons/mysql.svg';
+import node from '../../icons/node.svg';
+import sass from '../../icons/sass.svg';
+import bootstrap5 from '../../icons/bootstrap5.svg';
+import tailwind from '../../icons/tailwind.svg';
+import materialui from '../../icons/materialui.svg';
+import canva from '../../icons/canva.svg';
+import figma from '../../icons/figma.svg';
+import express from '../../icons/express.svg';
+import mongodb from '../../icons/mongodb.svg';
+
 
 
 const skills = [
     {
         skill: "HTML5",
-        img: "./src/icons/html5.svg"
+        img: { html5 }
     },
     {
         skill: "CSS3",
-        img: "./src/icons/css3.svg"
+        img: { css3 }
     },
     {
         skill: "Javascript",
-        img: "./src/icons/js.svg"
+        img: { js }
     },
     {
         skill: "React",
-        img: "./src/icons/react.svg"
+        img: { react }
     },
     {
         skill: "Git",
-        img: "./src/icons/git.svg"
+        img: { git }
     },
     {
         skill: "Github",
-        img: "./src/icons/githubblack.svg"
+        img: { githubblack }
     },
     {
         skill: "My SQL",
-        img: "./src/icons/mysql.svg"
+        img: { mysql }
     },
     {
         skill: "Node JS",
-        img: "./src/icons/node.svg"
+        img: { node }
     },
     {
         skill: "SASS",
-        img: "./src/icons/sass.svg"
+        img: { sass }
     },
     {
         skill: "Bootstrap5",
-        img: "./src/icons/bootstrap5.svg"
+        img: { bootstrap5 }
     },
     {
         skill: "Tailwind",
-        img: "./src/icons/tailwind.svg"
+        img: { tailwind }
     },
     {
         skill: "Material UI",
-        img: "./src/icons/materialui.svg"
+        img: { materialui }
     },
     {
         skill: "Canva",
-        img: "./src/icons/canva.svg"
+        img: { canva }
     },
     {
         skill: "Figma",
-        img: "./src/icons/figma.svg"
+        img: { figma }
     },
     {
         skill: "Express",
-        img: "./src/icons/express.svg"
+        img: { express }
     },
     {
         skill: "Mongo DB",
-        img: "./src/icons/mongodb.svg"
+        img: { mongodb }
     }
 ]
 

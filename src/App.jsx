@@ -13,6 +13,8 @@ import Portfolio from './Components/Portfolio/Portfolio';
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Contact/Footer";
 import '@fortawesome/fontawesome-free/css/all.css';
+import backtotop from './icons/backtotop.svg';
+
 // import Loading from "./Components/Loading";
 
 
@@ -20,7 +22,8 @@ import '@fortawesome/fontawesome-free/css/all.css';
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
+  // const [topClass, setTopClass] = useState('0');
 
 
   useEffect(() => {
@@ -39,6 +42,9 @@ function App() {
       setIsLoading(false);
     }, ); // Change this time to simulate your actual loading time
 
+    // const handleClick = () => {
+    //   setTopClass('top-0')
+    // }
 
     window.addEventListener("scroll", handleScroll);
 
@@ -92,7 +98,7 @@ function App() {
                       <div className="mx-auto text-end">
                         <ScrollLink to="Home" smooth={true} duration={500}>
                           <button className="back-to-top">
-                            <img className="h-8 sm:h-12 md:h-14" src="/src/icons/backtotop.svg" alt="" />
+                            <img className="h-8 sm:h-12 md:h-14" src={backtotop} alt="" />
                           </button>
                         </ScrollLink>
                       </div>

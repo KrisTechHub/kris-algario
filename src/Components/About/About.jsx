@@ -1,6 +1,8 @@
 import React from 'react';
 import AboutInfo from "./AboutInfo";
 import PropTypes from 'prop-types'; // Import PropTypes
+import aboutPortrait from '../../assets/about-portrait.svg';
+
 
 export default function About({id}) {
     return (
@@ -8,7 +10,7 @@ export default function About({id}) {
             <div className="flex-row mx-auto">
                 <div className="flex flex-col md:flex-row xl:px-[50px]">
                     <div className="order-1 sm:order-1 items-center w-full lg:w-1/2">
-                        <img src="./src/assets/about-portrait.svg" alt="home portrait" />
+                        <img src={aboutPortrait} alt="home portrait" />
                     </div>
 
                     <div className="order-2 sm:order-2 flex items-center w-full lg:w-1/2 ">

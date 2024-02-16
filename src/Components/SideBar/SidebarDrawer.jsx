@@ -11,6 +11,9 @@ import {
     Squares2X2Icon,
 } from "@heroicons/react/24/solid";
 import { Link as ScrollLink } from 'react-scroll';
+import Kpink from '../../assets/Kpink.svg';
+import krisphoto from '../../assets/krisphoto.jpg';
+
 
 
 
@@ -25,7 +28,7 @@ export default function SidebarDrawer() {
         <div className="shadow-xl z-50 opacity-95 hidden lg:block lg:mt-[70px] xl:mt-[90px] xl:mt-[110px] w-16 text-mypink-800 bg-blue-gray-50 shadow-xl shadow-blue-gray-900/5 custom-rounded-tr custom-rounded-br fixed sb">    
             <div className="p-2 pt-5">
                 <ScrollLink to="Home" smooth={true} duration={500}>
-                    <img className="w-10 py-2" src="./src/assets/Kpink.svg" />
+                    <img className="w-10 py-2" src={Kpink} />
                 </ScrollLink>
 
                 <hr className="w-12 my-2 border-gray-400" />
@@ -55,7 +58,7 @@ export default function SidebarDrawer() {
             <div className="h-40"></div>
             <div className="py-3 text-center custom-rounded-br shadow-xl cursor-pointer">
                 <ScrollLink to="About" smooth={true} duration={500}>
-                    <Avatar variant="circular" size="sm" alt="portrait" src="./src/assets/krisphoto.jpg" />
+                    <Avatar variant="circular" size="sm" alt="portrait" src={krisphoto} />
                 </ScrollLink>
             </div>
 

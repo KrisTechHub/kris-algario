@@ -2,6 +2,7 @@
 import React from 'react';
 import ContactForm from "./ContactForm";
 import PropTypes from 'prop-types'; // Import PropTypes
+import contactPortrait from '../../assets/contact-portrait.svg';
 
 
 export default function Contact({id}) {
@@ -17,7 +18,7 @@ export default function Contact({id}) {
 
 
                     <div className="order-1 md:order-2 flex items-center justify-center w-full lg:w-1/2 ">
-                        <img className="w-96 xl:w-auto" src="./src/assets/contact-portrait.svg" alt="home portrait" />
+                        <img className="w-96 xl:w-auto" src={contactPortrait} alt="home portrait" />
                     </div>
 
                 </div>

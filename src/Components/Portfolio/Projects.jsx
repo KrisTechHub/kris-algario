@@ -1,10 +1,15 @@
 import React from 'react';
-import { Card, CardHeader, CardBody, CardFooter, Typography, Button } from "@material-tailwind/react"
+import { Card, CardHeader, CardBody, CardFooter, Typography, Button } from "@material-tailwind/react";
+import yelpcamp from '../../assets/projects/yelpcamp.png';
+import news from '../../assets/projects/news.png';
+import tierra from '../../assets/projects/tierra.png';
+import quiz from '../../assets/projects/quiz.png';
+import portfolio from '../../assets/projects/portfolio.png';
 
 
 const projItems = [
     {
-        img: "./src/assets/projects/yelpcamp.png",
+        img: { yelpcamp },
         title: "YelpCamp",
         techstack: "MongoDB, ExpressJS, NodeJS",
         desc: "A functional fullstack website where user can create new account, log in to existing account, add a new campground registered under a specific user's account, then update or delete that campground.",
@@ -12,7 +17,7 @@ const projItems = [
         source: "https://github.com/KrisTechHub/YelpCamp",
     },
     {
-        img: "./src/assets/projects/news.png",
+        img: { news },
         title: "Daily News Report",
         techstack: "API, Express, Material UI, React Vite, Tailwind",
         desc: "Just a sample website execute my knowlede on API, Material Tailwind and Express.",
@@ -20,7 +25,7 @@ const projItems = [
         source: "https://github.com/KrisTechHub/Daily-News-Report",
     },
     {
-        img: "./src/assets/projects/tierra.png",
+        img: { tierra },
         title: "Tierra Verde",
         techstack: "HTML, CSS3, Bootstrap5",
         desc: "A simple website built on practice for HTML, CSS, and Bootstrap5.",
@@ -28,7 +33,7 @@ const projItems = [
         source: "https://github.com/KrisTechHub/Tierra-Verde/",
     },
     {
-        img: "./src/assets/projects/quiz.png",
+        img: { quiz },
         title: "Family Quiz",
         techstack: "HTML, CSS3, Vanila JS",
         desc: "A sample quiz app using just HTML, CSS, and Javascript.",
@@ -36,7 +41,7 @@ const projItems = [
         source: "https://github.com/KrisTechHub/Quiz-App-JS",
     },
     {
-        img: "./src/assets/projects/portfolio.png",
+        img: { portfolio },
         title: "My Portfolio",
         techstack: "React Vite, Material Tailwind, Tailwind CSS, ",
         desc: "An online resume showcasing my skills, projects, services, contact details, and my pd resume.",

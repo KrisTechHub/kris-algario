@@ -2,6 +2,8 @@ import React from 'react';
 import Intro from "./Intro";
 import './Home.css';
 import PropTypes from 'prop-types'; // Import PropTypes
+import homePortrait from '../../assets/home-portrait.svg';
+
 
 
 export default function Home({id}) {
@@ -15,7 +17,7 @@ export default function Home({id}) {
 
 
                     <div className="order-1 sm:order-2 items-center mt-[-70px] w-full lg:w-1/2">
-                        <img src="./assets/home-portrait.svg" alt="home portrait" />
+                        <img src={homePortrait} alt="home portrait" />
                     </div>
                 </div>
             </div>

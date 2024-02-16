@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import krisphoto from '../../assets/krisphoto.jpg';
+
 
 
 import {
@@ -50,7 +52,7 @@ function ProfileMenu() {
         <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
             <MenuHandler>
                 <Button variant="text" className="tracking-wide flex items-center gap-1 rounded-full text-mypink-800 hover:bg-purple-50">
-                    <Avatar variant="circular" size="sm" alt="kris algario" className="border border-mypink-800 p-0.5" src="./src/assets/krisphoto.jpg" />
+                    <Avatar variant="circular" size="sm" alt="kris algario" className="border border-mypink-800 p-0.5" src={krisphoto} />
                     <p className='lg:text-base text-sm'>Contact</p>
                     <ChevronDownIcon strokeWidth={2.5} className={`h-3 w-3 transition-transform ${isMenuOpen ? "rotate-180" : "" }`} />
                 </Button>

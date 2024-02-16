@@ -1,5 +1,7 @@
 import React from "react";
 import MenuItems from "../NavMenu/MenuItems";
+import krisphoto from '../../assets/krisphoto.jpg';
+import Kpink from '../../assets/Kpink.svg';
 
 import { Typography, List, ListItem, ListItemPrefix, Accordion, AccordionHeader, AccordionBody, Alert } from "@material-tailwind/react";
 import { PhoneArrowDownLeftIcon } from "@heroicons/react/24/solid";
@@ -17,11 +19,11 @@ export default function SideBar() {
         <div>
 
             <div className="flex items-center justify-center pt-4">
-                <img src="./src/assets/krisphoto.jpg" alt="brand" className="h-20 w-20 space rounded-full" />
+                <img src={krisphoto} alt="brand" className="h-20 w-20 space rounded-full" />
             </div>
             
             <Typography variant="h5" className="font-mono flex items-center text-mypink-800 justify-center p-4">
-                <img src="./src/assets/Kpink.svg" alt="brand" className="h-8 w-8" />
+                <img src={Kpink} alt="brand" className="h-8 w-8" />
                 ristine Algario
             </Typography>
 

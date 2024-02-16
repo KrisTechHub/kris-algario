@@ -2,21 +2,25 @@ import React from 'react';
 import { Card, CardBody, Typography, Button, } from "@material-tailwind/react";
 import PropTypes from 'prop-types'; // Import PropTypes
 import { Link as ScrollLink, Link } from 'react-scroll';
+import webdev from '../../icons/webdev.svg';
+import uxui from '../../icons/uxui.svg';
+import webapp from '../../icons/webapp.svg';
+import design1 from '../../icons/design1.png';
 
 
 const service = [
     {
-        icon: "./src/icons/webdev.svg",
+        icon: {webdev},
         title: "Web Development",
         desc: "As a Web Developer, I use coding languages like HTML5, CSS3, and Javascript to build websites."
     },
     {
-        icon: "./src/icons/webdev.svg",
+        icon: { uxui },
         title: "UX/UI Designing",
         desc: "My areas of expertise in Web Designing includes web graphic and UX/UI designing."
     },
     {
-        icon: "./src/icons/webapp.svg",
+        icon: { webapp },
         title: "Web Application",
         desc: "I offer Web Application Development built specifically for your business needs."
     },
@@ -25,7 +29,7 @@ const service = [
 export default function Services({id}) {
     return (
         <div id={id} >
-            <img className="h-48 lg:h-72 xl:h-80 rotate-180 absolute mt-14 md:mt-28" src="./src/icons/design1.png" alt="bg design" />
+            <img className="h-48 lg:h-72 xl:h-80 rotate-180 absolute mt-14 md:mt-28" src={design1} alt="bg design" />
             
             <div className="container mx-auto py-28">
                 <div className="flex">
@@ -67,7 +71,7 @@ export default function Services({id}) {
                 </div>
             </div>
 
-            <img className="h-48 lg:h-72 xl:h-80 float-right  mt-[-200px]" src="./src/icons/design1.png" alt="bg design" />
+            <img className="h-48 lg:h-72 xl:h-80 float-right  mt-[-200px]" src={design1} alt="bg design" />
         </div>
     );
 }

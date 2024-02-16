@@ -56,21 +56,18 @@ const config = {
                 ],
             },
             {
-                test: /\.(jpeg|jpg|svg|png|gif|ico)$/i, //MEDIA
-                use: [
-                    {
-                        loader: 'asset/resource',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: 'dist/media',
-        
-                        }
-                    }
-                ]
+                test: /\.(svg|jpg|png)$/i, //MEDIA
+                type: 'asset/resource',   
+                generator: {
+                    filename: 'images/[name][ext]' // Output filename pattern
+                }           
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i, //FONTS
                 type: 'asset/resource',
+                generator: {
+                    filename: 'fonts/[name][ext]' // Output filename pattern
+                }
             },
         ]
     },

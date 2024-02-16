@@ -6,6 +6,8 @@ import { navItems } from "./NavData";
 import { Navbar, Collapse, Typography, IconButton, } from "@material-tailwind/react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import './NavMenu.css'
+import logo from '../../assets/Kpink.svg';
+
 
 
 
@@ -61,7 +63,7 @@ export default function NavMenu() {
                 <div className="relative flex items-center justify-between text-mypink-800">
 
                     <Typography as="a" href="/Home" className="divide-x-2 divide-gray-300 font-sans flex items-start cursor-pointer py-1.5 font-medium flex items-center">
-                        <img src="./src/assets/Kpink.svg" className="h-15 w-15 xs:h-12 xs:w-12 pr-2" /> 
+                    <img src={logo} className="h-15 w-15 xs:h-12 xs:w-12 pr-2" /> 
                         <h1 className="font-CinzelBlack pl-2 text-sm md:text-lg lg:text-xl xl:text-2xl ">Kristine Algario</h1>
                     </Typography>
                     
