@@ -4,6 +4,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import Dotenv from 'dotenv-webpack';
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
+import CopyWebpackPlugin from 'copy-webpack-plugin'
 // const envPath = `.env.${process.env.NODE_ENV}`;
 // require(dotenv).config({ path: envPath})
 
@@ -94,11 +95,17 @@ const config = {
     // Setup plugin to use a HTML file for serving bundled js files
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'index.html'
+            template: 'index.html',
+            favicon: './src/assets/kris.svg'
         }),
         new Dotenv({
             systemVars: true,
         }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: './src/assets/kris.svg' },
+            ]
+        })
     ],
 
     // Set webpack mode to development or production

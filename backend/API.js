@@ -41,7 +41,7 @@ import axios from 'axios';
 export const SendEmail = async ({ name, email, subject, message, setSend }) => {
     try {
         const datas = { name, email, subject, message };
-        let res = await axios.post(`http://localhost:5000/send`, datas);
+        let res = await axios.post(`https://krisalgario.onrender.com//send`, datas);
         if (res) {
             setSend(res.data)
         }
