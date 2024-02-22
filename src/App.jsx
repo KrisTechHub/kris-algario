@@ -14,7 +14,6 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Contact/Footer";
 import '@fortawesome/fontawesome-free/css/all.css';
 import backtotop from './icons/backtotop.svg';
-
 // import Loading from "./Components/Loading";
 
 
@@ -22,7 +21,7 @@ import backtotop from './icons/backtotop.svg';
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
   // const [topClass, setTopClass] = useState('0');
 
 
@@ -38,9 +37,9 @@ function App() {
     };
 
     // Simulate loading delay with setTimeout
-    setTimeout(() => {
-      setIsLoading(false);
-    }, ); // Change this time to simulate your actual loading time
+    // setTimeout(() => {
+    //   setIsLoading(false);
+    // }, 2000); // Change this time to simulate your actual loading time
 
     // const handleClick = () => {
     //   setTopClass('top-0')
@@ -53,11 +52,13 @@ function App() {
     };
   }, []);
 
+  // if (isLoading) {
+  //   return < Loading />
+  // };
+
 
   return (
-      <Router>
-          {/* { isLoading ? ( <Loading />) : ( */}
-            
+      <Router>            
         <div className="flex">
               {showSidebar && <SidebarDrawer />}
                 <main className="flex-1 overflow-y-auto">
@@ -105,7 +106,6 @@ function App() {
                     )}
                 </main>
             </div>
-          {/* )} */}
       </Router>
       
   )

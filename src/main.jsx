@@ -1,10 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Favicon from 'react-favicon'
-import App from './App.jsx'
-import './styles/index.css'
-
-import {ThemeProvider}  from "@material-tailwind/react";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Favicon from 'react-favicon';
+import App from './App.jsx';
+import './styles/index.css';
+import { ThemeProvider } from "@material-tailwind/react";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -13,4 +12,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <App />
     </ThemeProvider>
   </React.StrictMode>
-)
+);
